@@ -1,0 +1,1593 @@
+[
+ {
+  "id": "claude-code",
+  "name": "Claude Code",
+  "vendor": "Anthropic",
+  "kind": "cli",
+  "website": "https://claude.com/product/claude-code",
+  "mcpDocs": "https://code.claude.com/docs/en/mcp",
+  "logo": {
+   "simpleIcons": "claudecode"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI, user scope (all projects)",
+    "command": "claude mcp add --transport http --scope user {{NAME}} {{URL}} --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Project file .mcp.json (project root, shareable via git)",
+    "path": {
+     "macos": ".mcp.json",
+     "linux": ".mcp.json",
+     "windows": ".mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `claude mcp list` (expect 'Connected') or `claude mcp get conector`; inside a session run `/mcp`.",
+  "notes": "Scopes: local (default, this project only), project (.mcp.json, needs a one-time approval; reset with `claude mcp reset-project-choices`), user (all projects). Local and user entries are stored in ~/.claude.json (%USERPROFILE%\\.claude.json on Windows). `claude mcp add` only writes config and never tests the token, so always run `claude mcp list`. In .mcp.json use \"Bearer ${CONECTOR_TOKEN}\" (env expansion works in url/headers) to keep the secret out of git. A JSON entry with url but no type is read as stdio, so keep type: http. SSE is deprecated. Stdio also works (`claude mcp add --env K=V --transport stdio NAME -- node BRIDGE`; keep another option between the last --env and the name)."
+ },
+ {
+  "id": "claude-desktop",
+  "name": "Claude Desktop",
+  "vendor": "Anthropic",
+  "kind": "desktop",
+  "website": "https://claude.com/download",
+  "mcpDocs": "https://claude.com/docs/connectors/custom/add-unlisted",
+  "logo": {
+   "simpleIcons": "claude"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "steps",
+    "title": "Custom connector (needs a public https:// URL)",
+    "steps": [
+     "In Claude open “Customize” → “Connectors” → “Add custom connector” (Team and Enterprise: “Organization settings” → “Connectors” → “Add” → “Custom” → “Web”).",
+     "Name it “Conector” and paste the MCP URL below.",
+     "Set “Authentication” to “No sign-in”, open “Request headers”, choose “authorization” and paste the header value below."
+    ],
+    "values": [
+     {
+      "label": "MCP URL",
+      "value": "{{URL}}"
+     },
+     {
+      "label": "authorization header",
+      "value": "Bearer {{TOKEN}}"
+     }
+    ]
+   },
+   {
+    "kind": "file",
+    "title": "Local stdio bridge (claude_desktop_config.json)",
+    "path": {
+     "macos": "~/Library/Application Support/Claude/claude_desktop_config.json",
+     "windows": "%APPDATA%\\Claude\\claude_desktop_config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"command\": \"{{NODE}}\",\n      \"args\": [\n        \"{{BRIDGE_PATH}}\"\n      ],\n      \"env\": {\n        \"CONECTOR_URL\": \"{{URL}}\",\n        \"CONECTOR_TOKEN\": \"{{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Remote connector: Customize > Connectors lists it; in a chat click + > Connectors and toggle it on. Local bridge: fully quit and reopen Claude Desktop, then + > Connectors (Manage connectors) shows 'conector' with its tools; logs in ~/Library/Logs/Claude/mcp*.log (macOS) or %APPDATA%\\Claude\\logs (Windows).",
+  "notes": "Remote route is UI only (no config file): Customize > Connectors > Add custom connector (Team/Enterprise: Organization settings > Connectors > Add > Custom > Web). Enter the Conector URL, set Authentication to 'No sign-in', open Request headers, pick 'authorization' and enter 'Bearer <token>' (sent verbatim, so include 'Bearer '). Request headers is a beta limited to some organizations (section missing = no access) and cannot be edited later (remove and re-add). The connection is made from Anthropic's cloud for Desktop, Cowork, claude.ai and mobile, so the URL must be public HTTPS (or allowlist Anthropic IPs / use Anthropic MCP tunnels); localhost or LAN URLs fail. The file method (local stdio bridge) works in Claude Desktop chat only, NOT in Cowork or claude.ai; restart the app after editing. Settings > Developer > Edit Config opens the file; the Linux path is not documented."
+ },
+ {
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "vendor": "OpenAI",
+  "kind": "web",
+  "website": "https://chatgpt.com",
+  "mcpDocs": "https://developers.openai.com/api/docs/guides/custom-mcp-server",
+  "logo": {
+   "favicon": "https://chatgpt.com"
+  },
+  "remoteHttp": false,
+  "stdio": false,
+  "methods": [],
+  "verify": "After 'Create as a plugin' ChatGPT scans the server and lists the discovered tools. Install the plugin, then in a new chat type @ and pick it (or name the app and tool in the prompt).",
+  "notes": "ChatGPT only connects to MCP servers that use OAuth or no authentication, and Conector authenticates agents with access tokens, so ChatGPT can't connect yet. Its custom MCP servers (developer mode) also need a public https:// URL."
+ },
+ {
+  "id": "codex",
+  "name": "Codex",
+  "vendor": "OpenAI",
+  "kind": "cli",
+  "website": "https://developers.openai.com/codex",
+  "mcpDocs": "https://developers.openai.com/codex/mcp",
+  "logo": {
+   "favicon": "https://developers.openai.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "config.toml with a static Authorization header",
+    "path": {
+     "macos": "~/.codex/config.toml",
+     "linux": "~/.codex/config.toml",
+     "windows": "%USERPROFILE%\\.codex\\config.toml"
+    },
+    "format": "toml",
+    "snippet": "[mcp_servers.{{NAME}}]\nurl = \"{{URL}}\"\nhttp_headers = { \"Authorization\" = \"Bearer {{TOKEN}}\" }"
+   },
+   {
+    "kind": "command",
+    "title": "CLI with the token read from an environment variable",
+    "command": "export CONECTOR_TOKEN={{TOKEN}}\ncodex mcp add {{NAME}} --url {{URL}} --bearer-token-env-var CONECTOR_TOKEN"
+   }
+  ],
+  "verify": "Run `codex mcp list`; inside the Codex TUI run `/mcp` to see active servers. IDE extension: gear menu > MCP servers.",
+  "notes": "The ChatGPT desktop app, Codex CLI and IDE extension share ~/.codex/config.toml; a project .codex/config.toml works only in trusted projects. Static `http_headers` works everywhere. `bearer_token_env_var` (what `codex mcp add --url ... --bearer-token-env-var VAR` writes) reads the token from the environment of the process that launches Codex, so persist the export in your shell profile and note a GUI-launched IDE may not see it. `codex mcp add` has no flag for static headers. `--bearer-token-env-var` is confirmed in the CLI source but is not on the docs page. Other keys: env_http_headers, http_headers_helper, startup_timeout_sec (default 10), tool_timeout_sec (default 60), enabled. IDE extension: gear menu > MCP servers > Add server, then Restart extension after saving. The docs show ~/.codex only; the Windows path is the conventional %USERPROFILE% location."
+ },
+ {
+  "id": "github-copilot",
+  "name": "GitHub Copilot",
+  "vendor": "GitHub",
+  "kind": "ide",
+  "website": "https://github.com/features/copilot",
+  "mcpDocs": "https://code.visualstudio.com/docs/copilot/customization/mcp-servers",
+  "logo": {
+   "simpleIcons": "githubcopilot"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "Copilot CLI: copilot mcp add",
+    "command": "copilot mcp add --transport http --header \"Authorization: Bearer {{TOKEN}}\" {{NAME}} {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "VS Code user mcp.json (Command Palette: MCP: Open User Configuration)",
+    "path": {
+     "macos": "~/Library/Application Support/Code/User/mcp.json",
+     "linux": "~/.config/Code/User/mcp.json",
+     "windows": "%APPDATA%\\Code\\User\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"servers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   },
+   {
+    "kind": "file",
+    "title": "Copilot CLI config file mcp-config.json",
+    "path": {
+     "macos": "~/.copilot/mcp-config.json",
+     "linux": "~/.copilot/mcp-config.json",
+     "windows": "%USERPROFILE%\\.copilot\\mcp-config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      },\n      \"tools\": [\n        \"*\"\n      ]\n    }\n  }\n}"
+   }
+  ],
+  "verify": "VS Code: Command Palette 'MCP: List Servers' > pick the server > Show Output; the Configure Tools button in the Chat view lists its tools. Copilot CLI: `copilot mcp list` or `/mcp show conector`.",
+  "notes": "Two incompatible formats: VS Code mcp.json uses top-level `servers` (type http|sse|stdio); Copilot CLI uses `mcpServers` with type `http` or `local` and `tools: [\"*\"]`, and ignores .vscode/mcp.json. The VS Code user-profile paths shown are the standard profile location (the docs only say to run 'MCP: Open User Configuration' or 'MCP: Add Server' > HTTP). Workspace .vscode/mcp.json takes the same snippet but needs Workspace Trust; do not commit tokens, instead define an `inputs` entry (type promptString, id conector-token, password true) and use \"Bearer ${input:conector-token}\". VS Code tries HTTP first and falls back to SSE. `code --add-mcp` exists but the docs only show a stdio example, so HTTP+headers through that flag is unconfirmed. Copilot CLI project servers (.mcp.json, .github/mcp.json) load only in trusted folders; org policies can restrict MCP. The Copilot CLI docs show ~/.copilot only (Windows path inferred)."
+ },
+ {
+  "id": "cursor",
+  "name": "Cursor",
+  "vendor": "Anysphere",
+  "kind": "ide",
+  "website": "https://cursor.com",
+  "mcpDocs": "https://cursor.com/docs/context/mcp",
+  "logo": {
+   "simpleIcons": "cursor"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Global mcp.json (all projects)",
+    "path": {
+     "macos": "~/.cursor/mcp.json",
+     "linux": "~/.cursor/mcp.json",
+     "windows": "%USERPROFILE%\\.cursor\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Open Cursor Settings > Tools & MCP (labelled Customize in newer builds): the server should be enabled and list its tools. On errors open the Output panel (Cmd/Ctrl+Shift+U) and select 'MCP Logs'.",
+  "notes": "No CLI command; edit ~/.cursor/mcp.json (global) or .cursor/mcp.json (per project). Remote servers need only `url` (+ `headers`), no `type` key; Streamable HTTP and SSE are both supported. Interpolation works in command/args/env/url/headers, so \"Authorization\": \"Bearer ${env:CONECTOR_TOKEN}\" keeps the token out of the file. Restart Cursor if the server does not show up. The docs only show ~/.cursor, the Windows path is the conventional %USERPROFILE% location, and the docs do not confirm the exact Settings panel label."
+ },
+ {
+  "id": "gemini-cli",
+  "name": "Gemini CLI",
+  "vendor": "Google",
+  "kind": "cli",
+  "website": "https://geminicli.com",
+  "mcpDocs": "https://github.com/google-gemini/gemini-cli/blob/main/docs/tools/mcp-server.md",
+  "logo": {
+   "simpleIcons": "googlegemini"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI, user scope",
+    "command": "gemini mcp add --scope user --transport http --header \"Authorization: Bearer {{TOKEN}}\" {{NAME}} {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "User settings.json",
+    "path": {
+     "macos": "~/.gemini/settings.json",
+     "linux": "~/.gemini/settings.json",
+     "windows": "%USERPROFILE%\\.gemini\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"httpUrl\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `gemini mcp list` (shows CONNECTED/DISCONNECTED) or `/mcp` inside a session (servers, status, tools).",
+  "notes": "`httpUrl` = Streamable HTTP; `url` = SSE. `gemini mcp add` defaults to --scope project (writes ./.gemini/settings.json), so pass --scope user for a global install. Avoid underscores in server names (policy parser). Stdio servers show Disconnected in untrusted folders (`gemini trust`). The documented $VAR/${VAR} expansion applies to the `env` block, not necessarily `headers`, so keep a literal token there. The docs show ~/.gemini only; the Windows path is the conventional %USERPROFILE% location."
+ },
+ {
+  "id": "google-antigravity",
+  "name": "Google Antigravity",
+  "vendor": "Google",
+  "kind": "ide",
+  "website": "https://antigravity.google",
+  "mcpDocs": "https://antigravity.google/docs/mcp",
+  "logo": {
+   "favicon": "https://antigravity.google"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Global mcp_config.json (IDE: Manage MCP Servers > View raw config)",
+    "path": {
+     "macos": "~/.gemini/config/mcp_config.json",
+     "linux": "~/.gemini/config/mcp_config.json",
+     "windows": "%USERPROFILE%\\.gemini\\config\\mcp_config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"serverUrl\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "IDE: '...' menu of the agent panel > MCP Servers > Manage MCP Servers (status and tools). CLI: `/mcp` opens the MCP Manager overlay with live status. App: Settings > Customizations > Installed MCP Servers > Refresh.",
+  "notes": "Remote servers MUST use `serverUrl`; the docs say legacy `url`/`httpUrl` are not supported. Streamable HTTP and SSE are accepted and `headers` is supported. Docs list the global file as ~/.gemini/config/mcp_config.json and a workspace file .agents/mcp_config.json, but several third-party guides cite ~/.gemini/antigravity/mcp_config.json (possibly older builds), so use 'View raw config' in the IDE to open the file Antigravity really reads. Windows path is not documented (the ~ form is used). Unconfigured MCP tools default to Ask permission; allow with the pattern mcp(conector/*)."
+ },
+ {
+  "id": "opencode",
+  "name": "OpenCode",
+  "vendor": "Anomaly (SST)",
+  "kind": "cli",
+  "website": "https://opencode.ai",
+  "mcpDocs": "https://opencode.ai/docs/mcp-servers/",
+  "logo": {
+   "simpleIcons": "opencode"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Global opencode.json",
+    "path": {
+     "macos": "~/.config/opencode/opencode.json",
+     "linux": "~/.config/opencode/opencode.json",
+     "windows": "%USERPROFILE%\\.config\\opencode\\opencode.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcp\": {\n    \"{{NAME}}\": {\n      \"type\": \"remote\",\n      \"url\": \"{{URL}}\",\n      \"enabled\": true,\n      \"oauth\": false,\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `opencode mcp list` (servers and connection status); `opencode mcp debug conector` diagnoses connection problems.",
+  "notes": "Global config merges with a project opencode.json (project wins); .jsonc is also accepted. Env substitution: \"Bearer {env:CONECTOR_TOKEN}\" (or {file:path}). `oauth: false` is a documented option that stops OpenCode from attempting OAuth for servers that use API keys. `opencode mcp add` exists but is an interactive wizard (no flags documented), so it is not listed as a method. Default tool-fetch timeout is 5000 ms (raise `timeout` if Conector is slow). The docs give no user-level Windows path; %USERPROFILE%\\.config\\opencode is inferred from the ~/.config convention."
+ },
+ {
+  "id": "cline",
+  "name": "Cline",
+  "vendor": "Cline",
+  "kind": "ide",
+  "website": "https://cline.bot",
+  "mcpDocs": "https://docs.cline.bot/mcp/configuring-mcp-servers",
+  "logo": {
+   "github": "cline"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "Cline CLI: cline mcp add",
+    "command": "cline mcp add {{NAME}} {{URL}} --transport http --header \"Authorization: Bearer {{TOKEN}}\" --yes"
+   },
+   {
+    "kind": "file",
+    "title": "VS Code extension cline_mcp_settings.json (MCP Servers > Configure > Configure MCP Servers)",
+    "path": {
+     "macos": "~/Library/Application Support/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json",
+     "linux": "~/.config/Code/User/globalStorage/saoudrizwan.claude-dev/settings/cline_mcp_settings.json",
+     "windows": "%APPDATA%\\Code\\User\\globalStorage\\saoudrizwan.claude-dev\\settings\\cline_mcp_settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"streamableHttp\",\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      },\n      \"disabled\": false\n    }\n  }\n}"
+   }
+  ],
+  "verify": "VS Code: Cline panel > MCP Servers icon: the server and its tools are listed (run one tool call to confirm; the docs mention no status dot). CLI: `cline config mcp` (add --json for JSON).",
+  "notes": "Set type to `streamableHttp`; if `type` is omitted Cline defaults to the legacy SSE transport. The Cline CLI stores ~/.cline/data/settings/cline_mcp_settings.json (override with CLINE_MCP_SETTINGS_PATH). Without --yes, `cline mcp add` opens a wizard prefilled with your values. The extension's Remote Servers tab (name, URL, transport) has no documented header field, so use the JSON. The docs do not list the extension's file path (they say to open it from the UI); the per-OS paths here come from third-party guides (VS Code Insiders and Cursor use their own User folder)."
+ },
+ {
+  "id": "kilo-code",
+  "name": "Kilo Code",
+  "vendor": "Kilo Code",
+  "kind": "ide",
+  "website": "https://kilo.ai",
+  "mcpDocs": "https://kilo.ai/docs/automate/mcp/using-in-kilo-code",
+  "logo": {
+   "favicon": "https://kilo.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Global kilo.jsonc (VS Code extension and Kilo CLI)",
+    "path": {
+     "macos": "~/.config/kilo/kilo.jsonc",
+     "linux": "~/.config/kilo/kilo.jsonc",
+     "windows": "%USERPROFILE%\\.config\\kilo\\kilo.jsonc"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcp\": {\n    \"{{NAME}}\": {\n      \"type\": \"remote\",\n      \"url\": \"{{URL}}\",\n      \"enabled\": true,\n      \"oauth\": false,\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "VS Code: Kilo Code settings > Agent Behaviour > MCP Servers shows each server's status (needs_auth and failed are the error states).",
+  "notes": "The docs say VS Code and the CLI use the same `mcp` format; the UI route is Settings > Agent Behaviour > MCP Servers > Add Server (Local stdio / Remote HTTP). Project config: kilo.jsonc in the repo root or .kilo/kilo.jsonc (overrides global). Remote servers try Streamable HTTP first and fall back to SSE; `oauth: false` disables the default OAuth attempt. Env syntax {env:VAR} is documented for the VS Code extension. Older configs used a top-level `mcpServers` key with alwaysAllow/disabled (legacy SSE example): do not mix the formats. Windows path and which product reads which file are not stated in the docs (inferred from the ~/.config convention)."
+ },
+ {
+  "id": "amp",
+  "name": "Amp",
+  "vendor": "Amp",
+  "kind": "cli",
+  "website": "https://ampcode.com",
+  "mcpDocs": "https://ampcode.com/docs/customize/mcp",
+  "logo": {
+   "favicon": "https://ampcode.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: amp mcp add with a header",
+    "command": "amp mcp add {{NAME}} --header \"Authorization=Bearer {{TOKEN}}\" {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "User settings.json (amp.mcpServers)",
+    "path": {
+     "macos": "~/.config/amp/settings.json",
+     "linux": "~/.config/amp/settings.json",
+     "windows": "%USERPROFILE%\\.config\\amp\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"amp.mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `amp mcp doctor` (shows server status; workspace servers show 'awaiting approval' until `amp mcp approve conector`).",
+  "notes": "The settings key is the literal dotted string \"amp.mcpServers\". The `--header \"Name=value\"` flag of `amp mcp add` is NOT in Amp's own docs (they only show `amp mcp add NAME -- cmd...` and `amp mcp add NAME URL`); it is taken from Context7's Amp instructions, so run `amp mcp add --help` if it fails. The settings.json route is the documented one. ${VAR} interpolation works in url/headers (e.g. \"Bearer ${CONECTOR_TOKEN}\"). Workspace .amp/settings.json servers need approval, user settings do not; the file can also be settings.jsonc and `--mcp-config` overrides both. A url entry may start a browser OAuth flow if the server answers 401 with OAuth metadata."
+ },
+ {
+  "id": "goose",
+  "name": "goose",
+  "vendor": "Block (open source)",
+  "kind": "cli",
+  "website": "https://goose-docs.ai",
+  "mcpDocs": "https://goose-docs.ai/docs/getting-started/using-extensions",
+  "logo": {
+   "favicon": "https://goose-docs.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "Interactive wizard: goose configure",
+    "command": "goose configure"
+   },
+   {
+    "kind": "file",
+    "title": "config.yaml extensions entry (type streamable_http)",
+    "path": {
+     "macos": "~/.config/goose/config.yaml",
+     "linux": "~/.config/goose/config.yaml",
+     "windows": "%APPDATA%\\Block\\goose\\config\\config.yaml"
+    },
+    "format": "yaml",
+    "snippet": "extensions:\n  {{NAME}}:\n    type: streamable_http\n    name: {{NAME}}\n    description: Conector MCP gateway\n    enabled: true\n    uri: \"{{URL}}\"\n    headers:\n      Authorization: \"Bearer {{TOKEN}}\"\n    env_keys: []\n    envs: {}\n    timeout: 300"
+   }
+  ],
+  "verify": "Run `goose configure` > Toggle Extensions: 'conector' should be listed and enabled (solid marker), then start `goose session` and ask it which tools conector provides. Desktop: the Extensions page shows a toggle for it.",
+  "notes": "Wizard answers: Add Extension > Remote Extension (Streamable HTTP) > name > endpoint URI > timeout in seconds > description > 'Would you like to add custom headers?' yes > header name Authorization, value Bearer <token>. In the YAML the endpoint key is `uri` (not url) and `headers` is a plain map (confirmed by the docs config-files page and the source); no env-var interpolation is documented for headers, so the token sits in plain text. `description` is included because the wizard always writes it (the docs examples omit it). `goose session --with-streamable-http-extension URL` takes only a URL (no headers). The Desktop 'Add custom extension' modal supports the streamable_http type with a headers section in the source, but the docs page only describes the Standard IO form. Docs moved from block.github.io/goose to goose-docs.ai."
+ },
+ {
+  "id": "qwen-code",
+  "name": "Qwen Code",
+  "vendor": "Alibaba Cloud (Qwen)",
+  "kind": "cli",
+  "website": "https://github.com/QwenLM/qwen-code",
+  "mcpDocs": "https://qwenlm.github.io/qwen-code-docs/en/users/features/mcp/",
+  "logo": {
+   "favicon": "https://qwen.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI, user scope",
+    "command": "qwen mcp add --scope user --transport http --header \"Authorization: Bearer {{TOKEN}}\" {{NAME}} {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "User settings.json",
+    "path": {
+     "macos": "~/.qwen/settings.json",
+     "linux": "~/.qwen/settings.json",
+     "windows": "%USERPROFILE%\\.qwen\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"httpUrl\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `qwen mcp list` (referenced in the docs without syntax) or `/mcp` inside Qwen Code to open the management dialog.",
+  "notes": "`httpUrl` = Streamable HTTP (recommended); `url` = SSE (legacy). Project scope file is .qwen/settings.json. Same shape as Gemini CLI: optional timeout (default 600000 ms), trust, includeTools/excludeTools, oauth. $VAR/${VAR} expansion is documented for `env` values only, so keep a literal token in headers. OAuth tokens are stored in ~/.qwen/mcp-oauth-tokens.json. The docs do not give a Windows path (%USERPROFILE%\\.qwen is the conventional location) and show no `qwen mcp list` syntax."
+ },
+ {
+  "id": "kiro",
+  "name": "Kiro",
+  "vendor": "Amazon Web Services",
+  "kind": "ide",
+  "website": "https://kiro.dev",
+  "mcpDocs": "https://kiro.dev/docs/mcp/configuration/",
+  "logo": {
+   "favicon": "https://kiro.dev"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User mcp.json (IDE and CLI; IDE: 'Kiro: Open user MCP config (JSON)')",
+    "path": {
+     "macos": "~/.kiro/settings/mcp.json",
+     "linux": "~/.kiro/settings/mcp.json",
+     "windows": "%USERPROFILE%\\.kiro\\settings\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   },
+   {
+    "kind": "command",
+    "title": "Kiro CLI, stdio bridge (use when the URL is plain http:// on a LAN)",
+    "command": "kiro-cli mcp add --name {{NAME}} --command \"{{NODE}} {{BRIDGE_PATH}}\" --env \"CONECTOR_URL={{URL}},CONECTOR_TOKEN={{TOKEN}}\" --scope global"
+   }
+  ],
+  "verify": "IDE: Kiro panel > MCP Servers tab shows status and tools (logs: Output tab > 'Kiro - MCP Logs'). CLI: `kiro-cli mcp list` and `kiro-cli mcp status --name conector`.",
+  "notes": "Workspace .kiro/settings/mcp.json overrides the user file; saved changes hot-reload. `url` must be HTTPS (HTTP is accepted only for localhost), so for a plain-http LAN Conector use the stdio bridge method. `kiro-cli mcp add` documents only stdio flags (--name --command --scope --env --timeout --force), no --url or --header, so remote servers go in the JSON. ${VAR} in headers is expanded only for variables approved in the IDE setting 'Mcp Approved Env Vars'; a literal token avoids that. The docs describe remote support as 'HTTP/SSE' without naming Streamable HTTP, and do not give a Windows path (conventional %USERPROFILE% location)."
+ },
+ {
+  "id": "junie",
+  "name": "Junie",
+  "vendor": "JetBrains",
+  "kind": "ide",
+  "website": "https://junie.jetbrains.com",
+  "mcpDocs": "https://junie.jetbrains.com/docs/junie-cli-mcp-configuration.html",
+  "logo": {
+   "favicon": "https://junie.jetbrains.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User mcp.json, remote server with headers",
+    "path": {
+     "macos": "~/.junie/mcp/mcp.json",
+     "linux": "~/.junie/mcp/mcp.json",
+     "windows": "%USERPROFILE%\\.junie\\mcp\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": {\n        \"Authorization\": \"Bearer {{TOKEN}}\"\n      }\n    }\n  }\n}"
+   },
+   {
+    "kind": "file",
+    "title": "User mcp.json, stdio bridge (fallback if the IDE plugin ignores url/headers)",
+    "path": {
+     "macos": "~/.junie/mcp/mcp.json",
+     "linux": "~/.junie/mcp/mcp.json",
+     "windows": "%USERPROFILE%\\.junie\\mcp\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"command\": \"{{NODE}}\",\n      \"args\": [\n        \"{{BRIDGE_PATH}}\"\n      ],\n      \"env\": {\n        \"CONECTOR_URL\": \"{{URL}}\",\n        \"CONECTOR_TOKEN\": \"{{TOKEN}}\"\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Junie CLI: run `/mcp` (server should be Active). IDE plugin: open Junie's MCP Settings; the server list shows each server's connection status and tools.",
+  "notes": "Junie CLI and the JetBrains IDE plugin share one mcp.json format. Scopes: user ~/.junie/mcp/mcp.json (private) and project .junie/mcp/mcp.json (may be committed, so keep tokens out of it). Only the CLI docs explicitly show `url` + `headers` (Authorization Bearer) for remote servers over HTTP/HTTPS; the IDE plugin page just says the schema follows each server's own docs and an Add button opens mcp.json. If the IDE does not connect, use the stdio bridge entry. No env interpolation is documented. Windows path and the exact IDE Settings path were not confirmed in the pages read. Manually added entries are enabled by default; remote OAuth servers show 'Authorization required'."
+ },
+ {
+  "id": "factory-droid",
+  "name": "Factory Droid",
+  "vendor": "Factory",
+  "kind": "cli",
+  "website": "https://factory.com",
+  "mcpDocs": "https://docs.factory.com/cli/configuration/mcp",
+  "logo": {
+   "favicon": "https://factory.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: droid mcp add (HTTP + Authorization header)",
+    "command": "droid mcp add {{NAME}} {{URL}} --type http --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit the user MCP file",
+    "path": {
+     "macos": "~/.factory/mcp.json",
+     "linux": "~/.factory/mcp.json",
+     "windows": "%USERPROFILE%\\.factory\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `droid mcp list` (status should read connected) or open /mcp inside Droid to see status and tools.",
+  "notes": "droid mcp add writes the user file ~/.factory/mcp.json; Droid reloads automatically when it changes (no restart). Project .factory/mcp.json is normally committed to git, so keep the token in the user file or use \"Bearer ${CONECTOR_TOKEN}\" (expanded in headers/env). Add --no-oauth to skip OAuth discovery for header-authenticated servers. Org mcpPolicy can block servers that are not allowlisted. Windows path inferred from ~ (docs give only the ~ form)."
+ },
+ {
+  "id": "devin-cli",
+  "name": "Devin CLI",
+  "vendor": "Cognition",
+  "kind": "cli",
+  "website": "https://devin.ai",
+  "mcpDocs": "https://docs.devin.ai/cli/extensibility/mcp/configuration",
+  "logo": {
+   "favicon": "https://devin.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit the user MCP file (Streamable HTTP + header)",
+    "path": {
+     "macos": "~/.config/devin/mcp_config.json",
+     "linux": "~/.config/devin/mcp_config.json",
+     "windows": "%APPDATA%\\devin\\mcp_config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"transport\": \"http\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `devin mcp list`, then `devin mcp get conector`; tools show up as mcp__conector__<tool>.",
+  "notes": "`devin mcp add <name> <URL>` has no header flag, so put the Authorization header in the JSON file. For a per-project token use the gitignored .devin/mcp_config.local.json (shared project file: .devin/mcp_config.json). Streamable HTTP is tried first and falls back to SSE on non-auth 4xx errors; set \"transport\": \"sse\" only for legacy endpoints. MCP tools ask for approval; pre-approve with mcp__conector__* in permissions.allow. Before v3000.3 servers lived in ~/.config/devin/config.json (auto-migrated). Org allowlists may block servers. Docs give one non-Windows path, used for macOS and Linux."
+ },
+ {
+  "id": "trae-cli",
+  "name": "TRAE CLI",
+  "vendor": "ByteDance",
+  "kind": "cli",
+  "website": "https://www.trae.ai",
+  "mcpDocs": "https://docs.trae.cn/cli_model-context-protocol",
+  "logo": {
+   "simpleIcons": "trae"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "TRAE CLI global config trae_cli.yaml (Streamable HTTP + header); `traecli config edit` opens it",
+    "path": {
+     "macos": "~/Library/Application Support/trae_cli/trae_cli.yaml",
+     "linux": "~/.config/trae_cli/trae_cli.yaml",
+     "windows": "%USERPROFILE%\\AppData\\Roaming\\trae_cli\\trae_cli.yaml"
+    },
+    "format": "yaml",
+    "snippet": "mcp_servers:\n  - name: \"{{NAME}}\"\n    type: http\n    url: \"{{URL}}\"\n    headers:\n      Authorization: \"Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Open-source trae-agent (`trae-cli`, stdio only): stdio bridge",
+    "path": {
+     "macos": "trae_config.yaml",
+     "linux": "trae_config.yaml",
+     "windows": "trae_config.yaml"
+    },
+    "format": "yaml",
+    "snippet": "allow_mcp_servers:\n  - {{NAME}}\nmcp_servers:\n  {{NAME}}:\n    command: \"{{NODE}}\"\n    args:\n      - \"{{BRIDGE_PATH}}\"\n    env:\n      CONECTOR_URL: \"{{URL}}\"\n      CONECTOR_TOKEN: \"{{TOKEN}}\""
+   }
+  ],
+  "verify": "In the TRAE CLI chat input type /mcp: it lists each MCP server with its status and any initialization error. The open-source trae-agent has no status command and silently skips servers that fail to connect, so run a task that calls a Conector tool.",
+  "notes": "docs.trae.cn has two generations. The YAML-based TRAE CLI (trae_cli.yaml, `traecli` binary) documents stdio, SSE and Streamable HTTP with headers; on Linux $XDG_CONFIG_HOME/trae_cli/ is used when set. TRAE CLI 2.0 (install_v2) uses ~/.trae/traecli.toml with [mcp_servers.<name>] but its docs only show stdio command/args, so if the YAML has no effect confirm the HTTP keys with `traecli mcp --help`. The CLI needs an enterprise account login; a project .trae/mcp.json from the TRAE IDE is also read. The open-source bytedance/trae-agent implements stdio MCP only (http_url and url raise NotImplementedError) and loads only servers listed in allow_mcp_servers, hence the bridge entry."
+ },
+ {
+  "id": "mistral-vibe",
+  "name": "Mistral Vibe",
+  "vendor": "Mistral AI",
+  "kind": "cli",
+  "website": "https://mistral.ai/products/vibe",
+  "mcpDocs": "https://github.com/mistralai/mistral-vibe#mcp-server-configuration",
+  "logo": {
+   "simpleIcons": "mistralai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: vibe mcp add (Streamable HTTP + static header)",
+    "command": "vibe mcp add {{NAME}} --transport streamable-http --url {{URL}} --header \"Authorization=Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit config.toml",
+    "path": {
+     "macos": "~/.vibe/config.toml",
+     "linux": "~/.vibe/config.toml",
+     "windows": "%USERPROFILE%\\.vibe\\config.toml"
+    },
+    "format": "toml",
+    "snippet": "[[mcp_servers]]\nname = \"{{NAME}}\"\ntransport = \"streamable-http\"\nurl = \"{{URL}}\"\n\n[mcp_servers.auth]\ntype = \"static\"\nheaders = { \"Authorization\" = \"Bearer {{TOKEN}}\" }"
+   }
+  ],
+  "verify": "In a Vibe session run /mcp (alias /connectors) to browse servers; `/mcp conector` lists that server's tools. Tools are named conector_<tool>.",
+  "notes": "--header takes NAME=VALUE (not 'Name: value') and is stored in plaintext in config.toml; use `--api-key-env VAR` instead to read the token from an environment variable. If VIBE_CLI=rust, the shell `vibe mcp add` is OAuth-only: unset it (or set VIBE_CLI=python for that command) or edit config.toml. Vibe reads ./.vibe/config.toml first, then ~/.vibe/config.toml (VIBE_HOME moves the home). Restart Vibe if the server does not appear."
+ },
+ {
+  "id": "kimi-code-cli",
+  "name": "Kimi Code CLI",
+  "vendor": "Moonshot AI",
+  "kind": "cli",
+  "website": "https://www.kimi.com/code",
+  "mcpDocs": "https://www.kimi.com/code/docs/en/kimi-code-cli/customization/mcp.html",
+  "logo": {
+   "simpleIcons": "kimi"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit the user mcp.json (or use /mcp-config in the TUI)",
+    "path": {
+     "macos": "~/.kimi-code/mcp.json",
+     "linux": "~/.kimi-code/mcp.json",
+     "windows": "%USERPROFILE%\\.kimi-code\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Start a NEW session and run /mcp in the TUI to see the connection status of every server.",
+  "notes": "The current Kimi Code CLI has no `kimi mcp add` subcommand (the archived Python kimi-cli had one): edit mcp.json or run /mcp-config in the TUI to add/edit servers interactively. An entry with url and no transport is Streamable HTTP; \"transport\": \"sse\" is for legacy servers. $KIMI_CODE_HOME overrides ~/.kimi-code; a project .kimi-code/mcp.json wins over the user file and its stdio entries need workspace trust. A server added while a session is open only joins sessions created later. \"bearerTokenEnvVar\": \"CONECTOR_TOKEN\" can replace the literal header. Windows path inferred from ~ (docs give only the ~ form)."
+ },
+ {
+  "id": "grok-build",
+  "name": "Grok Build",
+  "vendor": "xAI",
+  "kind": "cli",
+  "website": "https://x.ai/cli",
+  "mcpDocs": "https://docs.x.ai/build/features/mcp-servers",
+  "logo": {
+   "favicon": "https://x.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: grok mcp add (HTTP + header, user scope)",
+    "command": "grok mcp add --transport http {{NAME}} {{URL}} --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit the user config.toml",
+    "path": {
+     "macos": "~/.grok/config.toml",
+     "linux": "~/.grok/config.toml",
+     "windows": "%USERPROFILE%\\.grok\\config.toml"
+    },
+    "format": "toml",
+    "snippet": "[mcp_servers.{{NAME}}]\nurl = \"{{URL}}\"\nheaders = { \"Authorization\" = \"Bearer {{TOKEN}}\" }"
+   }
+  ],
+  "verify": "Run `grok mcp list` and `grok mcp doctor conector` (checks config and connectivity); in the TUI open /mcps (press r to refresh after config edits).",
+  "notes": "Default scope is user (~/.grok/config.toml); `--scope project` writes .grok/config.toml, which is meant to be committed, so avoid tokens there. Grok also imports servers from ~/.claude.json, .cursor/mcp.json and .mcp.json at lower priority; a same-name project entry replaces the global one entirely. Server names may contain only letters, digits, hyphen and underscore. ${VAR} references are expanded in headers/env. Transport is inferred from url vs command in TOML. Windows path inferred from ~ (docs give only ~/.grok)."
+ },
+ {
+  "id": "hermes-agent",
+  "name": "Hermes Agent",
+  "vendor": "Nous Research",
+  "kind": "cli",
+  "website": "https://hermes-agent.nousresearch.com",
+  "mcpDocs": "https://hermes-agent.nousresearch.com/docs/user-guide/features/mcp",
+  "logo": {
+   "favicon": "https://hermes-agent.nousresearch.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit config.yaml (url + headers)",
+    "path": {
+     "macos": "~/.hermes/config.yaml",
+     "linux": "~/.hermes/config.yaml",
+     "windows": "%LOCALAPPDATA%\\hermes\\config.yaml"
+    },
+    "format": "yaml",
+    "snippet": "mcp_servers:\n  {{NAME}}:\n    url: \"{{URL}}\"\n    headers:\n      Authorization: \"Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "command",
+    "title": "Interactive CLI (prompts for the Bearer token and stores it in ~/.hermes/.env)",
+    "command": "hermes mcp add {{NAME}} --url {{URL}} --auth header"
+   }
+  ],
+  "verify": "Run `hermes mcp test conector` (reports what the server answers) and `hermes mcp list`; inside a session run /reload-mcp. Tools are prefixed mcp_conector_<tool>.",
+  "notes": "Streamable HTTP is the default for url servers; add `transport: sse` only for SSE-only endpoints. After editing run /reload-mcp (a running gateway also watches config.yaml). You can use \"Bearer ${CONECTOR_TOKEN}\" with the token in ~/.hermes/.env: `hermes mcp add --auth header` does exactly that but is interactive (asks whether auth is required, the token, then which tools to enable). Native Windows keeps data in %LOCALAPPDATA%\\hermes (WSL2 uses ~/.hermes); HERMES_HOME overrides."
+ },
+ {
+  "id": "auggie-cli",
+  "name": "Auggie CLI",
+  "vendor": "Augment Code",
+  "kind": "cli",
+  "website": "https://www.augmentcode.com/product/cli",
+  "mcpDocs": "https://docs.augmentcode.com/cli/integrations",
+  "logo": {
+   "favicon": "https://www.augmentcode.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: auggie mcp add (HTTP + header)",
+    "command": "auggie mcp add {{NAME}} --transport http --url {{URL}} --header \"Authorization:Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit settings.json",
+    "path": {
+     "macos": "~/.augment/settings.json",
+     "linux": "~/.augment/settings.json",
+     "windows": "%USERPROFILE%\\.augment\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `auggie mcp list` (shows status; add --json for machine output) or /mcp inside an Auggie session.",
+  "notes": "Here -h is the short flag for --header (not help). Use -r/--replace to overwrite an existing entry; `auggie mcp add-json` accepts a full JSON object. headers apply to http/sse only. ${workspaceFolder} expands in command/args/url. --mcp-config provides ad hoc overrides with the same structure. Do not commit tokens. Windows path inferred from ~ (docs give only ~/.augment/settings.json)."
+ },
+ {
+  "id": "codebuddy-code",
+  "name": "CodeBuddy Code",
+  "vendor": "Tencent",
+  "kind": "cli",
+  "website": "https://www.codebuddy.ai/cli",
+  "mcpDocs": "https://www.codebuddy.ai/docs/cli/mcp",
+  "logo": {
+   "simpleIcons": "codebuddy"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: codebuddy mcp add (user scope, HTTP + header)",
+    "command": "codebuddy mcp add --scope user --transport http --header \"Authorization: Bearer {{TOKEN}}\" -- {{NAME}} {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "Edit the user .mcp.json",
+    "path": {
+     "macos": "~/.codebuddy/.mcp.json",
+     "linux": "~/.codebuddy/.mcp.json",
+     "windows": "%USERPROFILE%\\.codebuddy\\.mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `codebuddy mcp list` (all scopes) and `codebuddy mcp get conector`; inside a session run /mcp for configuration and diagnostics.",
+  "notes": "The -- after --header ends the variadic option so NAME and URL are read as positionals. Scopes: user (~/.codebuddy/.mcp.json), project (<repo>/.mcp.json, needs approval on first connection), local (stored in ~/.codebuddy.json). ${VAR} and ${VAR:-default} are expanded in url/headers. Files accept JSONC. If changes do not take effect, check scope priority (local > project > user) and restart CodeBuddy. Windows path inferred from ~."
+ },
+ {
+  "id": "qoder-cli",
+  "name": "Qoder CLI",
+  "vendor": "Qoder",
+  "kind": "cli",
+  "website": "https://qoder.com/cli",
+  "mcpDocs": "https://docs.qoder.com/cli/mcp-reference",
+  "logo": {
+   "favicon": "https://qoder.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit the user settings.json (mcpServers)",
+    "path": {
+     "macos": "~/.qoder/settings.json",
+     "linux": "~/.qoder/settings.json",
+     "windows": "%USERPROFILE%\\.qoder\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `qoder mcp list`; inside a session run /mcp (connected servers and status) and /mcp reload to rediscover servers and tools.",
+  "notes": "Current docs use the binary name `qoder` (npm package @qoder-ai/qodercli; older docs said `qodercli`). `qoder mcp add` documents only -t (transport: stdio|sse|http|ws), -s (scope: user|local|project) and a stdio form (`qoder mcp add NAME -- CMD`); no header flag is documented, so edit settings.json (QODER_CONFIG_DIR moves ~/.qoder). The docs give field tables (type, url, headers) but no full JSON example, so the snippet is assembled from them and should be verified. Run /mcp reload after editing, or restart. Project servers (<repo>/.mcp.json) need approval. Windows path inferred from ~."
+ },
+ {
+  "id": "minimax-code",
+  "name": "MiniMax Code",
+  "vendor": "MiniMax",
+  "kind": "cli",
+  "website": "https://agent.minimax.io",
+  "mcpDocs": "https://agent.minimax.io/docs/code/agents/mcp",
+  "logo": {
+   "simpleIcons": "minimax"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit mcp.json in the MiniMax data dir (shared by the desktop app and the `mcode` CLI)",
+    "path": {
+     "macos": "~/.minimax/mcp.json",
+     "linux": "~/.minimax/mcp.json",
+     "windows": "%USERPROFILE%\\.minimax\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"streamable-http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" },\n      \"enabled\": true\n    }\n  }\n}"
+   },
+   {
+    "kind": "file",
+    "title": "Open-source MiniMax Mini-Agent (`mini-agent` CLI)",
+    "path": {
+     "macos": "~/.mini-agent/config/mcp.json",
+     "linux": "~/.mini-agent/config/mcp.json",
+     "windows": "%USERPROFILE%\\.mini-agent\\config\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"streamable_http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "In the TUI run /mcp (shows configuration and status) or, with MiniMax Code running, `mcode mcp list --human` and `mcode mcp tools conector`. Desktop app: Plugins > MCP Servers has a connection test.",
+  "notes": "The `mcode` CLI (npm @minimax-ai/code) is the open-source terminal agent; its docs have no MCP page, so the user file comes from the desktop MCP docs plus the source (data dir ~/.minimax, MINIMAX_DATA_DIR overrides; mcp.json or mcp/mcp.json). Desktop app: MCP Servers > JSON mode accepts the same object. A project .mcp.json in the workspace root is also auto-loaded without approval. http/streamable-http/sse take url+headers, ${VAR} is expanded; there is no documented `mcode mcp add`. Restart MiniMax Code if tools do not appear (/mcp reload in the TUI). Windows is not yet validated upstream. The Mini-Agent entry is a different tool (type sse|http|streamable_http, headers supported)."
+ },
+ {
+  "id": "glm-agent",
+  "name": "GLM Agent",
+  "vendor": "Community project (GLM models)",
+  "kind": "cli",
+  "website": "https://github.com/stefandevo/glm-acp-agent",
+  "mcpDocs": "https://zed.dev/docs/ai/mcp",
+  "logo": {
+   "favicon": "https://z.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Configure Conector in the ACP client (example: Zed settings.json, forwarded to the agent)",
+    "path": {
+     "macos": "~/.config/zed/settings.json",
+     "linux": "~/.config/zed/settings.json",
+     "windows": "%APPDATA%\\Zed\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"context_servers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "In Zed open Settings > AI > MCP Servers and confirm the server is running, then start a GLM Agent thread and ask it to list the available tools.",
+  "notes": "The ACP-registry 'GLM Agent' (npm glm-acp-agent) is a community ACP agent that runs GLM Coding Plan models; it is not a Z.ai product and has no MCP config file of its own. The ACP client sends mcpServers when a session starts and the agent connects to stdio and Streamable HTTP servers (headers are forwarded as given; SSE is rejected). The example uses Zed, which forwards its context_servers to external agents (Zed docs say 'may be forwarded', so check the thread's tools). Other ACP clients (JetBrains, Neovim, etc.) have their own MCP settings. Z.ai's own coding agent is the separate zcode entry."
+ },
+ {
+  "id": "cortex-code",
+  "name": "Cortex Code",
+  "vendor": "Snowflake",
+  "kind": "cli",
+  "website": "https://www.snowflake.com/en/product/snowflake-coco/",
+  "mcpDocs": "https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-mcp",
+  "logo": {
+   "simpleIcons": "snowflake"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: cortex mcp add (HTTP + header)",
+    "command": "cortex mcp add {{NAME}} {{URL}} --transport http -H \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit mcp.json",
+    "path": {
+     "macos": "~/.snowflake/cortex/mcp.json",
+     "linux": "~/.snowflake/cortex/mcp.json",
+     "windows": "%USERPROFILE%\\.snowflake\\cortex\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `cortex mcp list` (transport, URL, masked credential keys), `cortex mcp get conector` for the full entry, and `cortex mcp start` to connect and count connected/failed servers; inside a session /mcp shows state, tool count and last error.",
+  "notes": "Docs call the product CoCo CLI; the binary is `cortex`. Values passed with -H or -e are moved into the OS keychain on first connection and removed from mcp.json (without a keychain nothing secret is written to disk). Use ${VAR} with braces for env-based secrets in mcp.json. No restart is documented; `cortex mcp start` connects after changes. An admin policy can disable user MCP servers. Logs: ~/.snowflake/cortex/logs/mcp.log. Windows path inferred from ~; the http JSON example is built from the documented schema (type, url, headers)."
+ },
+ {
+  "id": "deepagents",
+  "name": "Deep Agents",
+  "vendor": "LangChain",
+  "kind": "cli",
+  "website": "https://www.langchain.com/deep-agents",
+  "mcpDocs": "https://docs.langchain.com/oss/python/deepagents/cli/mcp-tools",
+  "logo": {
+   "simpleIcons": "langchain"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit the user-level .mcp.json (auto-discovered)",
+    "path": {
+     "macos": "~/.deepagents/.mcp.json",
+     "linux": "~/.deepagents/.mcp.json",
+     "windows": "%USERPROFILE%\\.deepagents\\.mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "At startup look for a line like 'Loaded N MCP tools' (N is 0 if the server connected but advertised no tools); inside the session run /mcp to see each server's status (ok, unauthenticated, error), transport and tools.",
+  "notes": "The CLI is Deep Agents Code, launched with `dcode`. The user-level file is always trusted; project files (<repo>/.mcp.json or <repo>/.deepagents/.mcp.json) need approval, or --trust-project-mcp for non-interactive runs. Do not combine \"auth\": \"oauth\" with an Authorization header. ${VAR} and ${VAR:-default} are interpolated in url/headers/env. Server names must match [A-Za-z0-9_-]+. --mcp-config PATH adds an explicit file with top precedence; --no-mcp disables MCP. Windows path inferred from ~."
+ },
+ {
+  "id": "fast-agent",
+  "name": "fast-agent",
+  "vendor": "fast-agent.ai",
+  "kind": "cli",
+  "website": "https://fast-agent.ai",
+  "mcpDocs": "https://fast-agent.ai/mcp/client-servers/",
+  "logo": {
+   "favicon": "https://fast-agent.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: ad hoc session (adds Authorization: Bearer <token>)",
+    "command": "fast-agent go --url {{URL}} --auth {{TOKEN}}"
+   },
+   {
+    "kind": "file",
+    "title": "Edit fast-agent.yaml in the project's fast-agent home",
+    "path": {
+     "macos": ".fast-agent/fast-agent.yaml",
+     "linux": ".fast-agent/fast-agent.yaml",
+     "windows": ".fast-agent\\fast-agent.yaml"
+    },
+    "format": "yaml",
+    "snippet": "mcp:\n  servers:\n    {{NAME}}:\n      transport: http\n      url: \"{{URL}}\"\n      headers:\n        Authorization: \"Bearer {{TOKEN}}\"\n      auth:\n        oauth: false"
+   }
+  ],
+  "verify": "Run `fast-agent config show-mcp fast-agent.yaml` (secrets redacted; add --view effective for resolved transport), then start with `fast-agent go --servers conector` and run /mcp list and /mcp status in the session.",
+  "notes": "OAuth is on by default for http/sse servers and fast-agent then strips any preconfigured Authorization header, so the snippet sets auth.oauth: false to keep the static bearer. Config is per project, not global: fast-agent.yaml in the active home (default ./.fast-agent; FAST_AGENT_HOME, --home or --config-path/-c change it) or, if absent there, in the current directory. Put the header in fast-agent.secrets.yaml (merged) to keep the token out of git. Attach a configured server in a session with /mcp attach conector. --auth takes the bare token (an optional 'Bearer ' prefix is accepted) and applies to every --url. Older docs and unofficial mirrors call this file fastagent.config.yaml."
+ },
+ {
+  "id": "stakpak",
+  "name": "Stakpak",
+  "vendor": "Stakpak",
+  "kind": "cli",
+  "website": "https://stakpak.dev",
+  "mcpDocs": "https://github.com/stakpak/agent#configure-external-mcp-servers",
+  "logo": {
+   "favicon": "https://stakpak.dev"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "CLI: stakpak mcp add (HTTP + headers)",
+    "command": "stakpak mcp add {{NAME}} --url {{URL}} --headers \"Authorization=Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "Edit the user mcp.toml",
+    "path": {
+     "macos": "~/.stakpak/mcp.toml",
+     "linux": "~/.stakpak/mcp.toml",
+     "windows": "%USERPROFILE%\\.stakpak\\mcp.toml"
+    },
+    "format": "toml",
+    "snippet": "[mcpServers.{{NAME}}]\nurl = \"{{URL}}\"\nheaders = { Authorization = \"Bearer {{TOKEN}}\" }"
+   }
+  ],
+  "verify": "Run `stakpak mcp list` and `stakpak mcp get conector`; start `stakpak` and confirm the tools are available (the agent connects through its built-in MCP proxy).",
+  "notes": "The agent loads external servers through its built-in MCP proxy, which uses only the first file found: ./mcp.toml|json, then ./.stakpak/mcp.*, then ~/.stakpak/mcp.* (so a project file hides the user file). `stakpak mcp add` writes the user file; JSON (mcp.json with mcpServers) is also accepted. --headers uses KEY=VALUE (repeatable). Remote entries use Streamable HTTP; $VAR references are substituted in headers/env. `disabled = true` parks an entry (stakpak mcp enable/disable toggles it). Windows path inferred from ~."
+ },
+ {
+  "id": "zcode",
+  "name": "ZCode",
+  "vendor": "Z.ai",
+  "kind": "cli",
+  "website": "https://zcode.z.ai",
+  "mcpDocs": "https://zcode.z.ai/en/docs/mcp-services",
+  "logo": {
+   "simpleIcons": "zai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Edit the user config (mcp.servers); the desktop app writes the same file",
+    "path": {
+     "macos": "~/.zcode/cli/config.json",
+     "linux": "~/.zcode/cli/config.json",
+     "windows": "%USERPROFILE%\\.zcode\\cli\\config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcp\": {\n    \"servers\": {\n      \"{{NAME}}\": {\n        \"type\": \"http\",\n        \"url\": \"{{URL}}\",\n        \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n      }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "In the zcode TUI run /mcp (or /mcp list|status; /mcp connect conector to retry); in the desktop app open Settings > MCP and check the server is connected.",
+  "notes": "Z.ai's own coding agent (desktop app plus the `zcode` CLI, Apache-2.0 at github.com/zai-org/ZCode); not the community ACP 'GLM Agent'. The config schema is strict: an unknown key drops the server, and ${...} templates are NOT expanded in config-file servers (use the literal token). User config overrides workspace config (<repo>/.zcode/config.json, which auto-connects). ~/.agents/mcp.json (top-level mcpServers) is only a fallback when .zcode defines no servers. Restart the session after editing. Desktop: Settings > MCP Servers form (type HTTP, URL, headers). The entry shape (type/url/headers) comes from the repo's diagnosing-mcp guide; the website docs only describe the Settings form. Windows path inferred from ~."
+ },
+ {
+  "id": "pi",
+  "name": "Pi",
+  "vendor": "Open source",
+  "kind": "cli",
+  "website": "https://pi.dev",
+  "mcpDocs": "https://pi.dev/docs/latest/mcp",
+  "logo": {
+   "simpleIcons": "pi"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "pi mcp add (user level)",
+    "command": "pi mcp add {{NAME}} --url {{URL}} --header \"Authorization=Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "User-level mcp.json",
+    "path": {
+     "macos": "~/.pi/agent/mcp.json",
+     "linux": "~/.pi/agent/mcp.json",
+     "windows": "%USERPROFILE%\\.pi\\agent\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `pi mcp list`: it connects to every enabled server and prints state, tools and errors (exit code 1 if an enabled server is not connected). Inside Pi, `/mcp` shows connections; run `/reload` after editing mcp.json by hand.",
+  "notes": "Built-in MCP needs Pi 0.99+ (older versions need the pi-mcp-adapter extension). Streamable HTTP only; legacy SSE is rejected. Default exposure is `codemode` (tools are reached through codemode scripts or tool_search, not listed directly); set \"exposure\": \"direct\" or \"deferred\" on the server to change that. Add `--local`/`-l` to write project .pi/mcp.json (only read in trusted projects). pi-acp does not forward ACP-provided mcpServers; Pi's own mcp.json applies."
+ },
+ {
+  "id": "oh-my-pi",
+  "name": "Oh My Pi",
+  "vendor": "Open source (fork of Pi)",
+  "kind": "cli",
+  "website": "https://omp.sh",
+  "mcpDocs": "https://github.com/can1357/oh-my-pi/blob/main/docs/mcp-config.md",
+  "logo": {
+   "favicon": "https://omp.sh"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User-level mcp.json",
+    "path": {
+     "macos": "~/.omp/agent/mcp.json",
+     "linux": "~/.omp/agent/mcp.json",
+     "windows": "%USERPROFILE%\\.omp\\agent\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "In an omp session run `/mcp list` (shows each server and the config file it came from) and `/mcp test conector`; run `/mcp reload` after editing the file.",
+  "notes": "Binary is `omp`. No non-interactive `mcp add` CLI exists; `/mcp add` is an interactive wizard. Project file .omp/mcp.json wins over the user file on a name clash; with `omp --profile <name>` the user file is ~/.omp/profiles/<name>/agent/mcp.json. Header values support ${VAR} expansion and `!command` values. `type: \"http\"` is Streamable HTTP (`sse` is also accepted). Servers from Claude Code, Cursor, Codex and similar configs are auto-imported."
+ },
+ {
+  "id": "muse-code",
+  "name": "Muse Code",
+  "vendor": "Meta",
+  "kind": "cli",
+  "website": "https://dev.meta.ai/docs/muse-code",
+  "mcpDocs": "https://dev.meta.ai/docs/muse-code/extending",
+  "logo": {
+   "simpleIcons": "meta"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User settings.json (streamable_http)",
+    "path": {
+     "macos": "~/.config/muse/settings.json",
+     "linux": "~/.config/muse/settings.json",
+     "windows": "%USERPROFILE%\\.config\\muse\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"schema_version\": 1,\n  \"mcp_servers\": {\n    \"{{NAME}}\": {\n      \"transport\": \"streamable_http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   },
+   {
+    "kind": "file",
+    "title": "User settings.json (stdio bridge fallback)",
+    "path": {
+     "macos": "~/.config/muse/settings.json",
+     "linux": "~/.config/muse/settings.json",
+     "windows": "%USERPROFILE%\\.config\\muse\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"schema_version\": 1,\n  \"mcp_servers\": {\n    \"{{NAME}}\": {\n      \"transport\": \"stdio\",\n      \"command\": \"{{NODE}}\",\n      \"args\": [\"{{BRIDGE_PATH}}\"],\n      \"env\": { \"CONECTOR_URL\": \"{{URL}}\", \"CONECTOR_TOKEN\": \"{{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `/mcp` in an interactive Muse Code session for a live list of connected servers and their tools (tool names look like mcp__<server>__<tool>).",
+  "notes": "Official docs only show a stdio example; they say streamable_http takes `url` and `headers`, so the header map is inferred. settings.json must contain \"schema_version\": 1 or every command fails. Docs use `mcp_servers` + `transport`; some third-party guides and the bundled migrate skill use `mcpServers` + `type` and warn that having both keys disables MCP, so keep one. Servers default to mode \"required\" (a failed start aborts the run); add \"mode\": \"optional\" if Conector may be offline. No `muse mcp add` command (only `muse mcp login/logout` for OAuth). Windows path is inferred from `~`. MCP tools are not sandboxed."
+ },
+ {
+  "id": "agoragentic",
+  "name": "Agoragentic",
+  "vendor": "Agoragentic",
+  "kind": "web",
+  "website": "https://agoragentic.com",
+  "mcpDocs": "https://github.com/rhein1/agoragentic-integrations/blob/main/acp/README.md",
+  "logo": {
+   "favicon": "https://agoragentic.com"
+  },
+  "remoteHttp": false,
+  "stdio": false,
+  "methods": [],
+  "verify": "Not applicable: no documented way to add third-party MCP servers.",
+  "notes": "Agoragentic is an agent marketplace, not an MCP client: there is no documented way to add your own MCP servers to it."
+ },
+ {
+  "id": "autohand-code",
+  "name": "Autohand Code",
+  "vendor": "Autohand AI",
+  "kind": "cli",
+  "website": "https://www.autohand.ai/cli/",
+  "mcpDocs": "https://docs.autohand.ai/working-with-autohand-code/mcp-servers",
+  "logo": {
+   "favicon": "https://autohand.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "autohand mcp add (Streamable HTTP)",
+    "command": "autohand mcp add --transport http {{NAME}} {{URL}} --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "User config.json (mcp.servers array)",
+    "path": {
+     "macos": "~/.autohand/config.json",
+     "linux": "~/.autohand/config.json",
+     "windows": "%USERPROFILE%\\.autohand\\config.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcp\": {\n    \"enabled\": true,\n    \"servers\": [\n      {\n        \"name\": \"{{NAME}}\",\n        \"transport\": \"http\",\n        \"url\": \"{{URL}}\",\n        \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" },\n        \"autoConnect\": true\n      }\n    ]\n  }\n}"
+   }
+  ],
+  "verify": "Run `autohand mcp list`; inside a session `/mcp list` shows servers, connection status and tools (named mcp__<server>__<tool>).",
+  "notes": "Config lives in $AUTOHAND_HOME/config.{toml,yaml,yml,json} (AUTOHAND_HOME defaults to ~/.autohand); keep only one of those formats there. `mcp.servers` is an array, so append to it. Per-project servers go in .autohand/config.json. Transport `http` is Streamable HTTP; `sse` and `stdio` also exist. Servers connect in the background at startup."
+ },
+ {
+  "id": "codewhale",
+  "name": "CodeWhale",
+  "vendor": "CodeWhale",
+  "kind": "cli",
+  "website": "https://codewhale.net",
+  "mcpDocs": "https://github.com/codewhale-hq/CodeWhale/blob/main/docs/MCP.md",
+  "logo": {
+   "favicon": "https://codewhale.net"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User-level mcp.json",
+    "path": {
+     "macos": "~/.codewhale/mcp.json",
+     "linux": "~/.codewhale/mcp.json",
+     "windows": "%USERPROFILE%\\.codewhale\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"servers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   },
+   {
+    "kind": "command",
+    "title": "codewhale mcp add (token read from $CONECTOR_TOKEN)",
+    "command": "codewhale mcp add {{NAME}} --url {{URL}} --bearer-token-env-var CONECTOR_TOKEN"
+   }
+  ],
+  "verify": "Run `codewhale mcp list`, `codewhale mcp validate` and `codewhale mcp tools conector`; in the TUI use `/mcp` (and `/mcp reload` after edits). Tools appear as mcp_<server>_<tool>.",
+  "notes": "Remote servers use Streamable HTTP with legacy SSE fallback. `headers` values are sent literally (no env substitution) and stored in plaintext. `codewhale mcp add` has no --header flag, only --bearer-token-env-var, so export CONECTOR_TOKEN=<token> in every shell/profile that starts codewhale. Use exactly one of `servers`/`mcpServers` in the file (both = parse error). ~/.deepseek/mcp.json is read only if the codewhale file is absent; override the path with mcp_config_path or DEEPSEEK_MCP_CONFIG. Hostnames resolving to private IPs need \"allow_private_network\": true on the server entry (localhost and private IP literals are allowed)."
+ },
+ {
+  "id": "corust-agent",
+  "name": "Corust Agent",
+  "vendor": "Corust AI",
+  "kind": "cli",
+  "website": "https://corust.ai/",
+  "mcpDocs": "https://corust.ai/",
+  "logo": {
+   "github": "Corust-ai"
+  },
+  "remoteHttp": true,
+  "stdio": false,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Configure Conector in the ACP client (example: Zed settings.json)",
+    "path": {
+     "macos": "~/.config/zed/settings.json",
+     "linux": "~/.config/zed/settings.json",
+     "windows": "%APPDATA%\\Zed\\settings.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"context_servers\": {\n    \"{{NAME}}\": {\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Not applicable: no documented MCP configuration.",
+  "notes": "Corust Agent runs as an ACP agent (for example inside Zed). It has no MCP settings of its own: MCP servers come from the ACP client when a session starts, and it is not documented whether Corust uses them. Check the tools in a new thread."
+ },
+ {
+  "id": "crow-cli",
+  "name": "crow-cli",
+  "vendor": "Open source",
+  "kind": "cli",
+  "website": "https://crow-ai.dev",
+  "mcpDocs": "https://github.com/crow-cli/crow-cli#tools-the-client-owns-the-supply",
+  "logo": {
+   "favicon": "https://crow-ai.dev"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "config.yaml mcpServers (crow's own ACP client)",
+    "path": {
+     "macos": "~/.agents/crow/config.yaml",
+     "linux": "~/.agents/crow/config.yaml",
+     "windows": "%USERPROFILE%\\.agents\\crow\\config.yaml"
+    },
+    "format": "yaml",
+    "snippet": "mcpServers:\n  {{NAME}}:\n    transport: http\n    url: \"{{URL}}\"\n    headers:\n      Authorization: \"Bearer {{TOKEN}}\""
+   }
+  ],
+  "verify": "Run `crow-cli run \"list the tools you have\"`: the client banner prints `MCP servers: <names>` and the agent should list Conector's tools.",
+  "notes": "ACP-native agent with no built-in tools: whatever mcpServers the ACP client sends in session/new is the entire tool supply. crow's own client (`crow-cli run`, TUI) reads `mcpServers` from config.yaml and forwards them, so keep the `crow-mcp` entry written by `crow-cli init` or the session loses its file/shell tools. An `agent_servers.<name>.mcpServers` block replaces the global map for that agent. Secrets can use ${VAR} from ~/.agents/crow/.env. Tool names are not namespaced. With a third-party ACP client (e.g. Zed) use that client's own MCP/context_servers setting instead."
+ },
+ {
+  "id": "dimcode",
+  "name": "DimCode",
+  "vendor": "ArcShips",
+  "kind": "cli",
+  "website": "https://dimcode.dev",
+  "mcpDocs": "https://dimcode.dev/docs/config.html",
+  "logo": {
+   "favicon": "https://dimcode.dev"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "dim mcp add (HTTP, user scope)",
+    "command": "dim mcp add --transport http {{NAME}} {{URL}} --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "User-level mcp.json",
+    "path": {
+     "macos": "~/.dimcode/v2/mcp.json",
+     "linux": "~/.dimcode/v2/mcp.json",
+     "windows": "%USERPROFILE%\\.dimcode\\v2\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"name\": \"{{NAME}}\",\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" },\n      \"enabled\": true\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `dim mcp list` (merged servers with status, scope, transport and warnings) and `dim mcp test conector` (connects, discovers tools, disconnects); in the TUI use `/mcp`.",
+  "notes": "Docs are served in Chinese by default. Use type \"http\" (or \"streamable-http\"); \"streamable_http\" with an underscore and \"sse\" are skipped with a warning when the CLI reads shared config. Project file <project>/.mcp.json overrides same-named user servers; DIMCODE_HOME relocates ~/.dimcode/v2. ${VAR} templating works in url/headers (a missing required variable skips that server). The token can alternatively go in \"auth\": {\"type\": \"bearer\", \"token\": \"...\"}. `dim acp` shares the same MCP config."
+ },
+ {
+  "id": "dirac",
+  "name": "Dirac",
+  "vendor": "Dirac Delta Labs",
+  "kind": "cli",
+  "website": "https://dirac.run",
+  "mcpDocs": "https://github.com/dirac-run/dirac",
+  "logo": {
+   "favicon": "https://dirac.run"
+  },
+  "remoteHttp": false,
+  "stdio": false,
+  "methods": [],
+  "verify": "Not applicable: no MCP support found.",
+  "notes": "Dirac (a Cline fork) has no MCP support: it uses its own tool calling. When it runs inside an ACP client, the client's MCP servers are most likely ignored."
+ },
+ {
+  "id": "gajae-code",
+  "name": "Gajae Code",
+  "vendor": "Open source",
+  "kind": "cli",
+  "website": "https://gajae-code.com",
+  "mcpDocs": "https://github.com/Yeachan-Heo/gajae-code/blob/main/docs/standalone-mcp.md",
+  "logo": {
+   "favicon": "https://gajae-code.com"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "gjc mcp add (HTTP, user scope)",
+    "command": "gjc mcp add {{NAME}} --type http --url {{URL}} --header \"Authorization=Bearer {{TOKEN}}\" --timeout 10000"
+   },
+   {
+    "kind": "file",
+    "title": "User-level mcp.json",
+    "path": {
+     "macos": "~/.gjc/agent/mcp.json",
+     "linux": "~/.gjc/agent/mcp.json",
+     "windows": "%USERPROFILE%\\.gjc\\agent\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" },\n      \"timeout\": 10000\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Run `gjc mcp list`: it prints stored definitions (secrets redacted), scope, runtime status and any startupDiagnostic. Start a new `gjc` session after changes.",
+  "notes": "CLI binary is `gjc`. Registrations autoload at startup from ~/.gjc/agent/mcp.json (user) and ./.gjc/mcp.json (`--project`, wins on a name clash); ~/.claude and ~/.codex configs are never read at startup. The startup wait is only 250 ms unless a positive `timeout` is set, so keep `--timeout 10000` or a remote server may be missing from the first session. There is no `/mcp` slash command in the TUI/ACP and no live reload. `gjc --mcp-config /abs/mcp.json` loads one explicit file instead; `--no-mcp` skips autoload. In ACP mode the editor owns MCP servers."
+ },
+ {
+  "id": "hoplite",
+  "name": "Hoplite",
+  "vendor": "Hoplite",
+  "kind": "web",
+  "website": "https://hoplite.sh",
+  "mcpDocs": "https://hoplite.sh/docs/agent/mcp",
+  "logo": {
+   "favicon": "https://hoplite.sh"
+  },
+  "remoteHttp": true,
+  "stdio": false,
+  "methods": [
+   {
+    "kind": "steps",
+    "title": "Hoplite web app (needs a public https:// URL)",
+    "steps": [
+     "In Hoplite open “Settings” → “Project” → “MCP” → “Add server”.",
+     "Enter the name “conector” and the MCP URL below, then click “Analyze connection”.",
+     "Under “Advanced” → “Custom headers” add the header below, then click “Add server”."
+    ],
+    "values": [
+     {
+      "label": "MCP URL",
+      "value": "{{URL}}"
+     },
+     {
+      "label": "Custom headers",
+      "value": "{\"Authorization\": \"Bearer {{TOKEN}}\"}"
+     }
+    ]
+   }
+  ],
+  "verify": "In Settings > Project > MCP the server row must be enabled and no longer say 'needs credentials'; then start a thread and ask the agent to list or call the server's tools (a saved URL alone does not prove authentication or tool access).",
+  "notes": "Hosted cloud agent: MCP servers are configured only in the Hoplite web app by a workspace owner/admin, not via CLI or files. Steps: Settings > Project > MCP > Add server > enter name and remote URL > Analyze connection > pick API key/bearer token, or put {\"Authorization\": \"Bearer <token>\"} under Advanced > Custom headers > Add server. The URL must be publicly reachable (loopback, private and internal hosts are rejected) and Streamable HTTP is the default transport; stdio is unavailable in hosted runs. Repo-level .hoplite/settings.json mcpServers and ACP-client mcpServers (`hoplite acp`) are ignored. `hoplite --mcp name=http://127.0.0.1:PORT/mcp` only bridges localhost servers from your machine (no auth header option documented)."
+ },
+ {
+  "id": "minion-code",
+  "name": "Minion Code",
+  "vendor": "Open source (Minion framework)",
+  "kind": "cli",
+  "website": "https://github.com/femto/minion-code",
+  "mcpDocs": "https://github.com/femto/minion-code/blob/main/README.md#mcp-tool-integration",
+  "logo": {
+   "initials": true
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User-level mcp.json (Streamable HTTP)",
+    "path": {
+     "macos": "~/.minion-code/mcp.json",
+     "linux": "~/.minion-code/mcp.json",
+     "windows": "%USERPROFILE%\\.minion-code\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"type\": \"http\",\n      \"url\": \"{{URL}}\",\n      \"headers\": { \"Authorization\": \"Bearer {{TOKEN}}\" }\n    }\n  }\n}"
+   },
+   {
+    "kind": "file",
+    "title": "User-level mcp.json (stdio bridge fallback)",
+    "path": {
+     "macos": "~/.minion-code/mcp.json",
+     "linux": "~/.minion-code/mcp.json",
+     "windows": "%USERPROFILE%\\.minion-code\\mcp.json"
+    },
+    "format": "json",
+    "snippet": "{\n  \"mcpServers\": {\n    \"{{NAME}}\": {\n      \"command\": \"{{NODE}}\",\n      \"args\": [\"{{BRIDGE_PATH}}\"],\n      \"env\": { \"CONECTOR_URL\": \"{{URL}}\", \"CONECTOR_TOKEN\": \"{{TOKEN}}\" }\n    }\n  }\n}"
+   }
+  ],
+  "verify": "Start `minion-code` and run `/mcp` (status table with transport and tool counts; `/mcp retry conector` reconnects) or type `tools` to list loaded tools.",
+  "notes": "The README documents stdio entries only (`minion-code --config mcp.json`, alias `mcode`); HTTP entries (type \"http\"/\"streamable-http\", `url`, `headers`) were confirmed in the released 0.1.45 package source, not in the docs. Auto-discovery uses only the FIRST existing file (no merging): project .mcp.json, .claude/mcp.json, .minion/mcp.json, then ~/.minion.json, ~/.claude/mcp.json, ~/.claude-code/mcp.json, ~/.minion-code/mcp.json, ~/.config/minion-code/mcp.json. Use `--config <file>` to force one. `minion-code acp` stores ACP mcpServers but does not appear to use them."
+ },
+ {
+  "id": "nova",
+  "name": "Nova",
+  "vendor": "Compass AI",
+  "kind": "cli",
+  "website": "https://www.compassap.ai/portfolio/nova.html",
+  "mcpDocs": "https://compass-ai-docs.azurewebsites.net/nova/en/build-with-nova/mcp-quickstart",
+  "logo": {
+   "favicon": "https://compassap.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "nova mcp add (HTTP, user scope)",
+    "command": "nova mcp add --transport http --scope user {{NAME}} {{URL}} --header \"Authorization: Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "command",
+    "title": "nova mcp add (stdio bridge fallback)",
+    "command": "nova mcp add --transport stdio --scope user {{NAME}} --env CONECTOR_URL={{URL}} --env CONECTOR_TOKEN={{TOKEN}} -- \"{{NODE}}\" \"{{BRIDGE_PATH}}\""
+   }
+  ],
+  "verify": "Start Nova and run `/mcp` (changelog lists `/mcp auth` and `/mcp reconnect`); tools appear as mcp__conector__<tool>. `nova mcp --help` lists the CLI subcommands of your installed version.",
+  "notes": "Nova's docs only say to run `nova mcp --help`; the flags here come from the shipped CLI bundle (v1.1.53): `add <name> <url|command> [args]`, `-t/--transport http|sse|stdio`, `-s/--scope local|project|user`, `-H/--header \"Name: value\"` (split at the first colon), `-e/--env KEY=value`. Streamable HTTP and OAuth (`/mcp auth`) are supported per the changelog. Nova also reads a project .mcp.json (it asks to trust new servers). Over ACP, mcpServers from session/new are accepted. The config file schema and paths are not documented, so only CLI methods are given."
+ },
+ {
+  "id": "poolside",
+  "name": "Poolside",
+  "vendor": "Poolside",
+  "kind": "cli",
+  "website": "https://poolside.ai",
+  "mcpDocs": "https://docs.poolside.ai/mcp-servers",
+  "logo": {
+   "favicon": "https://poolside.ai"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "command",
+    "title": "pool mcp add (Streamable HTTP)",
+    "command": "pool mcp add --transport http --header \"Authorization: Bearer {{TOKEN}}\" {{NAME}} {{URL}}"
+   },
+   {
+    "kind": "file",
+    "title": "User settings.yaml (mcp_servers)",
+    "path": {
+     "macos": "~/.config/poolside/settings.yaml",
+     "linux": "~/.config/poolside/settings.yaml",
+     "windows": "%USERPROFILE%\\.config\\poolside\\settings.yaml"
+    },
+    "format": "yaml",
+    "snippet": "mcp_servers:\n  {{NAME}}:\n    transport:\n      type: http\n      url: \"{{URL}}\"\n      headers:\n        - \"Authorization: Bearer {{TOKEN}}\""
+   }
+  ],
+  "verify": "Run `pool mcp list` and `pool mcp get conector`, then `pool exec --prompt \"Use the conector server to list its tools\"`.",
+  "notes": "The CLI binary is `pool`. `headers` is a YAML list of \"Name: value\" strings. Per-project servers go in .poolside/settings.yaml or the gitignored .poolside/settings.local.yaml. HTTP/SSE servers run outside the sandbox and always need explicit approval (unless unsafe auto-allow is on). `pool config` prints the real config directories (Windows support is a preview, so the Windows path is inferred). `pool acp` uses the same settings."
+ },
+ {
+  "id": "sigit-code",
+  "name": "siGit Code",
+  "vendor": "smbCloud",
+  "kind": "cli",
+  "website": "https://github.com/getsigit/sigit",
+  "mcpDocs": "https://github.com/getsigit/sigit/blob/main/crates/cli/src/mcp.rs",
+  "logo": {
+   "github": "getsigit"
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "Global mcp.toml",
+    "path": {
+     "macos": "~/.config/sigit/mcp.toml",
+     "linux": "~/.config/sigit/mcp.toml",
+     "windows": "%USERPROFILE%\\.config\\sigit\\mcp.toml"
+    },
+    "format": "toml",
+    "snippet": "[[server]]\nname = \"{{NAME}}\"\nurl = \"{{URL}}\"\n\n[server.headers]\nAuthorization = \"Bearer {{TOKEN}}\""
+   }
+  ],
+  "verify": "Run the `/mcp` slash command: it lists configured servers (URL or command), connection errors and tools (named mcp__<server>__<tool>).",
+  "notes": "No `mcp add` CLI. Global file is $SIGIT_CONFIG_DIR/mcp.toml (default $HOME/.config/sigit/mcp.toml); project .sigit/mcp.toml wins on a name clash. An entry has exactly one of `url` (Streamable HTTP) or `command` (stdio). Discovery runs once at startup and `/reload` does not redo it, so restart sigit after edits. Servers sent by an ACP client in session/new mcpServers are also accepted (SIGIT_MCP=off disables all MCP). On Windows the lookup uses HOME, so set SIGIT_CONFIG_DIR if HOME is unset. A user entry named `sigit` overrides the built-in official server."
+ },
+ {
+  "id": "vt-code",
+  "name": "VT Code",
+  "vendor": "Open source",
+  "kind": "cli",
+  "website": "https://github.com/vinhnx/VTCode",
+  "mcpDocs": "https://github.com/vinhnx/VTCode/blob/main/docs/guides/mcp-integration.md",
+  "logo": {
+   "initials": true
+  },
+  "remoteHttp": true,
+  "stdio": true,
+  "methods": [
+   {
+    "kind": "file",
+    "title": "User vtcode.toml (HTTP provider)",
+    "path": {
+     "macos": "~/Library/Application Support/com.vinhnx.vtcode/vtcode.toml",
+     "linux": "~/.config/vtcode/vtcode.toml",
+     "windows": "%APPDATA%\\vinhnx\\vtcode\\config\\vtcode.toml"
+    },
+    "format": "toml",
+    "snippet": "[mcp]\nenabled = true\n\n[[mcp.providers]]\nname = \"{{NAME}}\"\nenabled = true\nendpoint = \"{{URL}}\"\nheaders = { \"Authorization\" = \"Bearer {{TOKEN}}\" }"
+   },
+   {
+    "kind": "command",
+    "title": "vtcode mcp add (then set [mcp] enabled = true)",
+    "command": "vtcode mcp add {{NAME}} --url {{URL}} --header \"Authorization=Bearer {{TOKEN}}\""
+   },
+   {
+    "kind": "file",
+    "title": "User vtcode.toml (stdio bridge fallback)",
+    "path": {
+     "macos": "~/Library/Application Support/com.vinhnx.vtcode/vtcode.toml",
+     "linux": "~/.config/vtcode/vtcode.toml",
+     "windows": "%APPDATA%\\vinhnx\\vtcode\\config\\vtcode.toml"
+    },
+    "format": "toml",
+    "snippet": "[mcp]\nenabled = true\n\n[[mcp.providers]]\nname = \"{{NAME}}\"\nenabled = true\ncommand = \"{{NODE}}\"\nargs = [\"{{BRIDGE_PATH}}\"]\n\n[mcp.providers.env]\nCONECTOR_URL = \"{{URL}}\"\nCONECTOR_TOKEN = \"{{TOKEN}}\""
+   }
+  ],
+  "verify": "Run `vtcode mcp list` and `vtcode mcp get conector` (shows transport and handshake); inside VT Code use `/mcp` to see connected providers and tools.",
+  "notes": "MCP is off by default: `[mcp] enabled = true` is required, and `vtcode mcp add` does NOT set it (it also rewrites the whole global vtcode.toml). The vendor docs warn Streamable HTTP support is still evolving; use the stdio bridge if the connection fails. `headers` is an alias of `http_headers`; `api_key_env` and `env_http_headers` read secrets from env vars. A workspace-root vtcode.toml works too. Config dir follows platform conventions (XDG_CONFIG_HOME or VTCODE_CONFIG override it). The HTTP client never follows redirects."
+ }
+]

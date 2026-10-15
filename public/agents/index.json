@@ -1,0 +1,252 @@
+{
+ "agoragentic": {
+  "file": "agoragentic.png",
+  "kind": "image",
+  "source": "https://agoragentic.com/favicon.png"
+ },
+ "amp": {
+  "file": "amp.png",
+  "kind": "image",
+  "source": "https://ampcode.com/app-icon.png?v=4"
+ },
+ "auggie-cli": {
+  "file": "auggie-cli.svg",
+  "kind": "image",
+  "source": "https://www.augmentcode.com/favicon.svg"
+ },
+ "autohand-code": {
+  "file": "autohand-code.svg",
+  "kind": "image",
+  "source": "https://autohand.ai/favicon.svg"
+ },
+ "chatgpt": {
+  "file": "chatgpt.webp",
+  "kind": "image",
+  "source": "https://chatgpt.com/cdn/assets/favicon-180x180-od45eci6.webp"
+ },
+ "claude-code": {
+  "file": "claude-code.png",
+  "kind": "image",
+  "source": "https://claude.com/apple-touch-icon.png"
+ },
+ "claude-desktop": {
+  "file": "claude-desktop.svg",
+  "kind": "tile",
+  "source": "simple-icons:claude"
+ },
+ "cline": {
+  "file": "cline.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/184127137?s=128&v=4"
+ },
+ "codebuddy-code": {
+  "file": "codebuddy-code.svg",
+  "kind": "image",
+  "source": "https://codebuddy-1328495429.cos.accelerate.myqcloud.com/web/ide/logo.svg"
+ },
+ "codewhale": {
+  "file": "codewhale.png",
+  "kind": "image",
+  "source": "https://codewhale.net/apple-icon.png?apple-icon.01sj6w5x_8m_5.png"
+ },
+ "codex": {
+  "file": "codex.svg",
+  "kind": "image",
+  "source": "https://developers.openai.com/favicon.svg"
+ },
+ "cortex-code": {
+  "file": "cortex-code.svg",
+  "kind": "tile",
+  "source": "simple-icons:snowflake"
+ },
+ "corust-agent": {
+  "file": "corust-agent.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "crow-cli": {
+  "file": "crow-cli.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "cursor": {
+  "file": "cursor.svg",
+  "kind": "tile",
+  "source": "simple-icons:cursor"
+ },
+ "deepagents": {
+  "file": "deepagents.svg",
+  "kind": "tile",
+  "source": "simple-icons:langchain"
+ },
+ "devin-cli": {
+  "file": "devin-cli.png",
+  "kind": "image",
+  "source": "https://devin.ai/apple-icon.png"
+ },
+ "dimcode": {
+  "file": "dimcode.png",
+  "kind": "image",
+  "source": "https://dimcode.dev/apple-touch-icon.png"
+ },
+ "dirac": {
+  "file": "dirac.svg",
+  "kind": "image",
+  "source": "https://dirac.run/static/images/dirac.svg"
+ },
+ "factory-droid": {
+  "file": "factory-droid.svg",
+  "kind": "image",
+  "source": "https://factory.com/favicon.svg"
+ },
+ "fast-agent": {
+  "file": "fast-agent.svg",
+  "kind": "image",
+  "source": "https://fast-agent.ai/assets/forward/assets/icon-tile-16.svg"
+ },
+ "gajae-code": {
+  "file": "gajae-code.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "gemini-cli": {
+  "file": "gemini-cli.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlegemini"
+ },
+ "github-copilot": {
+  "file": "github-copilot.svg",
+  "kind": "tile",
+  "source": "simple-icons:githubcopilot"
+ },
+ "glm-agent": {
+  "file": "glm-agent.svg",
+  "kind": "image",
+  "source": "https://z-cdn.chatglm.cn/z-ai/static/logo.svg"
+ },
+ "google-antigravity": {
+  "file": "google-antigravity.png",
+  "kind": "image",
+  "source": "https://antigravity.google/apple-touch-icon.png"
+ },
+ "goose": {
+  "file": "goose.png",
+  "kind": "image",
+  "source": "https://goose-docs.ai/img/favicon.ico"
+ },
+ "grok-build": {
+  "file": "grok-build.ico",
+  "kind": "image",
+  "source": "https://x.ai/favicon.ico"
+ },
+ "hermes-agent": {
+  "file": "hermes-agent.png",
+  "kind": "image",
+  "source": "https://hermes-agent.nousresearch.com/marketing-static/assets/hermes-agent/icon.png"
+ },
+ "hoplite": {
+  "file": "hoplite.png",
+  "kind": "image",
+  "source": "https://hoplite.sh/apple-touch-icon.png"
+ },
+ "junie": {
+  "file": "junie.png",
+  "kind": "image",
+  "source": "https://junie.jetbrains.com/favicons/apple-touch-icon.png"
+ },
+ "kilo-code": {
+  "file": "kilo-code.png",
+  "kind": "image",
+  "source": "https://kilo.ai/favicon/apple-touch-icon.png?v=3"
+ },
+ "kimi-code-cli": {
+  "file": "kimi-code-cli.png",
+  "kind": "image",
+  "source": "https://www.kimi.com/pwa-192.png"
+ },
+ "kiro": {
+  "file": "kiro.png",
+  "kind": "image",
+  "source": "https://kiro.dev/apple-icon.png?4cefa8c54a20b098"
+ },
+ "minimax-code": {
+  "file": "minimax-code.svg",
+  "kind": "tile",
+  "source": "simple-icons:minimax"
+ },
+ "minion-code": {
+  "file": "minion-code.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "mistral-vibe": {
+  "file": "mistral-vibe.svg",
+  "kind": "tile",
+  "source": "simple-icons:mistralai"
+ },
+ "muse-code": {
+  "file": "muse-code.svg",
+  "kind": "tile",
+  "source": "simple-icons:meta"
+ },
+ "nova": {
+  "file": "nova.png",
+  "kind": "image",
+  "source": "https://www.compassap.ai/apple-touch-icon.png"
+ },
+ "oh-my-pi": {
+  "file": "oh-my-pi.png",
+  "kind": "image",
+  "source": "https://omp.sh/favicon-180x180.png"
+ },
+ "opencode": {
+  "file": "opencode.png",
+  "kind": "image",
+  "source": "https://opencode.ai/apple-touch-icon-v3.png"
+ },
+ "pi": {
+  "file": "pi.svg",
+  "kind": "image",
+  "source": "https://pi.dev/favicon.svg?v=cd05007b-2768-4195-9033-aa5ad3cbd123"
+ },
+ "poolside": {
+  "file": "poolside.png",
+  "kind": "image",
+  "source": "https://poolside.ai/favicon/apple-touch-icon.png"
+ },
+ "qoder-cli": {
+  "file": "qoder-cli.png",
+  "kind": "image",
+  "source": "https://img.alicdn.com/imgextra/i4/O1CN01QkSxiCocd3D0prc8_!!6000000008124-2-tps-412-412.png"
+ },
+ "qwen-code": {
+  "file": "qwen-code.png",
+  "kind": "image",
+  "source": "https://img.alicdn.com/imgextra/i4/O1CN01OXv3EM1FN8t9W4P79_!!6000000000474-2-tps-80-80.png"
+ },
+ "sigit-code": {
+  "file": "sigit-code.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/275235537?s=128&v=4"
+ },
+ "stakpak": {
+  "file": "stakpak.png",
+  "kind": "image",
+  "source": "https://stakpak.dev/main-assets/cropped-favicon-192x192.png"
+ },
+ "trae-cli": {
+  "file": "trae-cli.png",
+  "kind": "image",
+  "source": "https://lf16-web-neutral.traecdn.ai/obj/trae-ai-static/trae_website/favicon.png"
+ },
+ "vt-code": {
+  "file": "vt-code.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "zcode": {
+  "file": "zcode.png",
+  "kind": "image",
+  "source": "https://zcode.z.ai/apple-icon.png?v=20260707-transparent"
+ }
+}

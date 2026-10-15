@@ -1,0 +1,54 @@
+{
+  "name": "conector",
+  "version": "0.1.0",
+  "description": "Self-hosted MCP gateway: connect 1,178 apps once and use them from Claude, Codex, Cursor, Gemini CLI, Copilot and 45 more AI agents.",
+  "license": "MIT",
+  "author": "Secra Solutions (https://secra.es/en)",
+  "homepage": "https://github.com/Secra-Solutions/conector#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Secra-Solutions/conector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Secra-Solutions/conector/issues"
+  },
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "conector": "bin/conector.js",
+    "conector-stdio": "bin/stdio-bridge.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "validate": "node scripts/validate-catalog.mjs --offline src/catalog/apps/*.js",
+    "validate:network": "node scripts/validate-catalog.mjs",
+    "logos": "node scripts/logos.mjs",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "express": "^5.3.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "simple-icons": "^15.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "mcp-gateway",
+    "ai-agents",
+    "claude",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "integrations",
+    "oauth",
+    "self-hosted"
+  ]
+}

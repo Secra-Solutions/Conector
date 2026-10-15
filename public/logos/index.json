@@ -1,0 +1,5892 @@
+{
+ "ably": {
+  "file": "ably.png",
+  "kind": "image",
+  "source": "https://ably.com/apple-touch-icon.png"
+ },
+ "abstract": {
+  "file": "abstract.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65166126ca18241731aa26b0/6538e7c57e650c1c861cb100_FAV-large.png"
+ },
+ "abusech": {
+  "file": "abusech.png",
+  "kind": "image",
+  "source": "https://abuse.ch/favicon.ico"
+ },
+ "abuseipdb": {
+  "file": "abuseipdb.png",
+  "kind": "image",
+  "source": "https://www.abuseipdb.com/apple-touch-icon.png"
+ },
+ "abyssale": {
+  "file": "abyssale.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/672b6e17b837fe6d8ed6a300/6786ac25c08789ffad3c3b1c_Webclip.png"
+ },
+ "accredible": {
+  "file": "accredible.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "acculynx": {
+  "file": "acculynx.png",
+  "kind": "image",
+  "source": "https://acculynx.com/apple-touch-icon.png?v=2"
+ },
+ "accuweather": {
+  "file": "accuweather.svg",
+  "kind": "tile",
+  "source": "simple-icons:accuweather"
+ },
+ "activecampaign": {
+  "file": "activecampaign.webp",
+  "kind": "image",
+  "source": "https://www.activecampaign.com/dist/favicon-180x180.png"
+ },
+ "activetrail": {
+  "file": "activetrail.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "adafruitio": {
+  "file": "adafruitio.svg",
+  "kind": "tile",
+  "source": "simple-icons:adafruit"
+ },
+ "addressfinder": {
+  "file": "addressfinder.png",
+  "kind": "image",
+  "source": "https://addressfinder.com/_next/static/media/apple-touch.1deae2ab.png"
+ },
+ "adrapid": {
+  "file": "adrapid.png",
+  "kind": "image",
+  "source": "https://content.app-sources.com/s/27068494327316535/uploads/Images/favicon-8585023.ico"
+ },
+ "adtraction": {
+  "file": "adtraction.png",
+  "kind": "image",
+  "source": "https://adtraction.com/favicon.ico"
+ },
+ "adyen": {
+  "file": "adyen.svg",
+  "kind": "image",
+  "source": "https://www.adyen.com/icon.svg"
+ },
+ "aeroleads": {
+  "file": "aeroleads.png",
+  "kind": "image",
+  "source": "https://aeroleads.com/assets/favicon.png"
+ },
+ "affinda": {
+  "file": "affinda.png",
+  "kind": "image",
+  "source": "https://www.affinda.com/apple-touch-icon.png"
+ },
+ "affinity": {
+  "file": "affinity.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/69e63af550c7ba21cdac9029/6a4bc0bbe2da41cae3637d92_Dark.png"
+ },
+ "agencyzoom": {
+  "file": "agencyzoom.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5d677497cc9b4b3ed52d6d71/650c7fd6c200018615ee196a_MicrosoftTeams-image%20(9).png"
+ },
+ "agentmail": {
+  "file": "agentmail.ico",
+  "kind": "image",
+  "source": "https://www.agentmail.to/favicon.ico?favicon.0j3t3o7p4j8nq.ico"
+ },
+ "agentql": {
+  "file": "agentql.png",
+  "kind": "image",
+  "source": "https://www.agentql.com/favicon/favicon-512x512.png"
+ },
+ "agenty": {
+  "file": "agenty.png",
+  "kind": "image",
+  "source": "https://agenty.com/apple-touch-icon.png"
+ },
+ "agilecrm": {
+  "file": "agilecrm.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "agiled": {
+  "file": "agiled.ico",
+  "kind": "image",
+  "source": "https://agiled.app/favicon.ico?favicon.0b3bf435.ico"
+ },
+ "agilitycms": {
+  "file": "agilitycms.png",
+  "kind": "image",
+  "source": "https://agilitycms.com/favicon.ico"
+ },
+ "ahrefs": {
+  "file": "ahrefs.png",
+  "kind": "image",
+  "source": "https://static.ahrefs.com/apple-touch-icon-192x192.png?v=2"
+ },
+ "ai21": {
+  "file": "ai21.png",
+  "kind": "image",
+  "source": "https://www.ai21.com/wp-content/uploads/2026/01/favicon.png"
+ },
+ "aimlapi": {
+  "file": "aimlapi.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65b8f36fa600366bc7cf9a67/6882319cfc66d25ec955be54_123.png"
+ },
+ "aimtell": {
+  "file": "aimtell.png",
+  "kind": "image",
+  "source": "https://aimtell.com/images/icons/icon-512x512.png"
+ },
+ "aircall": {
+  "file": "aircall.svg",
+  "kind": "tile",
+  "source": "simple-icons:aircall"
+ },
+ "airparser": {
+  "file": "airparser.ico",
+  "kind": "image",
+  "source": "https://airparser.com/favicon.ico"
+ },
+ "airtable": {
+  "file": "airtable.svg",
+  "kind": "tile",
+  "source": "simple-icons:airtable"
+ },
+ "airtop": {
+  "file": "airtop.ico",
+  "kind": "image",
+  "source": "https://www.airtop.ai/favicon.ico"
+ },
+ "akaunting": {
+  "file": "akaunting.svg",
+  "kind": "tile",
+  "source": "simple-icons:akaunting"
+ },
+ "akta": {
+  "file": "akta.png",
+  "kind": "image",
+  "source": "https://akta.pro/favicon.ico"
+ },
+ "alchemy": {
+  "file": "alchemy.svg",
+  "kind": "tile",
+  "source": "simple-icons:alchemy"
+ },
+ "algodocs": {
+  "file": "algodocs.png",
+  "kind": "image",
+  "source": "https://algodocs.com/wp-content/uploads/2025/08/cropped-download__3___1__imresizer__1_-removebg-preview-180x180.png"
+ },
+ "algolia": {
+  "file": "algolia.svg",
+  "kind": "tile",
+  "source": "simple-icons:algolia"
+ },
+ "allimages": {
+  "file": "allimages.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "alpaca": {
+  "file": "alpaca.png",
+  "kind": "image",
+  "source": "https://files.alpaca.markets/webassets/apple-touch-icon.png"
+ },
+ "alphavantage": {
+  "file": "alphavantage.ico",
+  "kind": "image",
+  "source": "https://www.alphavantage.co/static/img/favicon.ico"
+ },
+ "altoviz": {
+  "file": "altoviz.png",
+  "kind": "image",
+  "source": "https://altoviz.com/apple-touch-icon.png"
+ },
+ "alttextai": {
+  "file": "alttextai.png",
+  "kind": "image",
+  "source": "https://assets.alttext.ai/assets/favicons/apple-touch-icon-98f21265b3a02761894848015c142b0c5280414a4a9fd8ac19ad9aa361791a8e.png"
+ },
+ "amara": {
+  "file": "amara.png",
+  "kind": "image",
+  "source": "https://static.amara.org/53ccd5a5/img/apple-touch-icon.png"
+ },
+ "amazingmarvin": {
+  "file": "amazingmarvin.ico",
+  "kind": "image",
+  "source": "https://app.amazingmarvin.com/favicon.ico"
+ },
+ "ambee": {
+  "file": "ambee.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6242a3f6d206db221c2b13e8/62c3be1f670a96586b870988_Favicon%20256%20x%20256.png"
+ },
+ "ambientweather": {
+  "file": "ambientweather.png",
+  "kind": "image",
+  "source": "https://ambientweather.com/media/favicon/stores/8/ambientweather-favicon1.png"
+ },
+ "amplitude": {
+  "file": "amplitude.png",
+  "kind": "image",
+  "source": "https://amplitude.com/nextjs-public/favicon/apple-touch-icon.png"
+ },
+ "anakin": {
+  "file": "anakin.png",
+  "kind": "image",
+  "source": "https://anakin.io/favicon.png"
+ },
+ "anchorbrowser": {
+  "file": "anchorbrowser.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/68e76a236cc487333075990b/68e76a236cc487333075996a_webclip.png"
+ },
+ "androidtexter": {
+  "file": "androidtexter.png",
+  "kind": "image",
+  "source": "https://androidtexter.com/apple-icon.png?apple-icon.b9efbfbe.png"
+ },
+ "anthropic": {
+  "file": "anthropic.svg",
+  "kind": "tile",
+  "source": "simple-icons:anthropic"
+ },
+ "anthropicadmin": {
+  "file": "anthropicadmin.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d31dd7aa394792257596c5_webclip.png"
+ },
+ "anyrun": {
+  "file": "anyrun.png",
+  "kind": "image",
+  "source": "https://files.any.run/images/favicon-ws/apple-touch-icon.png"
+ },
+ "apexverify": {
+  "file": "apexverify.png",
+  "kind": "image",
+  "source": "https://apexverify.com/apple-touch-icon.png"
+ },
+ "api2pdf": {
+  "file": "api2pdf.ico",
+  "kind": "image",
+  "source": "https://www.api2pdf.com/favicon.ico"
+ },
+ "apibible": {
+  "file": "apibible.png",
+  "kind": "image",
+  "source": "https://api.bible/apple-touch-icon.png"
+ },
+ "apiflash": {
+  "file": "apiflash.png",
+  "kind": "image",
+  "source": "https://apiflash.com/static/favicons/apple-touch-icon.png"
+ },
+ "apiframe": {
+  "file": "apiframe.png",
+  "kind": "image",
+  "source": "https://apiframe.ai/apiframe-favicon.png"
+ },
+ "apify": {
+  "file": "apify.png",
+  "kind": "image",
+  "source": "https://apify.com/apple-icon.png?apple-icon.1qabm0kj8blk6.png?dpl=c5041fc0e8"
+ },
+ "apilio": {
+  "file": "apilio.svg",
+  "kind": "image",
+  "source": "https://www.apilio.com/logo.svg"
+ },
+ "apininjas": {
+  "file": "apininjas.png",
+  "kind": "image",
+  "source": "https://api-ninjas.com/apple-touch-icon.png"
+ },
+ "apisports": {
+  "file": "apisports.png",
+  "kind": "image",
+  "source": "https://api-sports.io/apple-touch-icon.png"
+ },
+ "apiverve": {
+  "file": "apiverve.png",
+  "kind": "image",
+  "source": "https://apiverve.com/images/apple-touch-icon.png"
+ },
+ "apollo": {
+  "file": "apollo.png",
+  "kind": "image",
+  "source": "https://www.apollo.io/apple-icon.png?apple-icon.0-gy.9xjm.kcw.png"
+ },
+ "appcircle": {
+  "file": "appcircle.png",
+  "kind": "image",
+  "source": "https://appcircle.io/apple-touch-icon.png"
+ },
+ "appointo": {
+  "file": "appointo.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6555e79256c1657a9a2e92c3/65608f40416c64f555b756e5_logo256.png"
+ },
+ "apptivegrid": {
+  "file": "apptivegrid.svg",
+  "kind": "image",
+  "source": "https://www.apptivegrid.de/favicon.svg"
+ },
+ "appveyor": {
+  "file": "appveyor.svg",
+  "kind": "tile",
+  "source": "simple-icons:appveyor"
+ },
+ "archiveorg": {
+  "file": "archiveorg.svg",
+  "kind": "tile",
+  "source": "simple-icons:internetarchive"
+ },
+ "arena": {
+  "file": "arena.png",
+  "kind": "image",
+  "source": "https://www.are.na/apple-touch-icon.png"
+ },
+ "artificialanalysis": {
+  "file": "artificialanalysis.ico",
+  "kind": "image",
+  "source": "https://artificialanalysis.ai/favicon.ico"
+ },
+ "aryn": {
+  "file": "aryn.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67a3a89456723f8eeb15b5e9/67afcbe79907ad52f7b420c6_Aryn_pixelwebclip.png"
+ },
+ "asana": {
+  "file": "asana.svg",
+  "kind": "tile",
+  "source": "simple-icons:asana"
+ },
+ "ascora": {
+  "file": "ascora.ico",
+  "kind": "image",
+  "source": "https://ascora.com.au/favicon.ico"
+ },
+ "assemblyai": {
+  "file": "assemblyai.ico",
+  "kind": "image",
+  "source": "https://www.assemblyai.com/favicon.ico"
+ },
+ "authyo": {
+  "file": "authyo.webp",
+  "kind": "image",
+  "source": "https://authyo.io/wp-content/uploads/2025/08/cropped-authyo.webp"
+ },
+ "autobound": {
+  "file": "autobound.png",
+  "kind": "image",
+  "source": "https://www.autobound.ai/apple-icon?da6c17e00b2448d"
+ },
+ "autom": {
+  "file": "autom.png",
+  "kind": "image",
+  "source": "https://www.autom.dev/icon.png?icon.031x~1_ht8sln.png"
+ },
+ "avoma": {
+  "file": "avoma.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5de236b4d41434460ade73ac/5de60e45eee20578cc43a906_Avoma-Icon-Color-256.png"
+ },
+ "aws": {
+  "file": "aws.png",
+  "kind": "image",
+  "source": "https://a0.awsstatic.com/libra-css/images/site/touch-icon-ipad-144-smile.png"
+ },
+ "ayrshare": {
+  "file": "ayrshare.png",
+  "kind": "image",
+  "source": "https://www.ayrshare.com/apple-touch-icon-152x152.png"
+ },
+ "azure": {
+  "file": "azure.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/6844498?v=4"
+ },
+ "azuredevops": {
+  "file": "azuredevops.ico",
+  "kind": "image",
+  "source": "https://azure.microsoft.com/favicon.ico"
+ },
+ "azureopenai": {
+  "file": "azureopenai.ico",
+  "kind": "image",
+  "source": "https://ai.azure.com/favicon.ico"
+ },
+ "babelstreet": {
+  "file": "babelstreet.png",
+  "kind": "image",
+  "source": "https://www.babelstreet.com/apple-touch-icon.png"
+ },
+ "backblaze": {
+  "file": "backblaze.svg",
+  "kind": "tile",
+  "source": "simple-icons:backblaze"
+ },
+ "backendless": {
+  "file": "backendless.svg",
+  "kind": "tile",
+  "source": "simple-icons:backendless"
+ },
+ "bamboohr": {
+  "file": "bamboohr.ico",
+  "kind": "image",
+  "source": "https://www.bamboohr.com/favicon.ico"
+ },
+ "bannerbear": {
+  "file": "bannerbear.png",
+  "kind": "image",
+  "source": "https://www.bannerbear.com/images/apple-touch-icon.png"
+ },
+ "baremetrics": {
+  "file": "baremetrics.svg",
+  "kind": "tile",
+  "source": "simple-icons:baremetrics"
+ },
+ "bart": {
+  "file": "bart.ico",
+  "kind": "image",
+  "source": "https://www.bart.gov/themes/custom/bart/favicon.ico"
+ },
+ "baserow": {
+  "file": "baserow.svg",
+  "kind": "tile",
+  "source": "simple-icons:baserow"
+ },
+ "basin": {
+  "file": "basin.png",
+  "kind": "image",
+  "source": "https://usebasin.com/assets/favicon-2feb1d6a0d5241da50e0c6ce377835be3b6f3be7dec80a40a074f1a20d32d165.png"
+ },
+ "bce": {
+  "file": "bce.png",
+  "kind": "image",
+  "source": "https://www.ecb.europa.eu/favicon-180.png"
+ },
+ "beachdayapi": {
+  "file": "beachdayapi.png",
+  "kind": "image",
+  "source": "https://beachdayapi.com/static/apple-touch-icon.8ac9f287a7f0.png"
+ },
+ "beaconchain": {
+  "file": "beaconchain.png",
+  "kind": "image",
+  "source": "https://docs.beaconcha.in/mintlify-assets/_mintlify/favicons/bitflyexplorergmbh/ql_f-FKhQdaMtpRp/_generated/favicon/apple-touch-icon.png"
+ },
+ "beaconstac": {
+  "file": "beaconstac.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6669ecc72092c5122374cf32/66a8f009926d92d860e4bf3b_webclip.png"
+ },
+ "beamer": {
+  "file": "beamer.webp",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/66b70736e94ee47108b9f364/66d80424446687e534cb5315_getbeamer-webclip.webp"
+ },
+ "beehiiv": {
+  "file": "beehiiv.png",
+  "kind": "image",
+  "source": "https://beehiiv-marketing-images.s3.amazonaws.com/Redesign2023/favicon.png"
+ },
+ "beeminder": {
+  "file": "beeminder.png",
+  "kind": "image",
+  "source": "https://www.beeminder.com/assets/small_logo_bee_256-e807d274abc2d10aad17390dfe41eecb07b851f1a106f6b06be069a1b2d92749.png"
+ },
+ "benchmarkemail": {
+  "file": "benchmarkemail.png",
+  "kind": "image",
+  "source": "https://www.benchmarkemail.com/wp-content/themes/bb-theme-child/html/home/assets/images/favicon.png?v=866b5cc7716b8616"
+ },
+ "benzinga": {
+  "file": "benzinga.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "bettercontact": {
+  "file": "bettercontact.png",
+  "kind": "image",
+  "source": "https://bettercontact.rocks/assets/bettercontact-mark.png"
+ },
+ "betterproposals": {
+  "file": "betterproposals.png",
+  "kind": "image",
+  "source": "https://betterproposals.io/2/img/icons/favicon_144.png"
+ },
+ "betterstack": {
+  "file": "betterstack.svg",
+  "kind": "tile",
+  "source": "simple-icons:betterstack"
+ },
+ "bidsketch": {
+  "file": "bidsketch.ico",
+  "kind": "image",
+  "source": "https://www.bidsketch.com/favicon.ico"
+ },
+ "bigcommerce": {
+  "file": "bigcommerce.svg",
+  "kind": "tile",
+  "source": "simple-icons:bigcommerce"
+ },
+ "bigdatacloud": {
+  "file": "bigdatacloud.ico",
+  "kind": "image",
+  "source": "https://www.bigdatacloud.com/favicon.ico"
+ },
+ "bigmailer": {
+  "file": "bigmailer.png",
+  "kind": "image",
+  "source": "https://www.bigmailer.io/wp-content/uploads/2023/09/cropped-bigmailer_favicon-180x180.png"
+ },
+ "bigml": {
+  "file": "bigml.ico",
+  "kind": "image",
+  "source": "https://static.bigml.com/static/favicon.ico?v=2"
+ },
+ "bigpictureio": {
+  "file": "bigpictureio.png",
+  "kind": "image",
+  "source": "https://bigpicture.io/apple-icon-180x180.png"
+ },
+ "bika": {
+  "file": "bika.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "billsby": {
+  "file": "billsby.ico",
+  "kind": "image",
+  "source": "https://www.billsby.com/favicon.ico"
+ },
+ "bingwebmaster": {
+  "file": "bingwebmaster.png",
+  "kind": "image",
+  "source": "https://www.bing.com/webmasters/Content/PWA/iOS/logo/bing-logo-167.png"
+ },
+ "bitbucket": {
+  "file": "bitbucket.svg",
+  "kind": "tile",
+  "source": "simple-icons:bitbucket"
+ },
+ "bitly": {
+  "file": "bitly.png",
+  "kind": "image",
+  "source": "https://mkt-bitly-media.qrcg.net/wp-content/uploads/2026/10/01185950/favicon-2.png"
+ },
+ "bitquery": {
+  "file": "bitquery.png",
+  "kind": "image",
+  "source": "https://bitquery.io/favicon/apple-touch-icon.png"
+ },
+ "blackforestlabs": {
+  "file": "blackforestlabs.png",
+  "kind": "image",
+  "source": "https://bfl.ai/apple-icon.png?f3e2842f59013de0"
+ },
+ "blandai": {
+  "file": "blandai.png",
+  "kind": "image",
+  "source": "https://www.bland.ai/images/webclip.png"
+ },
+ "blazemeter": {
+  "file": "blazemeter.svg",
+  "kind": "tile",
+  "source": "simple-icons:blazemeter"
+ },
+ "blitzapi": {
+  "file": "blitzapi.png",
+  "kind": "image",
+  "source": "https://www.blitz-api.ai/webclip-180.png"
+ },
+ "blooio": {
+  "file": "blooio.png",
+  "kind": "image",
+  "source": "https://blooio.com/apple-touch-icon.png"
+ },
+ "bluepillow": {
+  "file": "bluepillow.ico",
+  "kind": "image",
+  "source": "https://www.bluepillow.es/favicon.ico"
+ },
+ "bolna": {
+  "file": "bolna.jpg",
+  "kind": "image",
+  "source": "https://www.bolna.ai/favicon.ico"
+ },
+ "boloforms": {
+  "file": "boloforms.svg",
+  "kind": "image",
+  "source": "https://www.boloforms.com/_next/static/media/logo.a7bd82db.svg"
+ },
+ "boltiot": {
+  "file": "boltiot.png",
+  "kind": "image",
+  "source": "https://www.boltiot.com/assets/images/favicon.png"
+ },
+ "bonsai": {
+  "file": "bonsai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/63c81e4decde60c281417feb/63c81e4decde602edf417ffc_Webclip.png"
+ },
+ "bookingmood": {
+  "file": "bookingmood.png",
+  "kind": "image",
+  "source": "https://www.bookingmood.com/apple-icon.png?60079cd57328538a"
+ },
+ "booqable": {
+  "file": "booqable.ico",
+  "kind": "image",
+  "source": "https://booqable.com/favicon.ico"
+ },
+ "botdog": {
+  "file": "botdog.png",
+  "kind": "image",
+  "source": "https://www.botdog.co/favicon.png"
+ },
+ "botpenguin": {
+  "file": "botpenguin.ico",
+  "kind": "image",
+  "source": "https://botpenguin.com/favicon.ico"
+ },
+ "botpress": {
+  "file": "botpress.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/635c4eeb78332f7971255095/6a887680628e755606a2406b_bp-logo.jpg"
+ },
+ "botsonic": {
+  "file": "botsonic.svg",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65e6ec2daf39c088fe6cd402/65e89bc0a967c0e47d3476b8_Frame%201116605940.svg"
+ },
+ "botstar": {
+  "file": "botstar.png",
+  "kind": "image",
+  "source": "https://botstar.com/src/assets/favicons/android-chrome-512x512.png?v=2c002a9f44aff48f867b09b7d4b629d5"
+ },
+ "botster": {
+  "file": "botster.png",
+  "kind": "image",
+  "source": "https://botster.io/apple-touch-icon.png"
+ },
+ "bouncer": {
+  "file": "bouncer.png",
+  "kind": "image",
+  "source": "https://www.usebouncer.com/wp-content/uploads/2024/09/cropped-bouncer_ICONA_owal-1-180x180.png"
+ },
+ "bouncify": {
+  "file": "bouncify.png",
+  "kind": "image",
+  "source": "https://bouncify.io/assets/img/apple-touch-icon.png"
+ },
+ "box": {
+  "file": "box.svg",
+  "kind": "tile",
+  "source": "simple-icons:box"
+ },
+ "boxhero": {
+  "file": "boxhero.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/2Z7lPX9m1fn334fcoH0yF8jhk.png"
+ },
+ "braintrust": {
+  "file": "braintrust.png",
+  "kind": "image",
+  "source": "https://www.braintrust.dev/icon180.png?v=2"
+ },
+ "brandfetch": {
+  "file": "brandfetch.svg",
+  "kind": "image",
+  "source": "https://brandfetch.com/logos/favicon-light-mode.svg"
+ },
+ "brave": {
+  "file": "brave.svg",
+  "kind": "tile",
+  "source": "simple-icons:brave"
+ },
+ "braze": {
+  "file": "braze.ico",
+  "kind": "image",
+  "source": "https://www.braze.com/favicon.ico"
+ },
+ "breeze": {
+  "file": "breeze.png",
+  "kind": "image",
+  "source": "https://d4m6dyamkl3ur.cloudfront.net/assets/apple-touch-icon-3ada5b2a06d4bc1b3900677e6c1f1c284f4af83650598527766537fbd50954ba.png"
+ },
+ "brevo": {
+  "file": "brevo.svg",
+  "kind": "tile",
+  "source": "simple-icons:brevo"
+ },
+ "brex": {
+  "file": "brex.png",
+  "kind": "image",
+  "source": "https://www.brex.com/apple-touch-icon.png"
+ },
+ "brightdata": {
+  "file": "brightdata.png",
+  "kind": "image",
+  "source": "https://brightdata.com/wp-content/themes/brightdata/assets/images/favicon.png"
+ },
+ "brilliantdirectories": {
+  "file": "brilliantdirectories.png",
+  "kind": "image",
+  "source": "https://www.brilliantdirectories.com/favicon.ico"
+ },
+ "browseai": {
+  "file": "browseai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/628be7c04ab34bfc699e4acb/68b9c656f48bca83e2a16839_webclip.png"
+ },
+ "browseract": {
+  "file": "browseract.png",
+  "kind": "image",
+  "source": "https://www.browseract.com/apple-touch-icon.png"
+ },
+ "browserbase": {
+  "file": "browserbase.svg",
+  "kind": "image",
+  "source": "https://www.browserbase.com/favicon.svg"
+ },
+ "browserless": {
+  "file": "browserless.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "browseruse": {
+  "file": "browseruse.png",
+  "kind": "image",
+  "source": "https://browser-use.com/apple-touch-icon.png"
+ },
+ "bubble": {
+  "file": "bubble.jpg",
+  "kind": "image",
+  "source": "https://meta-q.cdn.bubble.io/cdn-cgi/image/w=192,h=,f=auto,dpr=1,fit=contain/f1534423790492x745180500205606300/icon_512x512%402x.png"
+ },
+ "bugbug": {
+  "file": "bugbug.png",
+  "kind": "image",
+  "source": "https://bugbug.io/apple-icon-180x180.png"
+ },
+ "bugherd": {
+  "file": "bugherd.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5f348cefc28f73bfbed5b00a/5f348cefc28f732fc1d5b077_bug_logo.png"
+ },
+ "bugsnag": {
+  "file": "bugsnag.png",
+  "kind": "image",
+  "source": "https://imagedelivery.net/PVooPtpJE-25QaNkbEuXvw/19ef04f9-e12a-4978-585b-3e57e97f3000/public"
+ },
+ "builderio": {
+  "file": "builderio.png",
+  "kind": "image",
+  "source": "https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Ffd572a39ff674ec88c50c33f33d9ca02"
+ },
+ "buildkite": {
+  "file": "buildkite.svg",
+  "kind": "tile",
+  "source": "simple-icons:buildkite"
+ },
+ "builtwith": {
+  "file": "builtwith.png",
+  "kind": "image",
+  "source": "https://builtwith.com/img/apple-touch-icon.png"
+ },
+ "bulkemailchecker": {
+  "file": "bulkemailchecker.png",
+  "kind": "image",
+  "source": "https://bulkemailchecker.com/assets/images/icons/apple-touch-icon.png"
+ },
+ "bunnycdn": {
+  "file": "bunnycdn.svg",
+  "kind": "tile",
+  "source": "simple-icons:bunnydotnet"
+ },
+ "burpsuite": {
+  "file": "burpsuite.svg",
+  "kind": "tile",
+  "source": "simple-icons:burpsuite"
+ },
+ "byteforms": {
+  "file": "byteforms.png",
+  "kind": "image",
+  "source": "https://forms.bytesuite.io/byteforms.png"
+ },
+ "byteplusark": {
+  "file": "byteplusark.png",
+  "kind": "image",
+  "source": "https://sf-bpcms.bytepluscdn.com/obj/byteplus-public-aiso/portal/assets/favicon.png"
+ },
+ "cabinpanda": {
+  "file": "cabinpanda.png",
+  "kind": "image",
+  "source": "https://www.cabinpanda.com/v2-assets/img/favicon/apple-touch-icon.png"
+ },
+ "calcom": {
+  "file": "calcom.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/63tSo3fa0ylcjt88Er8WTEPS6Dw.png"
+ },
+ "calendarhero": {
+  "file": "calendarhero.webp",
+  "kind": "image",
+  "source": "https://calendarhero.com/favicon.ico"
+ },
+ "calendly": {
+  "file": "calendly.svg",
+  "kind": "tile",
+  "source": "simple-icons:calendly"
+ },
+ "callback24": {
+  "file": "callback24.png",
+  "kind": "image",
+  "source": "https://callback24.io/wp-content/uploads/2020/11/cropped-callback-fav-300x300.png"
+ },
+ "callerapi": {
+  "file": "callerapi.svg",
+  "kind": "image",
+  "source": "https://callerapi.com/favicon.ico?v=2"
+ },
+ "callingly": {
+  "file": "callingly.png",
+  "kind": "image",
+  "source": "https://callingly.com/img/pricing/cropped-Callingly_Logomark_FullColor2-180x180.png"
+ },
+ "callpage": {
+  "file": "callpage.png",
+  "kind": "image",
+  "source": "https://www.callpage.io/images/favicon.ico"
+ },
+ "cambai": {
+  "file": "cambai.png",
+  "kind": "image",
+  "source": "https://www.camb.ai/icon.png?344848d97038cf86"
+ },
+ "canny": {
+  "file": "canny.png",
+  "kind": "image",
+  "source": "https://assets.canny.io/22525497d8de5230ea5832cacf8495f2d7355077/apple-touch-icon.png"
+ },
+ "canva": {
+  "file": "canva.png",
+  "kind": "image",
+  "source": "https://static.canva.com/static/images/apple-touch-180x180-1.png"
+ },
+ "canvas": {
+  "file": "canvas.svg",
+  "kind": "tile",
+  "source": "simple-icons:canvas"
+ },
+ "capsulecrm": {
+  "file": "capsulecrm.png",
+  "kind": "image",
+  "source": "https://capsulecrm.com/icons/icon-512x512.png?v=e4ae038e61887946989263ab00faf7dd"
+ },
+ "capturekit": {
+  "file": "capturekit.png",
+  "kind": "image",
+  "source": "https://www.capturekit.dev/apple-touch-icon.png"
+ },
+ "carbone": {
+  "file": "carbone.ico",
+  "kind": "image",
+  "source": "https://carbone.io/favicon.ico"
+ },
+ "cardclan": {
+  "file": "cardclan.png",
+  "kind": "image",
+  "source": "https://cardclan.io/wp-content/uploads/2021/10/faviconl.png"
+ },
+ "cardly": {
+  "file": "cardly.png",
+  "kind": "image",
+  "source": "https://cdn1.cardly.net/images/favicon/ati-152.png"
+ },
+ "carsxe": {
+  "file": "carsxe.png",
+  "kind": "image",
+  "source": "https://imagedelivery.net/moyiiSImjJPI_EZVxNMBBw/base/images/brand/CarsXE_Logo_Icon_Light_db4sn8/public"
+ },
+ "castingwords": {
+  "file": "castingwords.png",
+  "kind": "image",
+  "source": "https://castingwords.com/apple-touch-icon.png"
+ },
+ "celigo": {
+  "file": "celigo.png",
+  "kind": "image",
+  "source": "https://www.celigo.com/wp-content/uploads/2024/05/cropped-Celigo-Monogram-2024-RGB-180x180.png"
+ },
+ "censusbureau": {
+  "file": "censusbureau.png",
+  "kind": "image",
+  "source": "https://www.census.gov/etc.clientlibs/census/clientlibs/common-site/resources/icons/apple-touch-icon-180x180.png"
+ },
+ "censys": {
+  "file": "censys.jpg",
+  "kind": "image",
+  "source": "https://censys.com/wp-content/uploads/Censys-Favicon.jpg"
+ },
+ "centralstationcrm": {
+  "file": "centralstationcrm.ico",
+  "kind": "image",
+  "source": "https://centralstationcrm.com/favicon.ico"
+ },
+ "ceramic": {
+  "file": "ceramic.ico",
+  "kind": "image",
+  "source": "https://www.ceramic.ai/favicon.ico"
+ },
+ "certifier": {
+  "file": "certifier.png",
+  "kind": "image",
+  "source": "https://certifier.io/favicon/apple-touch-icon.png"
+ },
+ "certspotter": {
+  "file": "certspotter.png",
+  "kind": "image",
+  "source": "https://sslmate.com/assets/@9e36fda1926f2047cead1adb754d0fe2.png"
+ },
+ "chameleon": {
+  "file": "chameleon.png",
+  "kind": "image",
+  "source": "https://www.chameleon.io/img/favicons/apple-touch-icon.png?v=202608"
+ },
+ "chargebee": {
+  "file": "chargebee.png",
+  "kind": "image",
+  "source": "https://www.chargebee.com/static/resources/brand/apple-touch-icon.png?v=1"
+ },
+ "charla": {
+  "file": "charla.png",
+  "kind": "image",
+  "source": "https://charla.com/wp-content/uploads/2020/06/cropped-favicon-1-180x180.png"
+ },
+ "chartly": {
+  "file": "chartly.png",
+  "kind": "image",
+  "source": "https://chartly.dev/favicon/apple-touch-icon.png"
+ },
+ "chartmogul": {
+  "file": "chartmogul.svg",
+  "kind": "tile",
+  "source": "simple-icons:chartmogul"
+ },
+ "chaser": {
+  "file": "chaser.jpg",
+  "kind": "image",
+  "source": "https://www.chaserhq.com/favicon.ico"
+ },
+ "chatbotkit": {
+  "file": "chatbotkit.png",
+  "kind": "image",
+  "source": "https://chatbotkit.com/apple-touch-icon.png"
+ },
+ "chatforma": {
+  "file": "chatforma.ico",
+  "kind": "image",
+  "source": "https://www.chatforma.com/favicon.ico"
+ },
+ "chatwork": {
+  "file": "chatwork.png",
+  "kind": "image",
+  "source": "https://go.chatwork.com/en/image/common/touch-icon-ipad-retina.png?v=20230526"
+ },
+ "checkflow": {
+  "file": "checkflow.png",
+  "kind": "image",
+  "source": "https://checkflow.io/apple-touch-icon.png"
+ },
+ "checkvist": {
+  "file": "checkvist.png",
+  "kind": "image",
+  "source": "https://d13kjy65myknzs.cloudfront.net/assets/logos/apple_touch_icon_2-8e1ee27fb1831db3074610dd1ff35536c1b86cc077880627113fed82e924ce7b.png"
+ },
+ "chmeetings": {
+  "file": "chmeetings.png",
+  "kind": "image",
+  "source": "https://www.chmeetings.com/wp-content/uploads/2018/06/favico.png"
+ },
+ "cincopa": {
+  "file": "cincopa.png",
+  "kind": "image",
+  "source": "https://www.cincopa.com/_cms/design15/icons/ios-152.png?fts=2015-03-26T13:13:08.0000000Z"
+ },
+ "circleci": {
+  "file": "circleci.svg",
+  "kind": "tile",
+  "source": "simple-icons:circleci"
+ },
+ "claid": {
+  "file": "claid.png",
+  "kind": "image",
+  "source": "https://claid.ai/icons/icon-512x512.png?v=929123789de593fc4153206756197444"
+ },
+ "classmarker": {
+  "file": "classmarker.png",
+  "kind": "image",
+  "source": "https://www.classmarker.com/apple-touch-icon.png"
+ },
+ "clay": {
+  "file": "clay.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6a3a92ab3c92c9caa6245619_dot-com_favicon_2026_512.png"
+ },
+ "clearout": {
+  "file": "clearout.png",
+  "kind": "image",
+  "source": "https://clearout.io/fav-icon/icon-512x512.png?v=c37791c52e2536f63f1e32d8d245744e"
+ },
+ "clickhouse": {
+  "file": "clickhouse.svg",
+  "kind": "tile",
+  "source": "simple-icons:clickhouse"
+ },
+ "clickmeeting": {
+  "file": "clickmeeting.png",
+  "kind": "image",
+  "source": "https://sc.stat-cdn.com/content/themes/clickmeeting/assets/favicons/apple-touch-icon-72x72.png"
+ },
+ "clicksend": {
+  "file": "clicksend.png",
+  "kind": "image",
+  "source": "https://www.clicksend.com/img/favicons/apple-touch-icon.png"
+ },
+ "clickup": {
+  "file": "clickup.svg",
+  "kind": "tile",
+  "source": "simple-icons:clickup"
+ },
+ "clientary": {
+  "file": "clientary.png",
+  "kind": "image",
+  "source": "https://cdn.clientary.com/assets/apple-touch-icon-45b617b9fcd4f7160b3145632eb58676bb6ddb1d6e42f81216429556da7af9f0.png"
+ },
+ "clockify": {
+  "file": "clockify.svg",
+  "kind": "tile",
+  "source": "simple-icons:clockify"
+ },
+ "cloro": {
+  "file": "cloro.png",
+  "kind": "image",
+  "source": "https://cloro.dev/apple-touch-icon.png"
+ },
+ "close": {
+  "file": "close.png",
+  "kind": "image",
+  "source": "https://close.com/apple-touch-icon.png"
+ },
+ "cloudconvert": {
+  "file": "cloudconvert.png",
+  "kind": "image",
+  "source": "https://static.cloudconvert.com/build/assets/apple-touch-icon-gaCvqugM.png"
+ },
+ "cloudflare": {
+  "file": "cloudflare.svg",
+  "kind": "tile",
+  "source": "simple-icons:cloudflare"
+ },
+ "cloudflarebrowser": {
+  "file": "cloudflarebrowser.svg",
+  "kind": "tile",
+  "source": "simple-icons:cloudflare"
+ },
+ "cloudflarer2": {
+  "file": "cloudflarer2.svg",
+  "kind": "tile",
+  "source": "simple-icons:cloudflare"
+ },
+ "cloudinary": {
+  "file": "cloudinary.svg",
+  "kind": "tile",
+  "source": "simple-icons:cloudinary"
+ },
+ "cloudlayer": {
+  "file": "cloudlayer.png",
+  "kind": "image",
+  "source": "https://cloudlayer.io/apple-touch-icon.png"
+ },
+ "cloudpdf": {
+  "file": "cloudpdf.png",
+  "kind": "image",
+  "source": "https://cloudpdf.io/apple-touch-icon.png"
+ },
+ "cloudsmith": {
+  "file": "cloudsmith.svg",
+  "kind": "tile",
+  "source": "simple-icons:cloudsmith"
+ },
+ "coda": {
+  "file": "coda.svg",
+  "kind": "tile",
+  "source": "simple-icons:coda"
+ },
+ "codacy": {
+  "file": "codacy.svg",
+  "kind": "tile",
+  "source": "simple-icons:codacy"
+ },
+ "codekit": {
+  "file": "codekit.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/679e16442439d38e1efcc5c3/68679c7289662b87e2347e21_Untitled%20design%20(15).png"
+ },
+ "codemagic": {
+  "file": "codemagic.svg",
+  "kind": "tile",
+  "source": "simple-icons:codemagic"
+ },
+ "codereadr": {
+  "file": "codereadr.png",
+  "kind": "image",
+  "source": "https://www.codereadr.com/wp-content/uploads/2018/05/codereadr-favicon-114.png"
+ },
+ "cody": {
+  "file": "cody.ico",
+  "kind": "image",
+  "source": "https://getcody.ai/favicon.ico"
+ },
+ "cohere": {
+  "file": "cohere.png",
+  "kind": "image",
+  "source": "https://cohere.com/apple-touch-icon.png"
+ },
+ "coinbase": {
+  "file": "coinbase.png",
+  "kind": "image",
+  "source": "https://www.coinbase.com/apple-touch-icon.png"
+ },
+ "coingecko": {
+  "file": "coingecko.ico",
+  "kind": "image",
+  "source": "https://www.coingecko.com/favicon.ico"
+ },
+ "coinmarketcal": {
+  "file": "coinmarketcal.png",
+  "kind": "image",
+  "source": "https://coinmarketcal.com/apple-touch-icon.png"
+ },
+ "coinmarketcap": {
+  "file": "coinmarketcap.svg",
+  "kind": "tile",
+  "source": "simple-icons:coinmarketcap"
+ },
+ "coinranking": {
+  "file": "coinranking.png",
+  "kind": "image",
+  "source": "https://coinranking.com/apple-touch-icon-192x192.png"
+ },
+ "collegefootballdata": {
+  "file": "collegefootballdata.ico",
+  "kind": "image",
+  "source": "https://collegefootballdata.com/favicon.ico"
+ },
+ "cometapi": {
+  "file": "cometapi.png",
+  "kind": "image",
+  "source": "https://www.cometapi.com/apple-touch-icon.png"
+ },
+ "commcare": {
+  "file": "commcare.png",
+  "kind": "image",
+  "source": "https://dnwn0mt1jqwp0.cloudfront.net/static/hqstyle/images/commcare-icon-180x180.png?version=d20ea3f"
+ },
+ "companycam": {
+  "file": "companycam.png",
+  "kind": "image",
+  "source": "https://companycam.com/apple-touch-icon.png"
+ },
+ "companyenrich": {
+  "file": "companyenrich.png",
+  "kind": "image",
+  "source": "https://companyenrich.com/apple-touch-icon.png"
+ },
+ "companyurlfinder": {
+  "file": "companyurlfinder.png",
+  "kind": "image",
+  "source": "https://companyurlfinder.com/imgs/logos/logo.png"
+ },
+ "compdf": {
+  "file": "compdf.ico",
+  "kind": "image",
+  "source": "https://www.compdf.com/favicon.ico"
+ },
+ "conductor": {
+  "file": "conductor.png",
+  "kind": "image",
+  "source": "https://www.conductor.build/apple-icon.png?apple-icon.1jxify8gcumnm.png"
+ },
+ "configcat": {
+  "file": "configcat.png",
+  "kind": "image",
+  "source": "https://configcat.com/assets/apple-touch-icon.png"
+ },
+ "confluence": {
+  "file": "confluence.svg",
+  "kind": "tile",
+  "source": "simple-icons:confluence"
+ },
+ "consensus": {
+  "file": "consensus.png",
+  "kind": "image",
+  "source": "https://consensus.app/images/icon-384.png"
+ },
+ "contentful": {
+  "file": "contentful.svg",
+  "kind": "tile",
+  "source": "simple-icons:contentful"
+ },
+ "contentfulgraphql": {
+  "file": "contentfulgraphql.svg",
+  "kind": "tile",
+  "source": "simple-icons:contentful"
+ },
+ "contentstudio": {
+  "file": "contentstudio.png",
+  "kind": "image",
+  "source": "https://contentstudio.io/favicons/apple-touch-icon-152x152.png"
+ },
+ "contextdev": {
+  "file": "contextdev.png",
+  "kind": "image",
+  "source": "https://www.context.dev/apple-touch-icon.png"
+ },
+ "contractbook": {
+  "file": "contractbook.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/622f565bf125560c02725fde/62c81509462fce378e47544e_favicon.png"
+ },
+ "controld": {
+  "file": "controld.png",
+  "kind": "image",
+  "source": "https://controld.com/favicon-128x128.png"
+ },
+ "convai": {
+  "file": "convai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/66f6655083b0f778e338eebf/66fb9e2f3b4c9acafeeeca64_Group%20654947.png"
+ },
+ "conversiontools": {
+  "file": "conversiontools.png",
+  "kind": "image",
+  "source": "https://conversiontools.io/apple-touch-icon.png"
+ },
+ "convertapi": {
+  "file": "convertapi.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "convex": {
+  "file": "convex.svg",
+  "kind": "tile",
+  "source": "simple-icons:convex"
+ },
+ "conveyor": {
+  "file": "conveyor.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/696e25579726c96825c6d025/69a88002fde5ffb386e6cfb6_faviconV2.png"
+ },
+ "copper": {
+  "file": "copper.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/69bdc11d6d8dca48c8a32ff4/6a68a40aeb4851e2572f03ee_copper-logo-icon.png"
+ },
+ "copyleaks": {
+  "file": "copyleaks.ico",
+  "kind": "image",
+  "source": "https://copyleaks.com/favicon.ico"
+ },
+ "corrently": {
+  "file": "corrently.png",
+  "kind": "image",
+  "source": "https://corrently.io/favicon.ico"
+ },
+ "cradl": {
+  "file": "cradl.png",
+  "kind": "image",
+  "source": "https://www.cradl.ai/apple-touch-icon.png"
+ },
+ "craftmypdf": {
+  "file": "craftmypdf.png",
+  "kind": "image",
+  "source": "https://craftmypdf.com/apple-touch-icon.png"
+ },
+ "crawlbase": {
+  "file": "crawlbase.png",
+  "kind": "image",
+  "source": "https://crawlbase.com/assets/images/favicon-apple-180-18242c289e.png"
+ },
+ "creatomate": {
+  "file": "creatomate.ico",
+  "kind": "image",
+  "source": "https://creatomate.com/favicon.ico"
+ },
+ "crewai": {
+  "file": "crewai.svg",
+  "kind": "tile",
+  "source": "simple-icons:crewai"
+ },
+ "crisp": {
+  "file": "crisp.png",
+  "kind": "image",
+  "source": "https://crisp.chat/favicons/apple-touch-icon-144x144.png"
+ },
+ "cronly": {
+  "file": "cronly.png",
+  "kind": "image",
+  "source": "https://cronly.app/img/favicons/favicon.png"
+ },
+ "crowdin": {
+  "file": "crowdin.svg",
+  "kind": "tile",
+  "source": "simple-icons:crowdin"
+ },
+ "crowdstrike": {
+  "file": "crowdstrike.png",
+  "kind": "image",
+  "source": "https://www.crowdstrike.com/etc.clientlibs/crowdstrike/clientlibs/crowdstrike-common/resources/favicon.ico"
+ },
+ "crustdata": {
+  "file": "crustdata.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/U2YRH6aaaO7oLNJR1oTwUbi8KQ.png"
+ },
+ "csvbox": {
+  "file": "csvbox.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "cults": {
+  "file": "cults.ico",
+  "kind": "image",
+  "source": "https://cults3d.com/favicon.ico"
+ },
+ "currencybeacon": {
+  "file": "currencybeacon.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "currentsapi": {
+  "file": "currentsapi.svg",
+  "kind": "image",
+  "source": "https://currentsapi.services/img/logo-only.svg?q=1772759572"
+ },
+ "cursor": {
+  "file": "cursor.svg",
+  "kind": "tile",
+  "source": "simple-icons:cursor"
+ },
+ "customerio": {
+  "file": "customerio.png",
+  "kind": "image",
+  "source": "https://customer.io/apple-touch-icon.png"
+ },
+ "customgpt": {
+  "file": "customgpt.png",
+  "kind": "image",
+  "source": "https://customgpt.ai/wp-content/themes/customgpt/assets/favicon/apple-touch-icon.png"
+ },
+ "customjs": {
+  "file": "customjs.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "cuttly": {
+  "file": "cuttly.png",
+  "kind": "image",
+  "source": "https://cutt.ly/img/apple-touch-icon.png"
+ },
+ "dadata": {
+  "file": "dadata.png",
+  "kind": "image",
+  "source": "https://dadata.ru/img/apple-touch-icon.png"
+ },
+ "daffy": {
+  "file": "daffy.png",
+  "kind": "image",
+  "source": "https://www.daffy.org/apple-touch-icon/180.png"
+ },
+ "daily": {
+  "file": "daily.png",
+  "kind": "image",
+  "source": "https://www.daily.co/icon.png?icon.3apzgf19zqf4s.png"
+ },
+ "dailybot": {
+  "file": "dailybot.svg",
+  "kind": "image",
+  "source": "https://www.dailybot.com/favicon.svg"
+ },
+ "dart": {
+  "file": "dart.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/659e83b16fe25e7824e48b3a/65ce9b667ac4c3ae776ba117_apple.png"
+ },
+ "data247": {
+  "file": "data247.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "databox": {
+  "file": "databox.png",
+  "kind": "image",
+  "source": "https://databox.com/wp-content/themes/databox/inc/img/favicons/apple-touch-icon.png"
+ },
+ "databricks": {
+  "file": "databricks.svg",
+  "kind": "tile",
+  "source": "simple-icons:databricks"
+ },
+ "datadog": {
+  "file": "datadog.svg",
+  "kind": "tile",
+  "source": "simple-icons:datadog"
+ },
+ "dataforseo": {
+  "file": "dataforseo.png",
+  "kind": "image",
+  "source": "https://dataforseo.com/wp-content/uploads/2022/04/cropped-favicon_512-1-180x180.png"
+ },
+ "datagma": {
+  "file": "datagma.png",
+  "kind": "image",
+  "source": "https://datagma.com/apple-touch-icon.png"
+ },
+ "datarobot": {
+  "file": "datarobot.png",
+  "kind": "image",
+  "source": "https://www.datarobot.com/wp-content/themes/datarobot6/assets/images/favicons/apple-icon-180x180.png"
+ },
+ "datascope": {
+  "file": "datascope.png",
+  "kind": "image",
+  "source": "https://datascope.io/wp-content/uploads/2020/10/Favicon-fondo-blanco.png"
+ },
+ "daytona": {
+  "file": "daytona.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "debounce": {
+  "file": "debounce.png",
+  "kind": "image",
+  "source": "https://debounce.com/wp-content/uploads/2025/12/cropped-db-logo-morewhitespace-invert-more-trounded-180x180.png"
+ },
+ "deel": {
+  "file": "deel.png",
+  "kind": "image",
+  "source": "https://www.deel.com/apple-icon.png?d2b410d8d6714d15"
+ },
+ "deepgram": {
+  "file": "deepgram.svg",
+  "kind": "tile",
+  "source": "simple-icons:deepgram"
+ },
+ "deepimage": {
+  "file": "deepimage.png",
+  "kind": "image",
+  "source": "https://deep-image.ai/apple-touch-icon.png"
+ },
+ "deepl": {
+  "file": "deepl.svg",
+  "kind": "tile",
+  "source": "simple-icons:deepl"
+ },
+ "deepseek": {
+  "file": "deepseek.svg",
+  "kind": "tile",
+  "source": "simple-icons:deepseek"
+ },
+ "demio": {
+  "file": "demio.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/639df5c77a191c7268d2f9a2/63d939e13b301514d7b3dbab_60ee09e2a0845e4356fd7641_5a86d4765e69d200011f70a5_favicon-256.png"
+ },
+ "deployhq": {
+  "file": "deployhq.png",
+  "kind": "image",
+  "source": "https://www.deployhq.com/assets/favicon-357ebe39b58f28869358da83948e76e7cadfb0791c97af34abfe346f5e3ef634.png"
+ },
+ "desktime": {
+  "file": "desktime.png",
+  "kind": "image",
+  "source": "https://desktime.com/favicon/apple-touch-icon.png"
+ },
+ "detrack": {
+  "file": "detrack.png",
+  "kind": "image",
+  "source": "https://www.detrack.com/wp-content/uploads/2022/02/cropped-Favicon-512-180x180.png"
+ },
+ "devcycle": {
+  "file": "devcycle.png",
+  "kind": "image",
+  "source": "https://devcycle.com/apple-icon.png?1d62bb615e6d0102"
+ },
+ "devolens": {
+  "file": "devolens.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6808f807c463bfccfab5e199/6813714d052f5f2e006d5502_DevolensLogoCircleMobile.png"
+ },
+ "devto": {
+  "file": "devto.webp",
+  "kind": "image",
+  "source": "https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png"
+ },
+ "dialmycalls": {
+  "file": "dialmycalls.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "dialpad": {
+  "file": "dialpad.png",
+  "kind": "image",
+  "source": "https://www.dialpad.com/assets/images/favicons/favicon-192x192.png"
+ },
+ "didit": {
+  "file": "didit.png",
+  "kind": "image",
+  "source": "https://didit.me/apple-icon.png?apple-icon.0u94h8npa_vmf.png"
+ },
+ "diffbot": {
+  "file": "diffbot.svg",
+  "kind": "image",
+  "source": "https://www.diffbot.com/favicon.svg"
+ },
+ "dify": {
+  "file": "dify.svg",
+  "kind": "tile",
+  "source": "simple-icons:dify"
+ },
+ "digicert": {
+  "file": "digicert.png",
+  "kind": "image",
+  "source": "https://www.digicert.com/apple-touch-icon.png"
+ },
+ "digitalhumani": {
+  "file": "digitalhumani.png",
+  "kind": "image",
+  "source": "https://static.wixstatic.com/media/e52a19_32ca43cd4d394f5e97d054ef8770d6e6%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/e52a19_32ca43cd4d394f5e97d054ef8770d6e6%7Emv2.png"
+ },
+ "digitalocean": {
+  "file": "digitalocean.svg",
+  "kind": "tile",
+  "source": "simple-icons:digitalocean"
+ },
+ "discord": {
+  "file": "discord.svg",
+  "kind": "tile",
+  "source": "simple-icons:discord"
+ },
+ "dnsfilter": {
+  "file": "dnsfilter.png",
+  "kind": "image",
+  "source": "https://www.dnsfilter.com/favicon.ico"
+ },
+ "dockcerts": {
+  "file": "dockcerts.ico",
+  "kind": "image",
+  "source": "https://truvera.io/favicon.ico"
+ },
+ "dockerhub": {
+  "file": "dockerhub.svg",
+  "kind": "tile",
+  "source": "simple-icons:docker"
+ },
+ "docmosis": {
+  "file": "docmosis.png",
+  "kind": "image",
+  "source": "https://cdn.docmosis.com/wp-content/uploads/2021/07/favicon-2.png?strip=all&#038;resize=180%2C180"
+ },
+ "docparser": {
+  "file": "docparser.jpg",
+  "kind": "image",
+  "source": "https://docparser.com/wp-content/uploads/2024/12/Favicon-300x300.jpg"
+ },
+ "docraptor": {
+  "file": "docraptor.ico",
+  "kind": "image",
+  "source": "https://docraptor.com/favicon.ico"
+ },
+ "docsautomator": {
+  "file": "docsautomator.png",
+  "kind": "image",
+  "source": "https://docsautomator.co/images/webclip.png"
+ },
+ "docsbot": {
+  "file": "docsbot.png",
+  "kind": "image",
+  "source": "https://docsbot.ai/apple-touch-icon.png"
+ },
+ "docsumo": {
+  "file": "docsumo.png",
+  "kind": "image",
+  "source": "https://www.docsumo.com/apple-touch-icon.png"
+ },
+ "docugenerate": {
+  "file": "docugenerate.svg",
+  "kind": "image",
+  "source": "https://www.docugenerate.com/favicon.svg"
+ },
+ "documenso": {
+  "file": "documenso.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/n1YjYo5anGvu7ELsJPaFfluXGvE.png"
+ },
+ "documint": {
+  "file": "documint.svg",
+  "kind": "image",
+  "source": "https://documint.me/api/media/file/Favicon.svg?prefix=media"
+ },
+ "docupilot": {
+  "file": "docupilot.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65cf90f17358e86945215afb/65e989d048eb7b0d0dafde43_docupilot-256x256px.png"
+ },
+ "docupipe": {
+  "file": "docupipe.ico",
+  "kind": "image",
+  "source": "https://www.docupipe.ai/favicon.ico"
+ },
+ "docupost": {
+  "file": "docupost.png",
+  "kind": "image",
+  "source": "https://docupost.com/wp-content/uploads/2022/12/logo-airplane-only-1-300x300.png"
+ },
+ "docuseal": {
+  "file": "docuseal.png",
+  "kind": "image",
+  "source": "https://www.docuseal.com/apple-icon-180x180.png"
+ },
+ "docusign": {
+  "file": "docusign.png",
+  "kind": "image",
+  "source": "https://www.docusign.com/assets/images/apple-touch-icon-180x180.png"
+ },
+ "donately": {
+  "file": "donately.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/63334c2c8ea58f2277b74981/633c3e90679b49ceb254345b_Webclip.png"
+ },
+ "doofinder": {
+  "file": "doofinder.png",
+  "kind": "image",
+  "source": "https://www.doofinder.com/main-files/uploads/2023/09/cropped-Doofinder-Favicon-96-x-96-px-180x180.png"
+ },
+ "doppler": {
+  "file": "doppler.svg",
+  "kind": "image",
+  "source": "https://cdn.sanity.io/images/q3zajrd2/production/01ad0eb786c8260c4daa709fe8a6f57fb063655e-101x100.svg?fit=max&amp;auto=format"
+ },
+ "dopplermarketing": {
+  "file": "dopplermarketing.png",
+  "kind": "image",
+  "source": "https://www.fromdoppler.com/apple-touch-icon.png?v=1.1.84"
+ },
+ "dovetail": {
+  "file": "dovetail.svg",
+  "kind": "tile",
+  "source": "simple-icons:dovetail"
+ },
+ "draftable": {
+  "file": "draftable.svg",
+  "kind": "image",
+  "source": "https://www.draftable.com/icon.svg?icon.303bm9y5mnnl2.svg"
+ },
+ "dreamstudio": {
+  "file": "dreamstudio.webp",
+  "kind": "image",
+  "source": "https://stability.ai/favicon.ico"
+ },
+ "dripcel": {
+  "file": "dripcel.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67af26a4d422446d9943c952/67b5a4c1bb4c7ab72c5194bb_Dripcel%20WebClip.png"
+ },
+ "dromo": {
+  "file": "dromo.png",
+  "kind": "image",
+  "source": "https://dromo.io/apple-touch-icon.png"
+ },
+ "dropbox": {
+  "file": "dropbox.svg",
+  "kind": "tile",
+  "source": "simple-icons:dropbox"
+ },
+ "dropboxsign": {
+  "file": "dropboxsign.svg",
+  "kind": "tile",
+  "source": "simple-icons:dropbox"
+ },
+ "dropcontact": {
+  "file": "dropcontact.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/655b8092803c160e897db876/655b8092803c160e897db913_DropcontactSymbol.png"
+ },
+ "droptocdn": {
+  "file": "droptocdn.svg",
+  "kind": "image",
+  "source": "https://droptocdn.com/favicon.svg"
+ },
+ "dub": {
+  "file": "dub.png",
+  "kind": "image",
+  "source": "https://assets.dub.co/favicons/apple-touch-icon.png"
+ },
+ "dungeonfighter": {
+  "file": "dungeonfighter.ico",
+  "kind": "image",
+  "source": "https://df.nexon.com/favicon.ico"
+ },
+ "dynamicmockups": {
+  "file": "dynamicmockups.png",
+  "kind": "image",
+  "source": "https://dynamicmockups.com/wp-content/uploads/2026/08/cropped-Group-180x180.png"
+ },
+ "e2b": {
+  "file": "e2b.jpg",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/129434473?v=4"
+ },
+ "eagledoc": {
+  "file": "eagledoc.png",
+  "kind": "image",
+  "source": "https://www.eagle-doc.com/apple-touch-icon.png"
+ },
+ "echtpost": {
+  "file": "echtpost.png",
+  "kind": "image",
+  "source": "https://echtpost.de/apple-touch-icon.png"
+ },
+ "ecologi": {
+  "file": "ecologi.png",
+  "kind": "image",
+  "source": "https://ecologi.com/apple-touch-icon.png"
+ },
+ "edenai": {
+  "file": "edenai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/61e7d259b7746e2d1df0b68d/6a63231f550a424753eaf4b3_eden%20ai%20logo%20light.png"
+ },
+ "elai": {
+  "file": "elai.png",
+  "kind": "image",
+  "source": "https://elai.io/wp-content/uploads/2022/08/android-chrome-512x512-1.png"
+ },
+ "elastic": {
+  "file": "elastic.svg",
+  "kind": "tile",
+  "source": "simple-icons:elasticcloud"
+ },
+ "elasticemail": {
+  "file": "elasticemail.png",
+  "kind": "image",
+  "source": "https://elasticemail.com/favicon.ico"
+ },
+ "elasticsearch": {
+  "file": "elasticsearch.svg",
+  "kind": "tile",
+  "source": "simple-icons:elasticsearch"
+ },
+ "elevenlabs": {
+  "file": "elevenlabs.svg",
+  "kind": "tile",
+  "source": "simple-icons:elevenlabs"
+ },
+ "elorus": {
+  "file": "elorus.ico",
+  "kind": "image",
+  "source": "https://www.elorus.com/favicon.ico"
+ },
+ "emailable": {
+  "file": "emailable.png",
+  "kind": "image",
+  "source": "https://emailable.com/images/app-icons/apple-touch-icon.png"
+ },
+ "emaillistverify": {
+  "file": "emaillistverify.png",
+  "kind": "image",
+  "source": "https://emaillistverify.com/favicon-512.png"
+ },
+ "emailoctopus": {
+  "file": "emailoctopus.png",
+  "kind": "image",
+  "source": "https://emailoctopus.com/apple-touch-icon.png"
+ },
+ "emailvalidation": {
+  "file": "emailvalidation.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "emelia": {
+  "file": "emelia.png",
+  "kind": "image",
+  "source": "https://emelia.io/favicon.ico"
+ },
+ "encodian": {
+  "file": "encodian.png",
+  "kind": "image",
+  "source": "https://www.encodian.com/app/themes/frogspark/fav.ico/apple-icon-180x180.png"
+ },
+ "endorsal": {
+  "file": "endorsal.png",
+  "kind": "image",
+  "source": "https://endorsal.io/apple-icon-180x180.png"
+ },
+ "enforcedflow": {
+  "file": "enforcedflow.png",
+  "kind": "image",
+  "source": "https://enforcedflow.com/_astro/favicon.B74aPzYi.png"
+ },
+ "enigma": {
+  "file": "enigma.png",
+  "kind": "image",
+  "source": "https://www.enigma.com/favicon-260.png"
+ },
+ "enrich": {
+  "file": "enrich.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "enrichlayer": {
+  "file": "enrichlayer.png",
+  "kind": "image",
+  "source": "https://enrichlayer.com/apple-touch-icon.png"
+ },
+ "entraid": {
+  "file": "entraid.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/2966316?v=4"
+ },
+ "eodhd": {
+  "file": "eodhd.ico",
+  "kind": "image",
+  "source": "https://eodhd.com/favicon.ico"
+ },
+ "esignatures": {
+  "file": "esignatures.png",
+  "kind": "image",
+  "source": "https://esignatures.com/apple-touch-icon.png"
+ },
+ "espocrm": {
+  "file": "espocrm.png",
+  "kind": "image",
+  "source": "https://www.espocrm.com/images/favicon-96x96.png"
+ },
+ "esputnik": {
+  "file": "esputnik.png",
+  "kind": "image",
+  "source": "https://esputnik.com/favicon.ico"
+ },
+ "evenium": {
+  "file": "evenium.png",
+  "kind": "image",
+  "source": "https://corp.evenium.com/wp-content/uploads/2023/07/cropped-Evenium-Flame-Circle-180x180.png"
+ },
+ "eventee": {
+  "file": "eventee.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/64d5f875c62eddf43295cf7a/64d5fa2f52d64bfdbda2aee1_Eventee%20Webclip.png"
+ },
+ "eventzilla": {
+  "file": "eventzilla.svg",
+  "kind": "image",
+  "source": "https://www.eventzilla.net/wp-content/uploads/2024/10/eventzillanewfavicon.svg"
+ },
+ "everhour": {
+  "file": "everhour.png",
+  "kind": "image",
+  "source": "https://everhour.com/assets/images/apple-touch-icon.png"
+ },
+ "eversign": {
+  "file": "eversign.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/687f66800b85e8425ceb6cfc/6936fdbadd0301f9885cec4e_xodo%20sign%20256x256.png"
+ },
+ "exa": {
+  "file": "exa.ico",
+  "kind": "image",
+  "source": "https://exa.ai/favicon.ico"
+ },
+ "exceptionless": {
+  "file": "exceptionless.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/5912469?v=4"
+ },
+ "explorium": {
+  "file": "explorium.png",
+  "kind": "image",
+  "source": "https://www.explorium.ai/wp-content/themes/moveo-theme/assets/icon/explorium-favicon-2026.png?ver=1788769239"
+ },
+ "extrovert": {
+  "file": "extrovert.png",
+  "kind": "image",
+  "source": "https://www.goextrovert.com/favicon/apple-touch-icon.png"
+ },
+ "factorial": {
+  "file": "factorial.png",
+  "kind": "image",
+  "source": "https://factorial.com/next-favicons/apple-touch-icon.png"
+ },
+ "fairing": {
+  "file": "fairing.webp",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/Zz7Eoictp7ASOVrnWcKPlfjaOng.webp"
+ },
+ "falai": {
+  "file": "falai.png",
+  "kind": "image",
+  "source": "https://fal.ai/apple-touch-icon.png"
+ },
+ "faraday": {
+  "file": "faraday.png",
+  "kind": "image",
+  "source": "https://faraday.ai/apple-touch-icon.png"
+ },
+ "fathom": {
+  "file": "fathom.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6899da9beccbdbe92be49b5d/6a4282cf896cae98018bfa8c_fathom_favicon.png"
+ },
+ "feathery": {
+  "file": "feathery.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5994ba20a9572800013a4d4d/60c21035597d2683f754fb91_Feathery-webclip.png"
+ },
+ "felt": {
+  "file": "felt.png",
+  "kind": "image",
+  "source": "https://felt.com/apple-touch-icon.png"
+ },
+ "fibery": {
+  "file": "fibery.svg",
+  "kind": "image",
+  "source": "https://fibery.com/favicon.svg"
+ },
+ "fidel": {
+  "file": "fidel.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/664367022d45646327c93232/664367ab12a8770afe4c67bd_logo_webclip.png"
+ },
+ "figma": {
+  "file": "figma.svg",
+  "kind": "tile",
+  "source": "simple-icons:figma"
+ },
+ "filescom": {
+  "file": "filescom.svg",
+  "kind": "image",
+  "source": "https://www.files.com/icon.svg?icon.0a718592.svg"
+ },
+ "filloutforms": {
+  "file": "filloutforms.svg",
+  "kind": "tile",
+  "source": "simple-icons:fillout"
+ },
+ "finage": {
+  "file": "finage.ico",
+  "kind": "image",
+  "source": "https://finage.co.uk/favicon.ico"
+ },
+ "financialdatasets": {
+  "file": "financialdatasets.png",
+  "kind": "image",
+  "source": "https://www.financialdatasets.ai/apple-touch-icon.png"
+ },
+ "findymail": {
+  "file": "findymail.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "finlight": {
+  "file": "finlight.png",
+  "kind": "image",
+  "source": "https://finlight.me/apple-icon.png"
+ },
+ "finmo": {
+  "file": "finmo.svg",
+  "kind": "image",
+  "source": "https://www.finmo.net/favicon.svg"
+ },
+ "finnhub": {
+  "file": "finnhub.webp",
+  "kind": "image",
+  "source": "https://finnhub.io/static/img/webp/finnhub-logo.webp"
+ },
+ "finviz": {
+  "file": "finviz.png",
+  "kind": "image",
+  "source": "https://finviz.com/apple-touch-icon.png"
+ },
+ "firebase": {
+  "file": "firebase.svg",
+  "kind": "tile",
+  "source": "simple-icons:firebase"
+ },
+ "fireberry": {
+  "file": "fireberry.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/62dd2d4e17b06b9a1df8fdfd/62de3cd2029d0241d2595ef9_Artboard%201icon.png"
+ },
+ "firecrawl": {
+  "file": "firecrawl.ico",
+  "kind": "image",
+  "source": "https://www.firecrawl.dev/favicon.ico"
+ },
+ "fireflies": {
+  "file": "fireflies.png",
+  "kind": "image",
+  "source": "https://fireflies.ai/apple-icon.png?81a7679a0c7e6094"
+ },
+ "fireworks": {
+  "file": "fireworks.png",
+  "kind": "image",
+  "source": "https://fireworks.ai/apple-icon.png?851b7c333784c47b"
+ },
+ "firmao": {
+  "file": "firmao.png",
+  "kind": "image",
+  "source": "https://firmao.io/wp-content/uploads/2026/02/cropped-favicon_firmaoo-180x180.png"
+ },
+ "fishaudio": {
+  "file": "fishaudio.png",
+  "kind": "image",
+  "source": "https://fish.audio/apple-touch-icon.png"
+ },
+ "fixer": {
+  "file": "fixer.png",
+  "kind": "image",
+  "source": "https://fixer.io/fixer_images/fixer_apple_icon.png"
+ },
+ "flatfile": {
+  "file": "flatfile.png",
+  "kind": "image",
+  "source": "https://flatfile.com/icons/icon-512x512.png?v=dc234d76e27249db97f159bad5ce98a9"
+ },
+ "fleetio": {
+  "file": "fleetio.ico",
+  "kind": "image",
+  "source": "https://www.fleetio.com/images/favicon-light.ico"
+ },
+ "float": {
+  "file": "float.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65efdf52a39c7b2ca4035c98/661dd6199c1807ddb7360905_icon-256x256.png"
+ },
+ "flotiq": {
+  "file": "flotiq.png",
+  "kind": "image",
+  "source": "https://www.flotiq.com/apple-touch-icon.png"
+ },
+ "flowise": {
+  "file": "flowise.ico",
+  "kind": "image",
+  "source": "https://flowiseai.com/favicon.ico"
+ },
+ "flutterwave": {
+  "file": "flutterwave.png",
+  "kind": "image",
+  "source": "https://flutterwave.com/_nuxt/icons/icon_512x512.776a2a.png"
+ },
+ "fluxguard": {
+  "file": "fluxguard.png",
+  "kind": "image",
+  "source": "https://fluxguard.com/apple-touch-icon.png"
+ },
+ "flyio": {
+  "file": "flyio.svg",
+  "kind": "tile",
+  "source": "simple-icons:flydotio"
+ },
+ "fofa": {
+  "file": "fofa.jpg",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/127726909?v=4"
+ },
+ "folk": {
+  "file": "folk.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/626be00c396339c5a816353b/6a16a47cc6dbf48bc20b20d7_logo.png"
+ },
+ "followupboss": {
+  "file": "followupboss.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/644fec6f9633da07ea1323cb/660c9d9611500e8ebcccde2d_favicon.png"
+ },
+ "fomo": {
+  "file": "fomo.png",
+  "kind": "image",
+  "source": "https://fomo.family/apple-touch-icon.png"
+ },
+ "forcemanager": {
+  "file": "forcemanager.svg",
+  "kind": "tile",
+  "source": "simple-icons:sage"
+ },
+ "formbricks": {
+  "file": "formbricks.svg",
+  "kind": "tile",
+  "source": "simple-icons:formbricks"
+ },
+ "formcarry": {
+  "file": "formcarry.png",
+  "kind": "image",
+  "source": "https://formcarry.com/apple-touch-icon.png"
+ },
+ "formcrafts": {
+  "file": "formcrafts.png",
+  "kind": "image",
+  "source": "https://formcrafts.com/apple-touch-icon.png"
+ },
+ "formdesk": {
+  "file": "formdesk.png",
+  "kind": "image",
+  "source": "https://formdesk.com/wp-content/themes/doubleweb_child/assets/output/images/favicon.png"
+ },
+ "formilla": {
+  "file": "formilla.png",
+  "kind": "image",
+  "source": "https://www.formilla.com/assets/salesite/images/favicon.png"
+ },
+ "formsite": {
+  "file": "formsite.png",
+  "kind": "image",
+  "source": "https://www.formsite.com/wp-content/themes/formsite-theme/assets/favicon/apple-icon-152x152.png"
+ },
+ "foursquare": {
+  "file": "foursquare.svg",
+  "kind": "tile",
+  "source": "simple-icons:foursquare"
+ },
+ "freshdesk": {
+  "file": "freshdesk.png",
+  "kind": "image",
+  "source": "https://www.freshworks.com/favicons/apple-touch-icon.png"
+ },
+ "freshservice": {
+  "file": "freshservice.png",
+  "kind": "image",
+  "source": "https://www.freshworks.com/favicons/apple-touch-icon.png"
+ },
+ "front": {
+  "file": "front.png",
+  "kind": "image",
+  "source": "https://front.com/apple-icon.png"
+ },
+ "fullenrich": {
+  "file": "fullenrich.svg",
+  "kind": "image",
+  "source": "https://fullenrich.com/_app/immutable/assets/favicon.qhQ-VE9A.svg"
+ },
+ "fullhunt": {
+  "file": "fullhunt.ico",
+  "kind": "image",
+  "source": "https://fullhunt.io/static/theme/images/logo/favicon.ico"
+ },
+ "fullstory": {
+  "file": "fullstory.png",
+  "kind": "image",
+  "source": "https://www.fullstory.com/icons/icon-512x512.png?v=7cac1bc6d731746740d72903d25cd5bf"
+ },
+ "fuseai": {
+  "file": "fuseai.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/EZBl8RXcBxRzXTJ1YEDht2nTM4.png"
+ },
+ "fusedesk": {
+  "file": "fusedesk.webp",
+  "kind": "image",
+  "source": "https://www.fusedesk.com/wp-content/uploads/2015/05/fusedesk-icon-57.png"
+ },
+ "gamma": {
+  "file": "gamma.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "gatherup": {
+  "file": "gatherup.webp",
+  "kind": "image",
+  "source": "https://gatherup.com/wp-content/uploads/2020/12/gfs-favicon-300x300.png"
+ },
+ "geekflare": {
+  "file": "geekflare.png",
+  "kind": "image",
+  "source": "https://cdn.geekflare.com/general/apple-icon.png"
+ },
+ "gemini": {
+  "file": "gemini.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlegemini"
+ },
+ "genderapi": {
+  "file": "genderapi.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "genderapiio": {
+  "file": "genderapiio.png",
+  "kind": "image",
+  "source": "https://www.genderapi.io/favicon.png"
+ },
+ "genderize": {
+  "file": "genderize.png",
+  "kind": "image",
+  "source": "https://genderize.io/favicon/genderize/apple-touch-icon.png"
+ },
+ "geoapify": {
+  "file": "geoapify.png",
+  "kind": "image",
+  "source": "https://www.geoapify.com/icons/icon-512x512.png?v=2c47dac95e540181ec657d633b8ad641"
+ },
+ "geocodio": {
+  "file": "geocodio.ico",
+  "kind": "image",
+  "source": "https://www.geocod.io/favicon.ico"
+ },
+ "geokeo": {
+  "file": "geokeo.png",
+  "kind": "image",
+  "source": "https://geokeo.com/icon.png"
+ },
+ "getform": {
+  "file": "getform.png",
+  "kind": "image",
+  "source": "https://forminit.com/favicon/apple-touch-icon.png"
+ },
+ "getprospect": {
+  "file": "getprospect.png",
+  "kind": "image",
+  "source": "https://getprospect.com/apple-icon.png"
+ },
+ "getresponse": {
+  "file": "getresponse.png",
+  "kind": "image",
+  "source": "https://www.getresponse.com/global/favicons/apple-touch-icon-180x180.png"
+ },
+ "ghost": {
+  "file": "ghost.svg",
+  "kind": "tile",
+  "source": "simple-icons:ghost"
+ },
+ "gigasheet": {
+  "file": "gigasheet.jpg",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/63c856d789d2ff615b5e9733/63cad3dd3e688471e93a105e_Gigasheet_Logo_AbstractMark_Webclip.jpg"
+ },
+ "giphy": {
+  "file": "giphy.svg",
+  "kind": "tile",
+  "source": "simple-icons:giphy"
+ },
+ "gist": {
+  "file": "gist.svg",
+  "kind": "tile",
+  "source": "simple-icons:github"
+ },
+ "gitea": {
+  "file": "gitea.svg",
+  "kind": "tile",
+  "source": "simple-icons:gitea"
+ },
+ "github": {
+  "file": "github.svg",
+  "kind": "tile",
+  "source": "simple-icons:github"
+ },
+ "gitlab": {
+  "file": "gitlab.svg",
+  "kind": "tile",
+  "source": "simple-icons:gitlab"
+ },
+ "givebutter": {
+  "file": "givebutter.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/612f5131b9c94ecd0fe9c722/612f5131b9c94e1aafe9cb21_gb-ico.png"
+ },
+ "gladia": {
+  "file": "gladia.svg",
+  "kind": "image",
+  "source": "https://www.gladia.io/favicon.svg"
+ },
+ "glasp": {
+  "file": "glasp.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "gleap": {
+  "file": "gleap.webp",
+  "kind": "image",
+  "source": "https://www.gleap.ai/webclip.webp"
+ },
+ "gleif": {
+  "file": "gleif.png",
+  "kind": "image",
+  "source": "https://www.gleif.org/apple-touch-icon.png"
+ },
+ "globalping": {
+  "file": "globalping.png",
+  "kind": "image",
+  "source": "https://globalping.io/icons/apple-touch-icon.png"
+ },
+ "gmail": {
+  "file": "gmail.svg",
+  "kind": "tile",
+  "source": "simple-icons:gmail"
+ },
+ "gocardless": {
+  "file": "gocardless.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/DttpiSG0Zmnl5Ae6JgVz0wbnkqQ.png"
+ },
+ "godial": {
+  "file": "godial.png",
+  "kind": "image",
+  "source": "https://godial.cc/wp-content/uploads/2023/09/cropped-android-chrome-512x512-1-180x180.png"
+ },
+ "gofile": {
+  "file": "gofile.png",
+  "kind": "image",
+  "source": "https://gofile.io/assets/img/favicon96.png"
+ },
+ "gong": {
+  "file": "gong.png",
+  "kind": "image",
+  "source": "https://www.gong.io/marketing-assets/apple-touch-icon.png"
+ },
+ "googleaddressvalidation": {
+  "file": "googleaddressvalidation.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlemaps"
+ },
+ "googleads": {
+  "file": "googleads.svg",
+  "kind": "tile",
+  "source": "simple-icons:googleads"
+ },
+ "googleanalytics": {
+  "file": "googleanalytics.svg",
+  "kind": "tile",
+  "source": "simple-icons:googleanalytics"
+ },
+ "googlebigquery": {
+  "file": "googlebigquery.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlebigquery"
+ },
+ "googlecalendar": {
+  "file": "googlecalendar.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlecalendar"
+ },
+ "googlechat": {
+  "file": "googlechat.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlechat"
+ },
+ "googlecloudvision": {
+  "file": "googlecloudvision.png",
+  "kind": "image",
+  "source": "https://www.gstatic.com/cgc/super_cloud_gradient.png"
+ },
+ "googlecontacts": {
+  "file": "googlecontacts.ico",
+  "kind": "image",
+  "source": "https://accounts.google.com/favicon.ico"
+ },
+ "googledocs": {
+  "file": "googledocs.svg",
+  "kind": "tile",
+  "source": "simple-icons:googledocs"
+ },
+ "googledrive": {
+  "file": "googledrive.svg",
+  "kind": "tile",
+  "source": "simple-icons:googledrive"
+ },
+ "googleforms": {
+  "file": "googleforms.svg",
+  "kind": "tile",
+  "source": "simple-icons:googleforms"
+ },
+ "googlemeet": {
+  "file": "googlemeet.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlemeet"
+ },
+ "googlesearchconsole": {
+  "file": "googlesearchconsole.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlesearchconsole"
+ },
+ "googlesheets": {
+  "file": "googlesheets.svg",
+  "kind": "tile",
+  "source": "simple-icons:googlesheets"
+ },
+ "googleslides": {
+  "file": "googleslides.svg",
+  "kind": "tile",
+  "source": "simple-icons:googleslides"
+ },
+ "googletagmanager": {
+  "file": "googletagmanager.svg",
+  "kind": "tile",
+  "source": "simple-icons:googletagmanager"
+ },
+ "googletasks": {
+  "file": "googletasks.svg",
+  "kind": "tile",
+  "source": "simple-icons:googletasks"
+ },
+ "gorgias": {
+  "file": "gorgias.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5e4ff204e7b6f80e402d407a/655f0a311c75248c5ff9756b_Social%20Avatar.png"
+ },
+ "gorilladesk": {
+  "file": "gorilladesk.png",
+  "kind": "image",
+  "source": "https://gorilladesk.com/wp-content/uploads/2019/11/cropped-512-purple-logo-300x300.png"
+ },
+ "gosquared": {
+  "file": "gosquared.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/1298873?v=4"
+ },
+ "gotable": {
+  "file": "gotable.png",
+  "kind": "image",
+  "source": "https://d2nbxhhppfsbve.cloudfront.net/assets/gotable/apple-touch-icon-962151a98c2c6633e4c62740a77554bcb23f80a3f817befbdf60ee79e9c8107b.png"
+ },
+ "gptbots": {
+  "file": "gptbots.png",
+  "kind": "image",
+  "source": "https://www.gptbots.ai/favicon.ico"
+ },
+ "grafana": {
+  "file": "grafana.svg",
+  "kind": "tile",
+  "source": "simple-icons:grafana"
+ },
+ "graphhopper": {
+  "file": "graphhopper.png",
+  "kind": "image",
+  "source": "https://www.graphhopper.com/favicon.ico"
+ },
+ "greynoise": {
+  "file": "greynoise.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/625f93b2923b4f2b1f2e7b64/625f93b2923b4f7fb02e7c32_gn_favicon_256.png"
+ },
+ "griptape": {
+  "file": "griptape.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65d658559223871198e78bca/6995e1929b75bc0cd4eecdfa_griptape%20favicon2.png"
+ },
+ "grist": {
+  "file": "grist.png",
+  "kind": "image",
+  "source": "https://www.getgrist.com/wp-content/uploads/2023/03/cropped-Grist-Favicon-180x180.png"
+ },
+ "groq": {
+  "file": "groq.png",
+  "kind": "image",
+  "source": "https://groq.com/apple-touch-icon.png"
+ },
+ "gtmetrix": {
+  "file": "gtmetrix.svg",
+  "kind": "image",
+  "source": "https://gtmetrix.com/favicon.svg"
+ },
+ "habitica": {
+  "file": "habitica.png",
+  "kind": "image",
+  "source": "https://habitica.com/static/icons/favicon_192x192.png"
+ },
+ "hackernews": {
+  "file": "hackernews.svg",
+  "kind": "tile",
+  "source": "simple-icons:ycombinator"
+ },
+ "hackerone": {
+  "file": "hackerone.svg",
+  "kind": "tile",
+  "source": "simple-icons:hackerone"
+ },
+ "hackerrankwork": {
+  "file": "hackerrankwork.svg",
+  "kind": "tile",
+  "source": "simple-icons:hackerrank"
+ },
+ "hackmd": {
+  "file": "hackmd.svg",
+  "kind": "image",
+  "source": "https://hackmd.io/favicon.svg"
+ },
+ "handwrite": {
+  "file": "handwrite.webp",
+  "kind": "image",
+  "source": "https://www.handwrite.io/favicon.ico"
+ },
+ "handwrytten": {
+  "file": "handwrytten.png",
+  "kind": "image",
+  "source": "https://cdn.handwrytten.com/www/2022/08/cropped-big512square-180x180.png"
+ },
+ "happyscribe": {
+  "file": "happyscribe.ico",
+  "kind": "image",
+  "source": "https://www.happyscribe.com/favicon.ico"
+ },
+ "harness": {
+  "file": "harness.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/34780278?v=4"
+ },
+ "harvest": {
+  "file": "harvest.png",
+  "kind": "image",
+  "source": "https://www.getharvest.com/hubfs/apple-touch-icon.png"
+ },
+ "hashnode": {
+  "file": "hashnode.svg",
+  "kind": "tile",
+  "source": "simple-icons:hashnode"
+ },
+ "haveibeenpwned": {
+  "file": "haveibeenpwned.svg",
+  "kind": "tile",
+  "source": "simple-icons:haveibeenpwned"
+ },
+ "headout": {
+  "file": "headout.png",
+  "kind": "image",
+  "source": "https://www.headout.com/static/favicons/favicon-1024x1024.png"
+ },
+ "heartbeat": {
+  "file": "heartbeat.png",
+  "kind": "image",
+  "source": "https://www.heartbeat.chat/apple-touch-icon.png"
+ },
+ "helloleads": {
+  "file": "helloleads.png",
+  "kind": "image",
+  "source": "https://www.helloleads.io/image/favicon.png"
+ },
+ "hellotracks": {
+  "file": "hellotracks.png",
+  "kind": "image",
+  "source": "https://hellotracks.com/assets/img/favicons/apple-touch-icon.png"
+ },
+ "helpdesk": {
+  "file": "helpdesk.svg",
+  "kind": "tile",
+  "source": "simple-icons:helpdesk"
+ },
+ "helpscout": {
+  "file": "helpscout.svg",
+  "kind": "tile",
+  "source": "simple-icons:helpscout"
+ },
+ "helpspot": {
+  "file": "helpspot.png",
+  "kind": "image",
+  "source": "https://www.helpspot.com/apple-touch-icon.png"
+ },
+ "helpwise": {
+  "file": "helpwise.png",
+  "kind": "image",
+  "source": "https://cdn.helpwise.io/assets/images/favicon.png"
+ },
+ "here": {
+  "file": "here.svg",
+  "kind": "tile",
+  "source": "simple-icons:here"
+ },
+ "heroku": {
+  "file": "heroku.png",
+  "kind": "image",
+  "source": "https://www.heroku.com/wp-content/uploads/2025/01/apple-touch-icon-180x180-1.png?w=180"
+ },
+ "hetzner": {
+  "file": "hetzner.svg",
+  "kind": "tile",
+  "source": "simple-icons:hetzner"
+ },
+ "hex": {
+  "file": "hex.svg",
+  "kind": "image",
+  "source": "https://hex.tech/favicon.svg"
+ },
+ "heygen": {
+  "file": "heygen.ico",
+  "kind": "image",
+  "source": "https://www.heygen.com/favicon.ico?favicon.2m321y0geyyfh.ico"
+ },
+ "heyreach": {
+  "file": "heyreach.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6a295ff72cf042cd2bb5d03a/6a2961144262510c804e6566_HQ-Favicon-1000x1000.png"
+ },
+ "heyy": {
+  "file": "heyy.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6895e296d8f9fdc10b77d52c/691a49c9b549c5fb65314f21_logo-small%20(12).png"
+ },
+ "higgsfield": {
+  "file": "higgsfield.png",
+  "kind": "image",
+  "source": "https://higgsfield.ai/apple-icon.png"
+ },
+ "highergov": {
+  "file": "highergov.png",
+  "kind": "image",
+  "source": "https://www.highergov.com/static/favicon.png"
+ },
+ "highlevellocation": {
+  "file": "highlevellocation.png",
+  "kind": "image",
+  "source": "https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/62b48689c85eccb36ca941fc.png"
+ },
+ "hitl": {
+  "file": "hitl.ico",
+  "kind": "image",
+  "source": "https://hitl.sh/favicon.ico"
+ },
+ "hitpay": {
+  "file": "hitpay.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/ZYOGxNjIKgqksXk3CutKo6Av5TE.png"
+ },
+ "hive": {
+  "file": "hive.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/gwU43bHfqpMwCjyiL0AaWhcbYs.png"
+ },
+ "hjarni": {
+  "file": "hjarni.png",
+  "kind": "image",
+  "source": "https://hjarni.com/icon.png"
+ },
+ "holded": {
+  "file": "holded.png",
+  "kind": "image",
+  "source": "https://www.holded.com/apple-touch-icon.png"
+ },
+ "honcho": {
+  "file": "honcho.svg",
+  "kind": "image",
+  "source": "https://honcho.dev/Honcho_Pixel-05.svg"
+ },
+ "honeybadger": {
+  "file": "honeybadger.svg",
+  "kind": "tile",
+  "source": "simple-icons:honeybadger"
+ },
+ "hookdeck": {
+  "file": "hookdeck.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/64021423?v=4"
+ },
+ "hostinger": {
+  "file": "hostinger.svg",
+  "kind": "tile",
+  "source": "simple-icons:hostinger"
+ },
+ "hotspotsystem": {
+  "file": "hotspotsystem.png",
+  "kind": "image",
+  "source": "https://www.hotspotsystem.com/apple-touch-icon-152x152-precomposed.png"
+ },
+ "htmlcsstoimage": {
+  "file": "htmlcsstoimage.png",
+  "kind": "image",
+  "source": "https://htmlcsstoimage.com/images/apple-icon-180x180.png"
+ },
+ "hubplanner": {
+  "file": "hubplanner.svg",
+  "kind": "image",
+  "source": "https://www.milientsoftware.com/hubfs/Milient_favicon.svg"
+ },
+ "hubspot": {
+  "file": "hubspot.svg",
+  "kind": "tile",
+  "source": "simple-icons:hubspot"
+ },
+ "huggingface": {
+  "file": "huggingface.svg",
+  "kind": "tile",
+  "source": "simple-icons:huggingface"
+ },
+ "humanitix": {
+  "file": "humanitix.png",
+  "kind": "image",
+  "source": "https://humanitix.com/apple-touch-icon.png"
+ },
+ "hunter": {
+  "file": "hunter.png",
+  "kind": "image",
+  "source": "https://hunter.io/assets/touch-icon-iphone-retina-toekunmu.png"
+ },
+ "hybridanalysis": {
+  "file": "hybridanalysis.svg",
+  "kind": "image",
+  "source": "https://hybrid-analysis.com/favicon.svg"
+ },
+ "hypeauditor": {
+  "file": "hypeauditor.ico",
+  "kind": "image",
+  "source": "https://hypeauditor.com/favicon.ico"
+ },
+ "hyperbrowser": {
+  "file": "hyperbrowser.ico",
+  "kind": "image",
+  "source": "https://www.hyperbrowser.ai/favicon.ico"
+ },
+ "ibmxforceexchange": {
+  "file": "ibmxforceexchange.png",
+  "kind": "image",
+  "source": "https://exchange.xforce.ibmcloud.com/images/shortcut-icons/apple-icon-180x180.png"
+ },
+ "icypeas": {
+  "file": "icypeas.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/68020885c1217bcae8c5e100/681098c01cc7c3c3135e7fd6_webclip.png"
+ },
+ "idealpostcodes": {
+  "file": "idealpostcodes.png",
+  "kind": "image",
+  "source": "https://ideal-postcodes.co.uk/apple-touch-icon.png"
+ },
+ "ideogram": {
+  "file": "ideogram.ico",
+  "kind": "image",
+  "source": "https://ideogram.ai/favicon.ico"
+ },
+ "ilert": {
+  "file": "ilert.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/13230510?v=4"
+ },
+ "ilovepdf": {
+  "file": "ilovepdf.png",
+  "kind": "image",
+  "source": "https://www.ilovepdf.com/img/app-icon.png"
+ },
+ "imagekit": {
+  "file": "imagekit.png",
+  "kind": "image",
+  "source": "https://imagekit.io/light-icon.png"
+ },
+ "imagerouter": {
+  "file": "imagerouter.png",
+  "kind": "image",
+  "source": "https://imagerouter.io/apple-touch-icon.png"
+ },
+ "imejis": {
+  "file": "imejis.png",
+  "kind": "image",
+  "source": "https://www.imejis.io/apple-icon-180x180.png"
+ },
+ "imgbb": {
+  "file": "imgbb.png",
+  "kind": "image",
+  "source": "https://simgbb.com/images/favicon.png"
+ },
+ "imgix": {
+  "file": "imgix.webp",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6705f4b15aee7ca914fff083/6781be1c1332a17b6b17a18a_favicon-256.webp"
+ },
+ "inblog": {
+  "file": "inblog.png",
+  "kind": "image",
+  "source": "https://inblog.ai/favicon/favicon.png"
+ },
+ "incidentio": {
+  "file": "incidentio.png",
+  "kind": "image",
+  "source": "https://incident.io/icons/icon-512x512.png"
+ },
+ "influxdbcloud": {
+  "file": "influxdbcloud.svg",
+  "kind": "tile",
+  "source": "simple-icons:influxdb"
+ },
+ "inistate": {
+  "file": "inistate.png",
+  "kind": "image",
+  "source": "https://app.inistate.com/icons/apple-icon-180x180.png"
+ },
+ "insightoai": {
+  "file": "insightoai.png",
+  "kind": "image",
+  "source": "https://insighto.ai/wp-content/uploads/2023/09/Fav-Icon-Insighto.AI_-300x300.png"
+ },
+ "instantly": {
+  "file": "instantly.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/63860c8c65e7bef4a1eeebeb/63f62e4d1df86f1bf7f133d5_cleaned_rounded.png"
+ },
+ "instatus": {
+  "file": "instatus.svg",
+  "kind": "tile",
+  "source": "simple-icons:instatus"
+ },
+ "intelliprint": {
+  "file": "intelliprint.png",
+  "kind": "image",
+  "source": "https://cdn.sanity.io/images/qcghmu1m/production/e6961d036f832b81763c71fc8c3cbd9e7c74fe23-128x128.png?w=32&amp;h=32&amp;fit=max&amp;auto=format"
+ },
+ "intercom": {
+  "file": "intercom.svg",
+  "kind": "tile",
+  "source": "simple-icons:intercom"
+ },
+ "interzoid": {
+  "file": "interzoid.jpg",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/50465512?v=4"
+ },
+ "intruder": {
+  "file": "intruder.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/61dd9339d05701b1440b323d/61dd9339d0570119050b32d6_256.png"
+ },
+ "inworld": {
+  "file": "inworld.png",
+  "kind": "image",
+  "source": "https://inworld.ai/apple-icon.png?apple-icon.41lwedso2_34h.png"
+ },
+ "ip2location": {
+  "file": "ip2location.png",
+  "kind": "image",
+  "source": "https://cdn.ip2location.com/assets/img/apple-touch-icon.png"
+ },
+ "ip2locationio": {
+  "file": "ip2locationio.png",
+  "kind": "image",
+  "source": "https://cdn.ip2location.io/assets/img/icons/apple-touch-icon.png"
+ },
+ "ip2whois": {
+  "file": "ip2whois.png",
+  "kind": "image",
+  "source": "https://www.ip2whois.com/apple-touch-icon.png"
+ },
+ "ipdataco": {
+  "file": "ipdataco.png",
+  "kind": "image",
+  "source": "https://ipdata.co/favicon.ico"
+ },
+ "ipgeolocation": {
+  "file": "ipgeolocation.png",
+  "kind": "image",
+  "source": "https://static.ipgeolocation.io/web-assets/images/brand/ipgeo-logo-152x152.png"
+ },
+ "ipinfo": {
+  "file": "ipinfo.png",
+  "kind": "image",
+  "source": "https://cdn.assets.ipinfo.io/static/deviceicons/apple-icon-precomposed.png"
+ },
+ "iplocate": {
+  "file": "iplocate.png",
+  "kind": "image",
+  "source": "https://www.iplocate.io/apple-touch-icon.png"
+ },
+ "ipregistry": {
+  "file": "ipregistry.png",
+  "kind": "image",
+  "source": "https://cdn.ipregistry.co/icons/apple-icon-180x180.png"
+ },
+ "iqairairvisual": {
+  "file": "iqairairvisual.ico",
+  "kind": "image",
+  "source": "https://dashboard.iqair.com/favicon.ico"
+ },
+ "iterable": {
+  "file": "iterable.png",
+  "kind": "image",
+  "source": "https://iterable.com/wp-content/themes/iterable/assets/images/favicon/light/favicon-32x32.png"
+ },
+ "iterate": {
+  "file": "iterate.png",
+  "kind": "image",
+  "source": "https://iteratehq.com/static/img/apple-touch-icon-512x512.png"
+ },
+ "jenkins": {
+  "file": "jenkins.svg",
+  "kind": "tile",
+  "source": "simple-icons:jenkins"
+ },
+ "jev": {
+  "file": "jev.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/kcuF2BEp5XaVfkmFB634IPRKQH0.png"
+ },
+ "jigsawstack": {
+  "file": "jigsawstack.svg",
+  "kind": "image",
+  "source": "https://jigsawstack.com/jigsaw_app_icon.svg"
+ },
+ "jina": {
+  "file": "jina.png",
+  "kind": "image",
+  "source": "https://jina.ai/icons/favicon-128x128.png"
+ },
+ "jinko": {
+  "file": "jinko.ico",
+  "kind": "image",
+  "source": "https://gojinko.com/favicon.ico?favicon.0zo_jzou56om5.ico"
+ },
+ "jira": {
+  "file": "jira.svg",
+  "kind": "tile",
+  "source": "simple-icons:jira"
+ },
+ "jobnimbus": {
+  "file": "jobnimbus.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "joggai": {
+  "file": "joggai.ico",
+  "kind": "image",
+  "source": "https://www.jogg.ai/favicon-64.ico"
+ },
+ "jotform": {
+  "file": "jotform.png",
+  "kind": "image",
+  "source": "https://cdn.jotfor.ms/assets/img/favicons/apple-touch-icon-180x180.png"
+ },
+ "jumpcloud": {
+  "file": "jumpcloud.png",
+  "kind": "image",
+  "source": "https://jumpcloud.com/wp-content/themes/jumpcloud/assets/images/favicons/apple-icon-180x180-light.png"
+ },
+ "kadoa": {
+  "file": "kadoa.svg",
+  "kind": "image",
+  "source": "https://www.kadoa.com/favicon/favicon.svg?dark"
+ },
+ "kaleido": {
+  "file": "kaleido.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5dfc18aeef0cf9644ab5ccca/6255b631d36284ba8781702a_Blue_Avatar_256x256.png"
+ },
+ "kanbanize": {
+  "file": "kanbanize.ico",
+  "kind": "image",
+  "source": "https://businessmap.io/images/favicon.ico"
+ },
+ "kanbantool": {
+  "file": "kanbantool.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "kapso": {
+  "file": "kapso.png",
+  "kind": "image",
+  "source": "https://kapso.com/apple-touch-icon.png"
+ },
+ "keenio": {
+  "file": "keenio.png",
+  "kind": "image",
+  "source": "https://keen.io/wp-content/uploads/2020/02/favicon-32x32-1.png"
+ },
+ "keywordcom": {
+  "file": "keywordcom.png",
+  "kind": "image",
+  "source": "https://keyword.com/apple-touch-icon.png"
+ },
+ "kibana": {
+  "file": "kibana.svg",
+  "kind": "tile",
+  "source": "simple-icons:kibana"
+ },
+ "kickbox": {
+  "file": "kickbox.svg",
+  "kind": "image",
+  "source": "https://kickbox.com/favicon.svg"
+ },
+ "kieai": {
+  "file": "kieai.ico",
+  "kind": "image",
+  "source": "https://kie.ai/favicon.ico"
+ },
+ "kintone": {
+  "file": "kintone.png",
+  "kind": "image",
+  "source": "https://www.kintone.com/wp-content/themes/kintone-global/assets/images/apple-touch-icon-precomposed.png?id=f947b41c9a564fc2b71d"
+ },
+ "kit": {
+  "file": "kit.png",
+  "kind": "image",
+  "source": "https://developers.kit.com/mintlify-assets/_mintlify/favicons/kit-314e57c1/Pkdyit4Q00bMDtMW/_generated/favicon/apple-touch-icon.png"
+ },
+ "klaviyo": {
+  "file": "klaviyo.png",
+  "kind": "image",
+  "source": "https://www.klaviyo.com/icons/icon-512x512.png"
+ },
+ "klazify": {
+  "file": "klazify.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "klipfolio": {
+  "file": "klipfolio.png",
+  "kind": "image",
+  "source": "https://www.klipfolio.com/favicon.png"
+ },
+ "knack": {
+  "file": "knack.png",
+  "kind": "image",
+  "source": "https://www.knack.com/uploads/2023/06/cropped-favicon-1-180x180.png"
+ },
+ "kobotoolbox": {
+  "file": "kobotoolbox.png",
+  "kind": "image",
+  "source": "https://www.kobotoolbox.org/favicon.png?2026-10-07_21-19-25"
+ },
+ "kommunicate": {
+  "file": "kommunicate.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67b47e1a7c314f1eb9f8dd7a/67b48dfeb3dabc7d83079a6a_Webclip_Kommunicate.png"
+ },
+ "kontentai": {
+  "file": "kontentai.png",
+  "kind": "image",
+  "source": "https://kontent.ai/img/favicon/apple-touch-icon.png"
+ },
+ "krakenio": {
+  "file": "krakenio.png",
+  "kind": "image",
+  "source": "https://assets.kraken.io/apple-touch-icon.png"
+ },
+ "labsmobile": {
+  "file": "labsmobile.ico",
+  "kind": "image",
+  "source": "https://www.labsmobile.com/favicon.ico"
+ },
+ "lagrowthmachine": {
+  "file": "lagrowthmachine.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6866d7c6ccdb9f9f82800626/686e2a6d298d164518517027_Webclip.png"
+ },
+ "lakeraguard": {
+  "file": "lakeraguard.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65080baa3f9a607985451de3/6526f98447db0b4b7b22493e_Lakera-Symbol-Black-256.png"
+ },
+ "landbot": {
+  "file": "landbot.jpg",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5e1c4fb5db4d5243c0021d34/61fbe5483be78212776f02c9_webclip.jpg"
+ },
+ "langbase": {
+  "file": "langbase.png",
+  "kind": "image",
+  "source": "https://langbase.com/favicon/2024/apple-touch-icon.png"
+ },
+ "langfuse": {
+  "file": "langfuse.png",
+  "kind": "image",
+  "source": "https://langfuse.com/apple-touch-icon.png"
+ },
+ "laposta": {
+  "file": "laposta.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/TZJqfBpO8eRBIVylvfHWa5iHQ.png"
+ },
+ "launchdarkly": {
+  "file": "launchdarkly.png",
+  "kind": "image",
+  "source": "https://launchdarkly.com/apple-icon.png?8354b0c15ee5b065"
+ },
+ "layerre": {
+  "file": "layerre.ico",
+  "kind": "image",
+  "source": "https://layerre.com/favicon.ico"
+ },
+ "leadboxer": {
+  "file": "leadboxer.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/BlilYuG6IEhNFc8SF54blbFRKe8.png"
+ },
+ "leadfeeder": {
+  "file": "leadfeeder.svg",
+  "kind": "image",
+  "source": "https://www.leadfeeder.com/favicon.svg"
+ },
+ "leadiq": {
+  "file": "leadiq.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/60819f9be381394642b5659e/60dccbfd2f79b364f4272d82_leadiq-icon-2.png"
+ },
+ "leadmagic": {
+  "file": "leadmagic.png",
+  "kind": "image",
+  "source": "https://leadmagic.io/apple-icon.png?v=20260829"
+ },
+ "leakix": {
+  "file": "leakix.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/68693571?v=4"
+ },
+ "leexi": {
+  "file": "leexi.png",
+  "kind": "image",
+  "source": "https://www.leexi.ai/favicon.ico"
+ },
+ "lemlist": {
+  "file": "lemlist.ico",
+  "kind": "image",
+  "source": "https://www.lemlist.com/favicon.ico"
+ },
+ "lemonsqueezy": {
+  "file": "lemonsqueezy.svg",
+  "kind": "tile",
+  "source": "simple-icons:lemonsqueezy"
+ },
+ "lessonspace": {
+  "file": "lessonspace.png",
+  "kind": "image",
+  "source": "https://www.thelessonspace.com/apple-touch-icon.png"
+ },
+ "lexoffice": {
+  "file": "lexoffice.png",
+  "kind": "image",
+  "source": "https://www.lexware.de/apple-touch-icon.png"
+ },
+ "line": {
+  "file": "line.svg",
+  "kind": "tile",
+  "source": "simple-icons:line"
+ },
+ "linear": {
+  "file": "linear.svg",
+  "kind": "tile",
+  "source": "simple-icons:linear"
+ },
+ "linguin": {
+  "file": "linguin.png",
+  "kind": "image",
+  "source": "https://linguin.ai/apple-icon-180x180.png"
+ },
+ "linkly": {
+  "file": "linkly.png",
+  "kind": "image",
+  "source": "https://app.linklyhq.com/assets/apple-touch-icon-10641cb2c5e121ae96cec4660829ea63.png?vsn=d"
+ },
+ "linkup": {
+  "file": "linkup.png",
+  "kind": "image",
+  "source": "https://www.linkup.so/_next/static/immutable/media/favicon.0nnprkm5qsjim.png"
+ },
+ "linode": {
+  "file": "linode.svg",
+  "kind": "tile",
+  "source": "simple-icons:akamai"
+ },
+ "linq": {
+  "file": "linq.png",
+  "kind": "image",
+  "source": "https://skywalker-next.linqapp.com/apple-touch-icon.png?v=3"
+ },
+ "listennotes": {
+  "file": "listennotes.png",
+  "kind": "image",
+  "source": "https://www.listennotes.com/static/v4/img/logo/apple-touch-icon.png"
+ },
+ "livesession": {
+  "file": "livesession.jpg",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67349953e5d5cf8bf9821dee/67349953e5d5cf8bf9821ee7_livesession-webclip.jpg"
+ },
+ "llmwhisperer": {
+  "file": "llmwhisperer.webp",
+  "kind": "image",
+  "source": "https://unstract.com/wp-content/uploads/2024/03/unstract-u.png"
+ },
+ "lob": {
+  "file": "lob.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5e1e5c62fa3d4447af417098/6348790a6940a6b92f0a188f_Lob%20Webclip.png"
+ },
+ "lodgify": {
+  "file": "lodgify.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "logodev": {
+  "file": "logodev.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "lokalise": {
+  "file": "lokalise.ico",
+  "kind": "image",
+  "source": "https://lokalise.com/favicon.ico"
+ },
+ "loomio": {
+  "file": "loomio.png",
+  "kind": "image",
+  "source": "https://www.loomio.com/images/brand/icon-yellow-on-white-256.png"
+ },
+ "loopsso": {
+  "file": "loopsso.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/vqkUynWM9t1cVWKFlqiYLmA1w.png"
+ },
+ "lumalabs": {
+  "file": "lumalabs.ico",
+  "kind": "image",
+  "source": "https://lumalabs.ai/favicons/favicon-black.ico"
+ },
+ "lumify": {
+  "file": "lumify.png",
+  "kind": "image",
+  "source": "https://lumify.ai/apple-touch-icon.png"
+ },
+ "lusha": {
+  "file": "lusha.webp",
+  "kind": "image",
+  "source": "https://www.lusha.com/wp-content/uploads/2020/09/cropped-Favicon-180x180.png"
+ },
+ "lyzr": {
+  "file": "lyzr.png",
+  "kind": "image",
+  "source": "https://b3591924.assetcdn.net/2.0/3591924/wp-content/uploads/2024/03/cropped-Lyzr_Logo_1-removebg-icon-180x180.png?lossy=1&strip=1&webp=1"
+ },
+ "magichour": {
+  "file": "magichour.png",
+  "kind": "image",
+  "source": "https://magichour.ai/apple-icon.png?apple-icon.0ljqqx-xj9zgh.png"
+ },
+ "mailboxlayer": {
+  "file": "mailboxlayer.png",
+  "kind": "image",
+  "source": "https://mailboxlayer.com/images/icons/mailboxlayer_icon.png"
+ },
+ "mailboxvalidator": {
+  "file": "mailboxvalidator.png",
+  "kind": "image",
+  "source": "https://www.mailboxvalidator.com/apple-touch-icon.png"
+ },
+ "mailcheck": {
+  "file": "mailcheck.png",
+  "kind": "image",
+  "source": "https://mailcheck.co/apple-touch-icon.png"
+ },
+ "mailchimp": {
+  "file": "mailchimp.svg",
+  "kind": "tile",
+  "source": "simple-icons:mailchimp"
+ },
+ "mailcoach": {
+  "file": "mailcoach.png",
+  "kind": "image",
+  "source": "https://www.mailcoach.app/favicons/apple-touch-icon.png"
+ },
+ "maildroppa": {
+  "file": "maildroppa.png",
+  "kind": "image",
+  "source": "https://maildroppa.com/apple-touch-icon.png"
+ },
+ "mailercheck": {
+  "file": "mailercheck.png",
+  "kind": "image",
+  "source": "https://www.mailercheck.com/img/containers/favicons/apple-touch-icon.png/94e539193bb716b3a3d57fe5e3805022.png"
+ },
+ "mailercloud": {
+  "file": "mailercloud.png",
+  "kind": "image",
+  "source": "https://www.mailercloud.com/favicon/apple-touch-icon.png"
+ },
+ "mailerlite": {
+  "file": "mailerlite.png",
+  "kind": "image",
+  "source": "https://www.mailerlite.com/site/themes/new/img/favicons/apple-touch-icon.png"
+ },
+ "mailersend": {
+  "file": "mailersend.png",
+  "kind": "image",
+  "source": "https://www.mailersend.com/img/containers/favicon/apple-touch-icon.png/94e539193bb716b3a3d57fe5e3805022.png"
+ },
+ "mailgun": {
+  "file": "mailgun.svg",
+  "kind": "tile",
+  "source": "simple-icons:mailgun"
+ },
+ "mailjet": {
+  "file": "mailjet.webp",
+  "kind": "image",
+  "source": "https://www.mailjet.com/wp-content/themes/simpletexting-theme-blank/assets/favicon/apple-touch-icon-512x512.png"
+ },
+ "mailslurp": {
+  "file": "mailslurp.png",
+  "kind": "image",
+  "source": "https://www.mailslurp.com/apple-touch-icon.png"
+ },
+ "mailsso": {
+  "file": "mailsso.svg",
+  "kind": "image",
+  "source": "https://mails.so/icon.svg"
+ },
+ "mailtrap": {
+  "file": "mailtrap.png",
+  "kind": "image",
+  "source": "https://mailtrap.io/app/themes/mailtrap/images/favicon/apple-touch-icon.png"
+ },
+ "maintainx": {
+  "file": "maintainx.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65ae6673d2c6ecb99ee249d1/6614e79c93cd2cbe7d24bace_webClip-9.png"
+ },
+ "make": {
+  "file": "make.svg",
+  "kind": "tile",
+  "source": "simple-icons:make"
+ },
+ "manus": {
+  "file": "manus.png",
+  "kind": "image",
+  "source": "https://manus.im/apple-icon.png?apple-icon.153es_5lvwth1.png"
+ },
+ "manyreach": {
+  "file": "manyreach.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/OKEstfgjPNuonCiQsB3pOkZwGI.png"
+ },
+ "mapbox": {
+  "file": "mapbox.svg",
+  "kind": "tile",
+  "source": "simple-icons:mapbox"
+ },
+ "mapflow": {
+  "file": "mapflow.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "mapulus": {
+  "file": "mapulus.png",
+  "kind": "image",
+  "source": "https://www.mapulus.com/apple-touch-icon.png"
+ },
+ "marketstack": {
+  "file": "marketstack.png",
+  "kind": "image",
+  "source": "https://marketstack.com/site_images/marketstack_icon.png"
+ },
+ "markupai": {
+  "file": "markupai.png",
+  "kind": "image",
+  "source": "https://markup.ai/wp-content/uploads/2025/07/cropped-markupai-favicon-180x180.png"
+ },
+ "mathpix": {
+  "file": "mathpix.png",
+  "kind": "image",
+  "source": "https://mathpix.com/images/favicon/apple-icon-180x180.png"
+ },
+ "matomo": {
+  "file": "matomo.svg",
+  "kind": "tile",
+  "source": "simple-icons:matomo"
+ },
+ "mattermost": {
+  "file": "mattermost.svg",
+  "kind": "tile",
+  "source": "simple-icons:mattermost"
+ },
+ "matterport": {
+  "file": "matterport.svg",
+  "kind": "image",
+  "source": "https://images.ctfassets.net/icnj41gkyohw/1XJtpPGI0zKF5QBrmaiNLH/523c47127070e2a7423cece0d99e8594/favicon.svg"
+ },
+ "maxio": {
+  "file": "maxio.png",
+  "kind": "image",
+  "source": "https://www.maxio.com/wp-content/themes/maxio-wp/favicons/apple-touch-icon.png"
+ },
+ "melo": {
+  "file": "melo.png",
+  "kind": "image",
+  "source": "https://www.melo.io/apple-icon-180x180.png"
+ },
+ "mem": {
+  "file": "mem.png",
+  "kind": "image",
+  "source": "https://get.mem.ai/assets/brand/apple-touch-icon.png"
+ },
+ "mem0": {
+  "file": "mem0.svg",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/2ys67ADJdvcyGmQnhp8vKWSq8.svg"
+ },
+ "merriamwebster": {
+  "file": "merriamwebster.png",
+  "kind": "image",
+  "source": "https://www.merriam-webster.com/apple-touch-icon.png"
+ },
+ "meshy": {
+  "file": "meshy.png",
+  "kind": "image",
+  "source": "https://www.meshy.ai/apple-icon.png?apple-icon.1x2jivih2_8ii.png"
+ },
+ "meta": {
+  "file": "meta.svg",
+  "kind": "tile",
+  "source": "simple-icons:meta"
+ },
+ "metabase": {
+  "file": "metabase.svg",
+  "kind": "tile",
+  "source": "simple-icons:metabase"
+ },
+ "mezmo": {
+  "file": "mezmo.svg",
+  "kind": "tile",
+  "source": "simple-icons:mezmo"
+ },
+ "microsoft365": {
+  "file": "microsoft365.svg",
+  "kind": "tile",
+  "source": "own"
+ },
+ "microsoftclarity": {
+  "file": "microsoftclarity.ico",
+  "kind": "image",
+  "source": "https://claritystatic.azureedge.net/images/logo.ico"
+ },
+ "mightynetworks": {
+  "file": "mightynetworks.svg",
+  "kind": "image",
+  "source": "https://www.mightynetworks.com/favicon.svg"
+ },
+ "mihuai": {
+  "file": "mihuai.ico",
+  "kind": "image",
+  "source": "https://mihu.ai/favicon.ico"
+ },
+ "mindbody": {
+  "file": "mindbody.png",
+  "kind": "image",
+  "source": "https://www.mindbodyonline.com/themes/mindbody/images/icons/favicons/apple-touch-icon.png"
+ },
+ "minelead": {
+  "file": "minelead.svg",
+  "kind": "image",
+  "source": "https://minelead.io/static/images/minelead-app-icon.svg"
+ },
+ "minerstat": {
+  "file": "minerstat.png",
+  "kind": "image",
+  "source": "https://minerstat.com/apple-icon.png?apple-icon.10kwzbx4b7bgy.png"
+ },
+ "mintlify": {
+  "file": "mintlify.svg",
+  "kind": "tile",
+  "source": "simple-icons:mintlify"
+ },
+ "miro": {
+  "file": "miro.svg",
+  "kind": "tile",
+  "source": "simple-icons:miro"
+ },
+ "misp": {
+  "file": "misp.png",
+  "kind": "image",
+  "source": "https://www.misp-project.org/img/apple-touch-icon.png"
+ },
+ "missive": {
+  "file": "missive.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/66c7823b4706f4a0a95d2d31/67100e63f9a272804370b0ac_missive-webclip.png"
+ },
+ "mistral": {
+  "file": "mistral.svg",
+  "kind": "tile",
+  "source": "simple-icons:mistralai"
+ },
+ "mixmax": {
+  "file": "mixmax.png",
+  "kind": "image",
+  "source": "https://www.mixmax.com/favicon.ico"
+ },
+ "mixpanel": {
+  "file": "mixpanel.svg",
+  "kind": "tile",
+  "source": "simple-icons:mixpanel"
+ },
+ "mocean": {
+  "file": "mocean.png",
+  "kind": "image",
+  "source": "https://moceanapi.com/images/favicon.png"
+ },
+ "moco": {
+  "file": "moco.png",
+  "kind": "image",
+  "source": "https://www.mocoapp.com/assets/apple-touch-icon-152x152-c84891b80ad4a495f2de03a114c224d48a342702094db65b14342d956ed94939.png"
+ },
+ "modem": {
+  "file": "modem.svg",
+  "kind": "image",
+  "source": "https://modem.ai/icon.svg?icon.0ys_qp08-dhev.svg"
+ },
+ "moderationapi": {
+  "file": "moderationapi.png",
+  "kind": "image",
+  "source": "https://moderationapi.com/apple-icon.png?apple-icon.31grcvdw8dgn9.png"
+ },
+ "mollie": {
+  "file": "mollie.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/qv5pP6IyH5pkUJsKlgG23E4RbBM.png"
+ },
+ "monday": {
+  "file": "monday.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/656da6fea306219773d04208/65af6bd6e742d497b5f23f69_645898132bbaac20f1963919_256x256.png"
+ },
+ "moneybird": {
+  "file": "moneybird.png",
+  "kind": "image",
+  "source": "https://www.moneybird.com/favicons/favicon-180.png"
+ },
+ "moonclerk": {
+  "file": "moonclerk.png",
+  "kind": "image",
+  "source": "https://www.moonclerk.com/icons/icon-512x512.png?v=4a779ed5ae52713bebf5ec7338af1068"
+ },
+ "moosend": {
+  "file": "moosend.png",
+  "kind": "image",
+  "source": "https://moosend.com/wp-content/uploads/2026/06/cropped-moosend-logomark-light-background-180x180.png"
+ },
+ "mopinion": {
+  "file": "mopinion.png",
+  "kind": "image",
+  "source": "https://media.mopinion.com/wp-content/themes/Mopinionated/images/fav/netigate/favicon-180x180.png?v=2"
+ },
+ "moretrees": {
+  "file": "moretrees.png",
+  "kind": "image",
+  "source": "https://platform.moretrees.eco/images/apple-touch-icon.png"
+ },
+ "motion": {
+  "file": "motion.svg",
+  "kind": "image",
+  "source": "https://www.usemotion.com/favicon.svg"
+ },
+ "moz": {
+  "file": "moz.png",
+  "kind": "image",
+  "source": "https://moz.com/apple-touch-icon.png"
+ },
+ "mrscraper": {
+  "file": "mrscraper.png",
+  "kind": "image",
+  "source": "https://mrscraper.com/apple-touch-icon.png"
+ },
+ "msg91": {
+  "file": "msg91.ico",
+  "kind": "image",
+  "source": "https://msg91.com/favicon.ico"
+ },
+ "mxtechnologies": {
+  "file": "mxtechnologies.png",
+  "kind": "image",
+  "source": "https://assets.mx.com/favicons/apple-touch-icon.png"
+ },
+ "mxtoolbox": {
+  "file": "mxtoolbox.png",
+  "kind": "image",
+  "source": "https://mxtoolbox.com/public/favicon/apple-touch-icon.png"
+ },
+ "myemailverifier": {
+  "file": "myemailverifier.png",
+  "kind": "image",
+  "source": "https://myemailverifier.com/images/myemailverifier-favicon.png"
+ },
+ "n8n": {
+  "file": "n8n.svg",
+  "kind": "tile",
+  "source": "simple-icons:n8n"
+ },
+ "namsor": {
+  "file": "namsor.png",
+  "kind": "image",
+  "source": "https://namsor.app/apple-touch-icon.png"
+ },
+ "nango": {
+  "file": "nango.png",
+  "kind": "image",
+  "source": "https://nango.dev/apple-touch-icon.png"
+ },
+ "nanonets": {
+  "file": "nanonets.png",
+  "kind": "image",
+  "source": "https://nanonets.com/apple-icon.png?apple-icon.01j-4josku-y7.png?dpl=dpl_8pjyqtTfVdiGKYsu5SnAusRGhAAd"
+ },
+ "nasa": {
+  "file": "nasa.svg",
+  "kind": "tile",
+  "source": "simple-icons:nasa"
+ },
+ "nasdaqdatalink": {
+  "file": "nasdaqdatalink.ico",
+  "kind": "image",
+  "source": "https://data.nasdaq.com/favicon.ico"
+ },
+ "needle": {
+  "file": "needle.png",
+  "kind": "image",
+  "source": "https://needle.app/needle-logo.png"
+ },
+ "neetoform": {
+  "file": "neetoform.ico",
+  "kind": "image",
+  "source": "https://www.neeto.com/favicon.ico"
+ },
+ "neo4j": {
+  "file": "neo4j.svg",
+  "kind": "tile",
+  "source": "simple-icons:neo4j"
+ },
+ "neon": {
+  "file": "neon.svg",
+  "kind": "tile",
+  "source": "simple-icons:neon"
+ },
+ "nethuntcrm": {
+  "file": "nethuntcrm.png",
+  "kind": "image",
+  "source": "https://nethunt.com/apple-touch-icon.png"
+ },
+ "netlas": {
+  "file": "netlas.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/79084675?v=4"
+ },
+ "netlicensing": {
+  "file": "netlicensing.png",
+  "kind": "image",
+  "source": "https://netlicensing.io/img/labs64-avatar-18x18.png"
+ },
+ "netlify": {
+  "file": "netlify.svg",
+  "kind": "tile",
+  "source": "simple-icons:netlify"
+ },
+ "neuronwriter": {
+  "file": "neuronwriter.png",
+  "kind": "image",
+  "source": "https://neuronwriter.com/wp-content/uploads/2025/01/pobrane.png"
+ },
+ "neutrino": {
+  "file": "neutrino.png",
+  "kind": "image",
+  "source": "https://www.neutrinoapi.com/apple-touch-icon.png"
+ },
+ "neverbounce": {
+  "file": "neverbounce.png",
+  "kind": "image",
+  "source": "https://www.neverbounce.com/icons/logos/favicon-nvb-512x512.png"
+ },
+ "newrelic": {
+  "file": "newrelic.svg",
+  "kind": "tile",
+  "source": "simple-icons:newrelic"
+ },
+ "newsapi": {
+  "file": "newsapi.png",
+  "kind": "image",
+  "source": "https://newsapi.org/apple-touch-icon.png"
+ },
+ "nextdns": {
+  "file": "nextdns.svg",
+  "kind": "tile",
+  "source": "simple-icons:nextdns"
+ },
+ "ngrok": {
+  "file": "ngrok.svg",
+  "kind": "tile",
+  "source": "simple-icons:ngrok"
+ },
+ "niftyimages": {
+  "file": "niftyimages.png",
+  "kind": "image",
+  "source": "https://niftyimages.com/images/logos/Logo_Round.png"
+ },
+ "ninox": {
+  "file": "ninox.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/697c688eb79bc2291521f16e/6992d9c9ced8162250f9a1cd_Ninox_webclip.png"
+ },
+ "nmkrstudio": {
+  "file": "nmkrstudio.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/627424a55a80c8659c58943a/62ab442cff6ad54237cc81e4_nmkr-webclip.png"
+ },
+ "nocodb": {
+  "file": "nocodb.png",
+  "kind": "image",
+  "source": "https://cdn.nocodb.com/marketing-site/20261015114245/images/webclip.png"
+ },
+ "nocrmio": {
+  "file": "nocrmio.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/699580632475d346db320d2f/69fb0140fdebb2fdbb30654b_nocrm-apple-touch-icon.png"
+ },
+ "noloco": {
+  "file": "noloco.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6777c60fe010fa2ddf45acb6/680b5f8a1da19e86541e5afc_Logo-WebClip.png"
+ },
+ "northflank": {
+  "file": "northflank.ico",
+  "kind": "image",
+  "source": "https://northflank.com/favicon.ico"
+ },
+ "notion": {
+  "file": "notion.svg",
+  "kind": "tile",
+  "source": "simple-icons:notion"
+ },
+ "nozbe": {
+  "file": "nozbe.png",
+  "kind": "image",
+  "source": "https://nozbe.com/images/base/favicon/196x196.png"
+ },
+ "npm": {
+  "file": "npm.svg",
+  "kind": "tile",
+  "source": "simple-icons:npm"
+ },
+ "ntfy": {
+  "file": "ntfy.ico",
+  "kind": "image",
+  "source": "https://ntfy.sh/_site/images/favicon.ico"
+ },
+ "nutrient": {
+  "file": "nutrient.png",
+  "kind": "image",
+  "source": "https://www.nutrient.io/apple-touch-icon.png"
+ },
+ "nutshell": {
+  "file": "nutshell.png",
+  "kind": "image",
+  "source": "https://www.nutshell.com/wp-content/uploads/2023/04/cropped-nutshell-logo-180x180.png"
+ },
+ "nvd": {
+  "file": "nvd.ico",
+  "kind": "image",
+  "source": "https://www.nist.gov/themes/custom/nist_www/favicon.ico"
+ },
+ "oceanio": {
+  "file": "oceanio.ico",
+  "kind": "image",
+  "source": "https://www.ocean.io/favicon.ico"
+ },
+ "ocrspace": {
+  "file": "ocrspace.png",
+  "kind": "image",
+  "source": "https://ocr.space/content/images/favicon2020.png"
+ },
+ "ocrwebservice": {
+  "file": "ocrwebservice.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "odata": {
+  "file": "odata.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/916520?v=4"
+ },
+ "odoo": {
+  "file": "odoo.ico",
+  "kind": "image",
+  "source": "https://odoocdn.com/web/image/website/1/favicon?unique=d5020f9"
+ },
+ "ollama": {
+  "file": "ollama.png",
+  "kind": "image",
+  "source": "https://ollama.com/public/apple-touch-icon.png"
+ },
+ "olostep": {
+  "file": "olostep.png",
+  "kind": "image",
+  "source": "https://www.olostep.com/images/webclip.png"
+ },
+ "omnisend": {
+  "file": "omnisend.png",
+  "kind": "image",
+  "source": "https://www.omnisend.com/wp-content/uploads/2022/07/cropped-favi-180x180.png"
+ },
+ "oncehub": {
+  "file": "oncehub.png",
+  "kind": "image",
+  "source": "https://www.oncehub.com/favicon.ico"
+ },
+ "onepagecrm": {
+  "file": "onepagecrm.png",
+  "kind": "image",
+  "source": "https://www.onepagecrm.com/apple-touch-icon.png"
+ },
+ "onepassword": {
+  "file": "onepassword.svg",
+  "kind": "tile",
+  "source": "simple-icons:1password"
+ },
+ "onesignal": {
+  "file": "onesignal.png",
+  "kind": "image",
+  "source": "https://onesignal.com/apple-touch-icon.png"
+ },
+ "onesignalorg": {
+  "file": "onesignalorg.png",
+  "kind": "image",
+  "source": "https://onesignal.com/apple-touch-icon.png"
+ },
+ "oneup": {
+  "file": "oneup.png",
+  "kind": "image",
+  "source": "https://www.oneupapp.io/favicon-96x96.png"
+ },
+ "onlyoffice": {
+  "file": "onlyoffice.svg",
+  "kind": "tile",
+  "source": "simple-icons:onlyoffice"
+ },
+ "onlysocial": {
+  "file": "onlysocial.png",
+  "kind": "image",
+  "source": "https://onlysocial.io/wp-content/uploads/2024/12/onlysocial-Icon-50x50-colored.png"
+ },
+ "openai": {
+  "file": "openai.svg",
+  "kind": "image",
+  "source": "https://developers.openai.com/favicon.svg"
+ },
+ "openalex": {
+  "file": "openalex.ico",
+  "kind": "image",
+  "source": "https://openalex.org/favicon.ico"
+ },
+ "opencage": {
+  "file": "opencage.svg",
+  "kind": "tile",
+  "source": "simple-icons:opencage"
+ },
+ "opencti": {
+  "file": "opencti.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/51881218?v=4"
+ },
+ "openfunnel": {
+  "file": "openfunnel.png",
+  "kind": "image",
+  "source": "https://openfunnel.ai/apple-icon.png?apple-icon.3d68kj_352sc0.png"
+ },
+ "opengraphio": {
+  "file": "opengraphio.png",
+  "kind": "image",
+  "source": "https://www.opengraph.io/images/opengraph-logo-set/apple-touch-icon.png"
+ },
+ "openlayer": {
+  "file": "openlayer.png",
+  "kind": "image",
+  "source": "https://www.openlayer.com/apple-icon.png?apple-icon.444moo84tfn5h.png"
+ },
+ "openregister": {
+  "file": "openregister.ico",
+  "kind": "image",
+  "source": "https://openregister.de/favicon.ico"
+ },
+ "openrouter": {
+  "file": "openrouter.svg",
+  "kind": "tile",
+  "source": "simple-icons:openrouter"
+ },
+ "openui": {
+  "file": "openui.ico",
+  "kind": "image",
+  "source": "https://www.thesys.dev/favicon.ico"
+ },
+ "openweatherapi": {
+  "file": "openweatherapi.svg",
+  "kind": "image",
+  "source": "https://openweathermap.org/icon.svg?icon.12sbjawem7k1w.svg"
+ },
+ "openwebninja": {
+  "file": "openwebninja.ico",
+  "kind": "image",
+  "source": "https://www.openwebninja.com/favicon.ico"
+ },
+ "opnform": {
+  "file": "opnform.ico",
+  "kind": "image",
+  "source": "https://opnform.com/favicon.ico"
+ },
+ "optimoroute": {
+  "file": "optimoroute.png",
+  "kind": "image",
+  "source": "https://optimoroute.com/wp-content/themes/optimoroute/apple-touch-icon-120x120.png"
+ },
+ "ordinal": {
+  "file": "ordinal.png",
+  "kind": "image",
+  "source": "https://www.tryordinal.com/apple-icon.png?apple-icon.2hpi8g92-vnqh.png?dpl=dpl_3y5q4EAEz8yY5eD8sXL7wpvu3MK7"
+ },
+ "orgo": {
+  "file": "orgo.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "orshot": {
+  "file": "orshot.png",
+  "kind": "image",
+  "source": "https://orshot.com/brand/icon-square-512.png"
+ },
+ "osv": {
+  "file": "osv.png",
+  "kind": "image",
+  "source": "https://osv.dev/static/img/favicon-32x32.png"
+ },
+ "otx": {
+  "file": "otx.ico",
+  "kind": "image",
+  "source": "https://otx.alienvault.com/favicon.ico"
+ },
+ "outline": {
+  "file": "outline.svg",
+  "kind": "tile",
+  "source": "simple-icons:outline"
+ },
+ "ovhcloud": {
+  "file": "ovhcloud.svg",
+  "kind": "tile",
+  "source": "simple-icons:ovh"
+ },
+ "pagerduty": {
+  "file": "pagerduty.svg",
+  "kind": "tile",
+  "source": "simple-icons:pagerduty"
+ },
+ "pandadoc": {
+  "file": "pandadoc.png",
+  "kind": "image",
+  "source": "https://pandadoc-prod-main-gwpy-web-static.s3.amazonaws.com/images/favicon.ico"
+ },
+ "paperform": {
+  "file": "paperform.png",
+  "kind": "image",
+  "source": "https://paperform.com/apple-touch-icon.png"
+ },
+ "paradym": {
+  "file": "paradym.ico",
+  "kind": "image",
+  "source": "https://paradym.id/favicon/favicon.ico"
+ },
+ "parallel": {
+  "file": "parallel.png",
+  "kind": "image",
+  "source": "https://parallel.ai/apple-icon.png?apple-icon.ea4d2091.png"
+ },
+ "parma": {
+  "file": "parma.png",
+  "kind": "image",
+  "source": "https://www.parma.ai/images/webclip.png"
+ },
+ "parsehub": {
+  "file": "parsehub.png",
+  "kind": "image",
+  "source": "https://www.parsehub.com/static/images/phmini2.png"
+ },
+ "parsera": {
+  "file": "parsera.ico",
+  "kind": "image",
+  "source": "https://parsera.org/favicon.ico"
+ },
+ "parseur": {
+  "file": "parseur.png",
+  "kind": "image",
+  "source": "https://parseur.com/images/parseur-logo-192.png"
+ },
+ "parsio": {
+  "file": "parsio.png",
+  "kind": "image",
+  "source": "https://parsio.io/i/apple-touch-icon.png"
+ },
+ "passcreator": {
+  "file": "passcreator.ico",
+  "kind": "image",
+  "source": "https://www.passcreator.com/_Resources/Static/Packages/Brainswarm.PasscreatorDe/Images/favicon.en.ico?bust=90e16d98"
+ },
+ "passslot": {
+  "file": "passslot.png",
+  "kind": "image",
+  "source": "https://www.passslot.com/public/passslot/favicon.png"
+ },
+ "paypal": {
+  "file": "paypal.svg",
+  "kind": "tile",
+  "source": "simple-icons:paypal"
+ },
+ "paystack": {
+  "file": "paystack.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "pdfapiio": {
+  "file": "pdfapiio.png",
+  "kind": "image",
+  "source": "https://pdf-api.io/apple-touch-icon.png"
+ },
+ "pdfco": {
+  "file": "pdfco.png",
+  "kind": "image",
+  "source": "https://pdf.co/favicon.png"
+ },
+ "pdfless": {
+  "file": "pdfless.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "pdfmonkey": {
+  "file": "pdfmonkey.png",
+  "kind": "image",
+  "source": "https://pdfmonkey.io/apple-touch-icon-fda147fffaaefb5bbc488fab6de7dd1e.png"
+ },
+ "peaka": {
+  "file": "peaka.ico",
+  "kind": "image",
+  "source": "https://www.peaka.com/assets/images/favicon.ico"
+ },
+ "pennylane": {
+  "file": "pennylane.ico",
+  "kind": "image",
+  "source": "https://www.pennylane.com/favicon.ico"
+ },
+ "penpot": {
+  "file": "penpot.svg",
+  "kind": "tile",
+  "source": "simple-icons:penpot"
+ },
+ "peopledatalabs": {
+  "file": "peopledatalabs.ico",
+  "kind": "image",
+  "source": "https://www.peopledatalabs.com/favicon.ico?favicon.32uj2hy8au1nh.ico"
+ },
+ "perigon": {
+  "file": "perigon.png",
+  "kind": "image",
+  "source": "https://perigon.io/apple-touch-icon.png"
+ },
+ "perplexity": {
+  "file": "perplexity.svg",
+  "kind": "tile",
+  "source": "simple-icons:perplexity"
+ },
+ "persistiq": {
+  "file": "persistiq.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "persona": {
+  "file": "persona.png",
+  "kind": "image",
+  "source": "https://withpersona.com/apple-touch-icon.png"
+ },
+ "personio": {
+  "file": "personio.svg",
+  "kind": "tile",
+  "source": "simple-icons:personio"
+ },
+ "pexels": {
+  "file": "pexels.svg",
+  "kind": "tile",
+  "source": "simple-icons:pexels"
+ },
+ "phantombuster": {
+  "file": "phantombuster.webp",
+  "kind": "image",
+  "source": "https://phantombuster.com/assets38766004669/icons/apple-touch-icon.webp"
+ },
+ "photoroom": {
+  "file": "photoroom.png",
+  "kind": "image",
+  "source": "https://www.photoroom.com/favicons/apple-touch-icon.png"
+ },
+ "pica": {
+  "file": "pica.png",
+  "kind": "image",
+  "source": "https://www.withone.ai/icons/apple-touch-icon.png"
+ },
+ "piggy": {
+  "file": "piggy.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/mgXAyKIScqDjvK7JGwXCoGNIs0.png"
+ },
+ "piloterr": {
+  "file": "piloterr.png",
+  "kind": "image",
+  "source": "https://www.piloterr.com/brand-assets/piloterr/apple-touch-icon.png"
+ },
+ "pilvio": {
+  "file": "pilvio.png",
+  "kind": "image",
+  "source": "https://pilvio.com/pilvio-logo.png"
+ },
+ "pinata": {
+  "file": "pinata.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/MqO0OW4TUTdzNRIiuv4IwSR9slg.png"
+ },
+ "pinecone": {
+  "file": "pinecone.ico",
+  "kind": "image",
+  "source": "https://www.pinecone.io/favicon.ico?favicon.16aah0kd0o17q.ico"
+ },
+ "pingdom": {
+  "file": "pingdom.svg",
+  "kind": "tile",
+  "source": "simple-icons:pingdom"
+ },
+ "pinterest": {
+  "file": "pinterest.svg",
+  "kind": "tile",
+  "source": "simple-icons:pinterest"
+ },
+ "pipedrive": {
+  "file": "pipedrive.png",
+  "kind": "image",
+  "source": "https://cdn.dub-1.pipedriveassets.com/www-main-renderer/_next/static/media/apple-touch-icon-152x152.8af4bcfd.png"
+ },
+ "pipelinecrm": {
+  "file": "pipelinecrm.png",
+  "kind": "image",
+  "source": "https://pipelinecrm.com/wp-content/uploads/2021/07/favicon-300x300.png"
+ },
+ "placekey": {
+  "file": "placekey.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/68f27fcf379331a1a5acc988/68f27fcf379331a1a5acc9a9_Webclip26.png"
+ },
+ "placid": {
+  "file": "placid.png",
+  "kind": "image",
+  "source": "https://placid.app/apple-icon-180x180.png"
+ },
+ "plain": {
+  "file": "plain.png",
+  "kind": "image",
+  "source": "https://framerusercontent.com/images/oPE9BwSE8LUYzrxvpHa5FCmXc.png"
+ },
+ "planetscale": {
+  "file": "planetscale.svg",
+  "kind": "tile",
+  "source": "simple-icons:planetscale"
+ },
+ "planly": {
+  "file": "planly.ico",
+  "kind": "image",
+  "source": "https://planly.com/favicon.ico"
+ },
+ "planyo": {
+  "file": "planyo.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "platerecognizer": {
+  "file": "platerecognizer.png",
+  "kind": "image",
+  "source": "https://platerecognizer.com/wp-content/uploads/2020/07/plate-recognizer-alpr-anpr-logo.png"
+ },
+ "plausible": {
+  "file": "plausible.svg",
+  "kind": "tile",
+  "source": "simple-icons:plausibleanalytics"
+ },
+ "plisio": {
+  "file": "plisio.png",
+  "kind": "image",
+  "source": "https://plisio.net/img/favicon/apple-icon-180x180.png"
+ },
+ "plivo": {
+  "file": "plivo.png",
+  "kind": "image",
+  "source": "https://www.plivo.com/favicon/apple-touch-icon.png"
+ },
+ "pneumatic": {
+  "file": "pneumatic.png",
+  "kind": "image",
+  "source": "https://www.pneumatic.app/favicon.ico"
+ },
+ "pocketsmith": {
+  "file": "pocketsmith.ico",
+  "kind": "image",
+  "source": "https://www.pocketsmith.com/favicon.ico"
+ },
+ "polygon": {
+  "file": "polygon.png",
+  "kind": "image",
+  "source": "https://massive.com/brands/favicon-massive.png"
+ },
+ "popupsmart": {
+  "file": "popupsmart.png",
+  "kind": "image",
+  "source": "https://popupsmart.com/apple-touch-icon.png"
+ },
+ "postalytics": {
+  "file": "postalytics.png",
+  "kind": "image",
+  "source": "https://cdn-dnili.nitrocdn.com/RYgOpzWWSRYjdAFBrxpYmSLGTPsKUeEf/assets/images/optimized/rev-cecd0d0/www.postalytics.com/wp-content/uploads/2017/07/cropped-postalytics-icon-180x180.png"
+ },
+ "postgrid": {
+  "file": "postgrid.png",
+  "kind": "image",
+  "source": "https://www.postgrid.com/wp-content/uploads/2026/05/cropped-favicon-180x180.png"
+ },
+ "postgridverify": {
+  "file": "postgridverify.png",
+  "kind": "image",
+  "source": "https://www.postgrid.com/wp-content/uploads/2026/05/cropped-favicon-180x180.png"
+ },
+ "posthog": {
+  "file": "posthog.svg",
+  "kind": "tile",
+  "source": "simple-icons:posthog"
+ },
+ "postman": {
+  "file": "postman.svg",
+  "kind": "tile",
+  "source": "simple-icons:postman"
+ },
+ "postmark": {
+  "file": "postmark.png",
+  "kind": "image",
+  "source": "https://postmarkapp.com/images/apple-touch-icon.png"
+ },
+ "postpone": {
+  "file": "postpone.png",
+  "kind": "image",
+  "source": "https://www.postpone.app/images/apple-touch-icon.png"
+ },
+ "predictleads": {
+  "file": "predictleads.svg",
+  "kind": "image",
+  "source": "https://predictleads.com/vite/assets/predictleads-favicon-9dD7SpqR.svg"
+ },
+ "prerender": {
+  "file": "prerender.webp",
+  "kind": "image",
+  "source": "https://prerender.io/wp-content/uploads/favicon-300x300.png"
+ },
+ "presenton": {
+  "file": "presenton.png",
+  "kind": "image",
+  "source": "https://presenton.ai/apple-icon.png?apple-icon.00_zmumb496d..png"
+ },
+ "prestashop": {
+  "file": "prestashop.svg",
+  "kind": "tile",
+  "source": "simple-icons:prestashop"
+ },
+ "printautopilot": {
+  "file": "printautopilot.ico",
+  "kind": "image",
+  "source": "https://printautopilot.com/favicon.ico"
+ },
+ "prisma": {
+  "file": "prisma.svg",
+  "kind": "tile",
+  "source": "simple-icons:prisma"
+ },
+ "prismic": {
+  "file": "prismic.svg",
+  "kind": "tile",
+  "source": "simple-icons:prismic"
+ },
+ "proabono": {
+  "file": "proabono.ico",
+  "kind": "image",
+  "source": "https://www.proabono.com/favicon.ico"
+ },
+ "processstreet": {
+  "file": "processstreet.png",
+  "kind": "image",
+  "source": "https://www.process.st/wp-content/themes/koombea/icons/apple-touch-icon-180x180.png"
+ },
+ "productboard": {
+  "file": "productboard.png",
+  "kind": "image",
+  "source": "https://www.productboard.com/apple-touch-icon.png"
+ },
+ "productlane": {
+  "file": "productlane.png",
+  "kind": "image",
+  "source": "https://productlane.com/public-icons/apple-touch-icon.png"
+ },
+ "projectbubble": {
+  "file": "projectbubble.png",
+  "kind": "image",
+  "source": "https://projectbubble.com/static/enterprise/images/ios.png"
+ },
+ "prompthub": {
+  "file": "prompthub.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/64417635e23552ed9991f5d0/649de7e26e58e0243cab3b1a_PromptHub%20Icon%20256.png"
+ },
+ "promptlayer": {
+  "file": "promptlayer.png",
+  "kind": "image",
+  "source": "https://www.promptlayer.com/icon.png?80871ce988069a1d"
+ },
+ "proofly": {
+  "file": "proofly.png",
+  "kind": "image",
+  "source": "https://proofly.io/dist/assets/images/favicon.png"
+ },
+ "prospeo": {
+  "file": "prospeo.png",
+  "kind": "image",
+  "source": "https://prospeo.io/favicon/apple-touch-icon.png"
+ },
+ "proxiedmail": {
+  "file": "proxiedmail.png",
+  "kind": "image",
+  "source": "https://proxiedmail.com/images/v2/favicons/apple-touch-icon.png"
+ },
+ "pumble": {
+  "file": "pumble.png",
+  "kind": "image",
+  "source": "https://pumble.com/assets/images/favicons/apple-touch-icon.png"
+ },
+ "purechecker": {
+  "file": "purechecker.png",
+  "kind": "image",
+  "source": "https://purechecker.com/apple-touch-icon.png"
+ },
+ "pushalert": {
+  "file": "pushalert.png",
+  "kind": "image",
+  "source": "https://cdn.pushalert.co/img/apple-touch-icon-180x180.png"
+ },
+ "pushbullet": {
+  "file": "pushbullet.svg",
+  "kind": "tile",
+  "source": "simple-icons:pushbullet"
+ },
+ "pushinator": {
+  "file": "pushinator.svg",
+  "kind": "image",
+  "source": "https://pushinator.com/logo.svg"
+ },
+ "pushover": {
+  "file": "pushover.ico",
+  "kind": "image",
+  "source": "https://pushover.net/favicon.ico"
+ },
+ "qdrant": {
+  "file": "qdrant.svg",
+  "kind": "tile",
+  "source": "simple-icons:qdrant"
+ },
+ "qonto": {
+  "file": "qonto.png",
+  "kind": "image",
+  "source": "https://qonto.com/blog/assets/apple-touch-icon-4d8a168a3ba8d53fa08beaf4d665da32d9a43f49b88fa9f08d3017e23663ef53.png"
+ },
+ "quaderno": {
+  "file": "quaderno.png",
+  "kind": "image",
+  "source": "https://quaderno.io/apple-touch-icon.png"
+ },
+ "qualys": {
+  "file": "qualys.svg",
+  "kind": "tile",
+  "source": "simple-icons:qualys"
+ },
+ "quiltt": {
+  "file": "quiltt.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6643cc066d97630f20e328a5/66f6253d7ca60b58f06ccb96_quiltt-256.png"
+ },
+ "quintadb": {
+  "file": "quintadb.png",
+  "kind": "image",
+  "source": "https://quintadb.com/apple-icon-180x180.png"
+ },
+ "quo": {
+  "file": "quo.png",
+  "kind": "image",
+  "source": "https://cdn.quo.com/favicon/android-chrome-512x512.png"
+ },
+ "radar": {
+  "file": "radar.svg",
+  "kind": "tile",
+  "source": "simple-icons:radar"
+ },
+ "rafflys": {
+  "file": "rafflys.png",
+  "kind": "image",
+  "source": "https://app-sorteos.com/apple-touch-icon.png"
+ },
+ "ragic": {
+  "file": "ragic.ico",
+  "kind": "image",
+  "source": "https://www.ragic.com/favicon.ico"
+ },
+ "railway": {
+  "file": "railway.svg",
+  "kind": "tile",
+  "source": "simple-icons:railway"
+ },
+ "raindrop": {
+  "file": "raindrop.png",
+  "kind": "image",
+  "source": "https://raindrop.io/_next/static/media/icon_128.6bddf89e.png"
+ },
+ "raisely": {
+  "file": "raisely.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/68f6c4a3bcdca22a4de5c375/694f53c6b17a8dac90621ef3_faviconV2-256.png"
+ },
+ "rawg": {
+  "file": "rawg.png",
+  "kind": "image",
+  "source": "https://rawg.io/assets/en/apple-icon-180x180.png?v=4"
+ },
+ "razorpay": {
+  "file": "razorpay.png",
+  "kind": "image",
+  "source": "https://razorpay.com/apple-touch-icon.png"
+ },
+ "readwise": {
+  "file": "readwise.ico",
+  "kind": "image",
+  "source": "https://readwise.io/favicon.ico"
+ },
+ "realphonevalidation": {
+  "file": "realphonevalidation.jpg",
+  "kind": "image",
+  "source": "https://realphonevalidation.com/wp-content/uploads/2023/08/cropped-cropped-site_logo-180x180.jpg"
+ },
+ "reamaze": {
+  "file": "reamaze.png",
+  "kind": "image",
+  "source": "https://www.reamaze.com/apple-touch-icon.png"
+ },
+ "recallai": {
+  "file": "recallai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/620d732b1f1f7b244ac89f0e/620d732c1f1f7ba1edc89f35_Favicon%20256.png"
+ },
+ "recurly": {
+  "file": "recurly.ico",
+  "kind": "image",
+  "source": "https://recurly.com/favicon.ico"
+ },
+ "redirectpizza": {
+  "file": "redirectpizza.png",
+  "kind": "image",
+  "source": "https://redirect.pizza/favicons/apple-touch-icon.png"
+ },
+ "referralrock": {
+  "file": "referralrock.ico",
+  "kind": "image",
+  "source": "https://referralrock.com/favicon.ico"
+ },
+ "refiner": {
+  "file": "refiner.png",
+  "kind": "image",
+  "source": "https://refiner.io/images/apple-touch-icon.png"
+ },
+ "removebg": {
+  "file": "removebg.svg",
+  "kind": "tile",
+  "source": "simple-icons:removedotbg"
+ },
+ "render": {
+  "file": "render.svg",
+  "kind": "tile",
+  "source": "simple-icons:render"
+ },
+ "renderform": {
+  "file": "renderform.png",
+  "kind": "image",
+  "source": "https://renderform.io/icon.png?v=1.0"
+ },
+ "rentman": {
+  "file": "rentman.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/680b7c8bdefaec9c53251168/68369deeedfbcae728f5045f_rentman-logo-256.png"
+ },
+ "repairshopr": {
+  "file": "repairshopr.png",
+  "kind": "image",
+  "source": "https://www.repairshopr.com/wp-content/uploads/2020/04/cropped-logo-R-1-180x180.png"
+ },
+ "replicate": {
+  "file": "replicate.svg",
+  "kind": "tile",
+  "source": "simple-icons:replicate"
+ },
+ "replyio": {
+  "file": "replyio.png",
+  "kind": "image",
+  "source": "https://reply.io/apple-touch-icon.png"
+ },
+ "requesttracker": {
+  "file": "requesttracker.png",
+  "kind": "image",
+  "source": "https://i0.wp.com/requesttracker.com/wp-content/uploads/2024/11/cropped-13d8eb00-c903-11eb-853d-c44e379eca57.png?fit=180%2C180&#038;ssl=1"
+ },
+ "resend": {
+  "file": "resend.svg",
+  "kind": "tile",
+  "source": "simple-icons:resend"
+ },
+ "respondio": {
+  "file": "respondio.png",
+  "kind": "image",
+  "source": "https://assets.respond.io/favicon/apple-touch-icon.png"
+ },
+ "retable": {
+  "file": "retable.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6295d1a43222795aaac32b12/654b9bbfe70a3bd4ad4ef290_Favicon%20(1).png"
+ },
+ "retellai": {
+  "file": "retellai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/64ada0f2685b2d18caa5e699/69d7b35ce160f153aa823cf0_output-Retellai%20(2).png"
+ },
+ "reteno": {
+  "file": "reteno.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/624ff35cc641a5e86c11bd6c/626d42c85217f8437d80e201_Logo(2).png"
+ },
+ "retently": {
+  "file": "retently.ico",
+  "kind": "image",
+  "source": "https://www.retently.com/favicon.ico?favicon.1j85np19lewhi.ico"
+ },
+ "revai": {
+  "file": "revai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/696faa07a3cec7ddc1af7d13/6982213dc34979aaa4557b74_webclip_rev.ai.png"
+ },
+ "revolt": {
+  "file": "revolt.svg",
+  "kind": "tile",
+  "source": "simple-icons:revoltdotchat"
+ },
+ "risk21": {
+  "file": "risk21.png",
+  "kind": "image",
+  "source": "https://21risk.com/apple-touch-icon.png"
+ },
+ "ritekit": {
+  "file": "ritekit.png",
+  "kind": "image",
+  "source": "https://ritekit.com/assets/img/ritekit/apple-icon-180x180.png"
+ },
+ "rize": {
+  "file": "rize.png",
+  "kind": "image",
+  "source": "https://rize.io/favicon.ico?favicon.1ca4wwrcrk1-w.ico"
+ },
+ "roam": {
+  "file": "roam.png",
+  "kind": "image",
+  "source": "https://ro.am/website/apple-touch-icon-1024x1024.png"
+ },
+ "roboflow": {
+  "file": "roboflow.png",
+  "kind": "image",
+  "source": "https://roboflow.com/apple-icon.png?apple-icon.44hzu8-ttqbmn.png"
+ },
+ "rocketlane": {
+  "file": "rocketlane.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6360d3edc696260ba2aecbc7/63ee279e8a3be2c0897ad856_webclip.png"
+ },
+ "rocketreach": {
+  "file": "rocketreach.png",
+  "kind": "image",
+  "source": "https://static.rocketreach.co/images/favicons/apple-icon.png?v=2020120"
+ },
+ "rollbar": {
+  "file": "rollbar.svg",
+  "kind": "tile",
+  "source": "simple-icons:rollbar"
+ },
+ "rootly": {
+  "file": "rootly.svg",
+  "kind": "image",
+  "source": "https://rootly.com/brand/favicon.svg"
+ },
+ "route4me": {
+  "file": "route4me.png",
+  "kind": "image",
+  "source": "https://apps-static.route4me.com/resources/addons/website-public/img/favicons/apple-touch-icon.png"
+ },
+ "rudderstack": {
+  "file": "rudderstack.png",
+  "kind": "image",
+  "source": "https://www.rudderstack.com/images/logos/logo-mark-dark.png"
+ },
+ "runpod": {
+  "file": "runpod.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/69ce570adca53340abab8376/69e08b4ced16e020149fc61d_favicon_www_runpod_io_256x256.png"
+ },
+ "runway": {
+  "file": "runway.png",
+  "kind": "image",
+  "source": "https://runway.com/icon.png?icon.35ps9bmugbe1e.png"
+ },
+ "safebrowsing": {
+  "file": "safebrowsing.svg",
+  "kind": "tile",
+  "source": "simple-icons:google"
+ },
+ "safetyculture": {
+  "file": "safetyculture.png",
+  "kind": "image",
+  "source": "https://mitti.com/apple-touch-icon-mitti.png"
+ },
+ "salesflare": {
+  "file": "salesflare.png",
+  "kind": "image",
+  "source": "https://salesflare.com/apple-touch-icon.png"
+ },
+ "salesforce": {
+  "file": "salesforce.ico",
+  "kind": "image",
+  "source": "https://www.salesforce.com/favicon.ico"
+ },
+ "salesmate": {
+  "file": "salesmate.png",
+  "kind": "image",
+  "source": "https://www.salesmate.io/mm-images/fav-icon-5q4xph6c.png"
+ },
+ "salesrobot": {
+  "file": "salesrobot.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67dbe6c61ee3963a8ec4128b/68cd2d8394f4470610707c8a_Android%20Chrome%20Icon%20(1).png"
+ },
+ "sanity": {
+  "file": "sanity.svg",
+  "kind": "tile",
+  "source": "simple-icons:sanity"
+ },
+ "saperly": {
+  "file": "saperly.png",
+  "kind": "image",
+  "source": "https://saperly.com/apple-touch-icon.png"
+ },
+ "satismeter": {
+  "file": "satismeter.png",
+  "kind": "image",
+  "source": "https://www.satismeter.com/wp-content/uploads/cropped-android-chrome-512x512-1-180x180.png"
+ },
+ "saucelabs": {
+  "file": "saucelabs.svg",
+  "kind": "tile",
+  "source": "simple-icons:saucelabs"
+ },
+ "scaleai": {
+  "file": "scaleai.png",
+  "kind": "image",
+  "source": "https://scale.com/static/global/favicon/v3/apple-touch-icon.png"
+ },
+ "scaleway": {
+  "file": "scaleway.svg",
+  "kind": "tile",
+  "source": "simple-icons:scaleway"
+ },
+ "scrapecreators": {
+  "file": "scrapecreators.png",
+  "kind": "image",
+  "source": "https://scrapecreators.com/apple-touch-icon.png"
+ },
+ "scrapedo": {
+  "file": "scrapedo.png",
+  "kind": "image",
+  "source": "https://scrape.do/apple-touch-icon.png"
+ },
+ "scrapegraphai": {
+  "file": "scrapegraphai.png",
+  "kind": "image",
+  "source": "https://scrapegraphai.com/apple-touch-icon.png"
+ },
+ "scrapfly": {
+  "file": "scrapfly.png",
+  "kind": "image",
+  "source": "https://scrapfly.io/apple-touch-icon.png"
+ },
+ "scrapingant": {
+  "file": "scrapingant.png",
+  "kind": "image",
+  "source": "https://scrapingant.com/images/webclip.png"
+ },
+ "scrapingbee": {
+  "file": "scrapingbee.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "screenshotone": {
+  "file": "screenshotone.png",
+  "kind": "image",
+  "source": "https://screenshotone.com/apple-touch-icon.png"
+ },
+ "seam": {
+  "file": "seam.png",
+  "kind": "image",
+  "source": "https://www.seam.co/apple-icon.png?9554b1c3fec22669"
+ },
+ "searchapi": {
+  "file": "searchapi.png",
+  "kind": "image",
+  "source": "https://www.searchapi.io/apple-touch-icon.png"
+ },
+ "seatgeek": {
+  "file": "seatgeek.svg",
+  "kind": "tile",
+  "source": "simple-icons:seatgeek"
+ },
+ "secedgar": {
+  "file": "secedgar.png",
+  "kind": "image",
+  "source": "https://www.sec.gov/themes/custom/uswds_sec/assets/img/favicons/apple-touch-icon.png"
+ },
+ "securityscorecard": {
+  "file": "securityscorecard.svg",
+  "kind": "tile",
+  "source": "simple-icons:securityscorecard"
+ },
+ "securitytrails": {
+  "file": "securitytrails.ico",
+  "kind": "image",
+  "source": "https://securitytrails.com/favicon.ico"
+ },
+ "seektable": {
+  "file": "seektable.ico",
+  "kind": "image",
+  "source": "https://www.seektable.com/favicon.ico"
+ },
+ "segment": {
+  "file": "segment.png",
+  "kind": "image",
+  "source": "https://avatars.githubusercontent.com/u/819518?v=4"
+ },
+ "semanticscholar": {
+  "file": "semanticscholar.png",
+  "kind": "image",
+  "source": "https://cdn.semanticscholar.org/96374d262d7c8584/img/apple-touch-icon-152x152.png"
+ },
+ "semrush": {
+  "file": "semrush.svg",
+  "kind": "tile",
+  "source": "simple-icons:semrush"
+ },
+ "sendbird": {
+  "file": "sendbird.png",
+  "kind": "image",
+  "source": "https://sendbird.com/_nuxt/icons/icon_512x512.e709d1.png"
+ },
+ "sendernet": {
+  "file": "sendernet.png",
+  "kind": "image",
+  "source": "https://www.sender.net/assets/touchicon-180.png?v=1"
+ },
+ "sendfox": {
+  "file": "sendfox.png",
+  "kind": "image",
+  "source": "https://sendfox.com/apple-touch-icon.png"
+ },
+ "sendgrid": {
+  "file": "sendgrid.png",
+  "kind": "image",
+  "source": "https://www.twilio.com/aem-static/content/dam/twilio-com/core-assets/social/apple-touch-icon.png"
+ },
+ "sendlane": {
+  "file": "sendlane.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/5fcfd42a1d06cd880266a30a/63dd277a865ac7e0502368e1_favicon-256x256.png"
+ },
+ "sendloop": {
+  "file": "sendloop.png",
+  "kind": "image",
+  "source": "https://sendloop.com/wp-content/uploads/2022/10/cropped-Sendloop-icon-512-180x180.png"
+ },
+ "sendpulse": {
+  "file": "sendpulse.png",
+  "kind": "image",
+  "source": "https://sendpulse.com/templates/sendpulsev1/img/favicons/apple-touch-icon.png"
+ },
+ "sendspark": {
+  "file": "sendspark.png",
+  "kind": "image",
+  "source": "https://www.sendspark.com/favicon-96x96.png"
+ },
+ "sensibo": {
+  "file": "sensibo.svg",
+  "kind": "image",
+  "source": "https://sensibo.com/cdn/shop/files/sensibo_logo_inside.svg?crop=center&height=32&v=1681719577&width=32"
+ },
+ "sentinelone": {
+  "file": "sentinelone.png",
+  "kind": "image",
+  "source": "https://www.sentinelone.com/next-assets/favicon-32x32.png"
+ },
+ "sentry": {
+  "file": "sentry.svg",
+  "kind": "tile",
+  "source": "simple-icons:sentry"
+ },
+ "seqera": {
+  "file": "seqera.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "sequenzy": {
+  "file": "sequenzy.png",
+  "kind": "image",
+  "source": "https://www.sequenzy.com/apple-touch-icon.png"
+ },
+ "serpapi": {
+  "file": "serpapi.png",
+  "kind": "image",
+  "source": "https://serpapi.com/apple-touch-icon.png"
+ },
+ "serper": {
+  "file": "serper.png",
+  "kind": "image",
+  "source": "https://serper.dev/apple-touch-icon.png"
+ },
+ "serphouse": {
+  "file": "serphouse.png",
+  "kind": "image",
+  "source": "https://www.serphouse.com/images/homePage/serphouse-logo.png"
+ },
+ "serply": {
+  "file": "serply.png",
+  "kind": "image",
+  "source": "https://serply.io/favicon/apple-touch-icon.png"
+ },
+ "serveravatar": {
+  "file": "serveravatar.png",
+  "kind": "image",
+  "source": "https://serveravatar.com/wp-content/uploads/2025/02/cropped-favicon-180x180.png"
+ },
+ "sesamehr": {
+  "file": "sesamehr.png",
+  "kind": "image",
+  "source": "https://www.sesamehr.es/wp-content/uploads/2021/03/cropped-favicon-ses-hr--180x180.png"
+ },
+ "sevdesk": {
+  "file": "sevdesk.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65c9eb8b18a74904c71e4d3c/66390d25d762a009ca906096_android-chrome-256x256.png"
+ },
+ "sevenio": {
+  "file": "sevenio.png",
+  "kind": "image",
+  "source": "https://www.seven.io/wp-content/uploads/icon-green-bold.png"
+ },
+ "shodan": {
+  "file": "shodan.png",
+  "kind": "image",
+  "source": "https://www.shodan.io/static/img/apple-touch-icon-192-4eb04af5.png"
+ },
+ "shopify": {
+  "file": "shopify.svg",
+  "kind": "tile",
+  "source": "simple-icons:shopify"
+ },
+ "shortcut": {
+  "file": "shortcut.svg",
+  "kind": "tile",
+  "source": "simple-icons:shortcut"
+ },
+ "shortenrest": {
+  "file": "shortenrest.svg",
+  "kind": "image",
+  "source": "https://shorten.rest/apple-touch-icon.svg"
+ },
+ "shortio": {
+  "file": "shortio.png",
+  "kind": "image",
+  "source": "https://short.io/favicon.png"
+ },
+ "shortpixel": {
+  "file": "shortpixel.png",
+  "kind": "image",
+  "source": "https://shortpixel.com/favicons/apple-touch-icon-180x180.png?v=2"
+ },
+ "shotstack": {
+  "file": "shotstack.png",
+  "kind": "image",
+  "source": "https://shotstack.io/apple-touch-icon.png"
+ },
+ "sideshow": {
+  "file": "sideshow.svg",
+  "kind": "image",
+  "source": "https://sideshow.sh/favicon.ico"
+ },
+ "sidetracker": {
+  "file": "sidetracker.png",
+  "kind": "image",
+  "source": "https://sidetracker.io/wp-content/uploads/2024/04/cropped-favi-192x192.png"
+ },
+ "signaturit": {
+  "file": "signaturit.svg",
+  "kind": "image",
+  "source": "https://www.signaturit.com/wp-content/uploads/2023/12/favicon-signaturit-group.svg"
+ },
+ "signpath": {
+  "file": "signpath.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "similarweb": {
+  "file": "similarweb.svg",
+  "kind": "tile",
+  "source": "simple-icons:similarweb"
+ },
+ "simlacom": {
+  "file": "simlacom.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/608aa9c186d01e674d859427/6256d5aac3234f24d5d086bc_icon%20Simla.com256.png"
+ },
+ "simpleanalytics": {
+  "file": "simpleanalytics.svg",
+  "kind": "tile",
+  "source": "simple-icons:simpleanalytics"
+ },
+ "simplelocalize": {
+  "file": "simplelocalize.svg",
+  "kind": "tile",
+  "source": "simple-icons:simplelocalize"
+ },
+ "simplero": {
+  "file": "simplero.png",
+  "kind": "image",
+  "source": "https://img.simplerousercontent.net/scaled_image/13180895/784a8dc30f894a270e1357517ea01aa5d39a9fdb/favicon-192w-192h.png"
+ },
+ "simplesat": {
+  "file": "simplesat.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/69835c4172c253147f762dca/6a4f65a805cb4b789297dc75_simplesat-icon.png"
+ },
+ "siteleaf": {
+  "file": "siteleaf.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "sitespeakai": {
+  "file": "sitespeakai.png",
+  "kind": "image",
+  "source": "https://sitespeak.ai/apple-touch-icon.png?v=ss2026a"
+ },
+ "skyvern": {
+  "file": "skyvern.png",
+  "kind": "image",
+  "source": "https://www.skyvern.com/apple-touch-icon.png"
+ },
+ "slack": {
+  "file": "slack.png",
+  "kind": "image",
+  "source": "https://a.slack-edge.com/9cc0056/img/icons/favicon-32.png"
+ },
+ "smartlead": {
+  "file": "smartlead.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6204a703ff61516512c04f55/6a6af43a690fcb45072c8410_512.png"
+ },
+ "smartproxy": {
+  "file": "smartproxy.png",
+  "kind": "image",
+  "source": "https://decodo.com/favicon/apple-touch-icon.png"
+ },
+ "smartsheet": {
+  "file": "smartsheet.png",
+  "kind": "image",
+  "source": "https://www.smartsheet.com/sites/default/files/favicons/apple-touch-icon.png"
+ },
+ "smsalert": {
+  "file": "smsalert.png",
+  "kind": "image",
+  "source": "https://www.smsalert.co.in/theme/Smsalert/img/www.smsalert.co.in-180x180.png"
+ },
+ "smtp2go": {
+  "file": "smtp2go.ico",
+  "kind": "image",
+  "source": "https://www.smtp2go.com/favicon.ico"
+ },
+ "smugmug": {
+  "file": "smugmug.svg",
+  "kind": "tile",
+  "source": "simple-icons:smugmug"
+ },
+ "sncf": {
+  "file": "sncf.svg",
+  "kind": "tile",
+  "source": "simple-icons:sncf"
+ },
+ "snowflake": {
+  "file": "snowflake.svg",
+  "kind": "tile",
+  "source": "simple-icons:snowflake"
+ },
+ "snyk": {
+  "file": "snyk.svg",
+  "kind": "tile",
+  "source": "simple-icons:snyk"
+ },
+ "solcast": {
+  "file": "solcast.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/6608b602449188ec7381f960/667ce7ea65dad19bacdad0d0_Solcast%20Webclip.png"
+ },
+ "sonarqube": {
+  "file": "sonarqube.svg",
+  "kind": "tile",
+  "source": "simple-icons:sonarqubecloud"
+ },
+ "sourcegraph": {
+  "file": "sourcegraph.svg",
+  "kind": "image",
+  "source": "https://sourcegraph.com/favicon.ico"
+ },
+ "sparkpost": {
+  "file": "sparkpost.svg",
+  "kind": "tile",
+  "source": "simple-icons:sparkpost"
+ },
+ "speechmatics": {
+  "file": "speechmatics.png",
+  "kind": "image",
+  "source": "https://www.speechmatics.com/apple-touch-icon.png"
+ },
+ "splitwise": {
+  "file": "splitwise.png",
+  "kind": "image",
+  "source": "https://www.splitwise.com/apple-touch-icon-precomposed.png"
+ },
+ "spoki": {
+  "file": "spoki.png",
+  "kind": "image",
+  "source": "https://spoki.com/apple-touch-icon.png"
+ },
+ "spondyr": {
+  "file": "spondyr.png",
+  "kind": "image",
+  "source": "https://www.spondyr.io/images/apple-touch-icon-114x114.png"
+ },
+ "spotlightr": {
+  "file": "spotlightr.png",
+  "kind": "image",
+  "source": "https://spotlightr.com/apple-touch-icon.png"
+ },
+ "square": {
+  "file": "square.svg",
+  "kind": "tile",
+  "source": "simple-icons:square"
+ },
+ "stannp": {
+  "file": "stannp.ico",
+  "kind": "image",
+  "source": "https://www.stannp.com/favicon.ico"
+ },
+ "statsig": {
+  "file": "statsig.png",
+  "kind": "image",
+  "source": "https://www.statsig.com/images/favicons/favicon180.png"
+ },
+ "statuscake": {
+  "file": "statuscake.png",
+  "kind": "image",
+  "source": "https://www.statuscake.com/wp-content/uploads/fbrfg/apple-touch-icon.png?v=3"
+ },
+ "statuspage": {
+  "file": "statuspage.svg",
+  "kind": "tile",
+  "source": "simple-icons:statuspage"
+ },
+ "stormglass": {
+  "file": "stormglass.png",
+  "kind": "image",
+  "source": "https://stormglass.io/wp-content/uploads/2025/10/cropped-favicon-180x180.png"
+ },
+ "strapi": {
+  "file": "strapi.svg",
+  "kind": "tile",
+  "source": "simple-icons:strapi"
+ },
+ "stripe": {
+  "file": "stripe.svg",
+  "kind": "tile",
+  "source": "simple-icons:stripe"
+ },
+ "suitedash": {
+  "file": "suitedash.png",
+  "kind": "image",
+  "source": "https://suitedash.com/wp-content/uploads/2018/11/cropped-SD-LogoBased-Artboards-android_icons-180x180.png"
+ },
+ "sumup": {
+  "file": "sumup.svg",
+  "kind": "tile",
+  "source": "simple-icons:sumup"
+ },
+ "supabase": {
+  "file": "supabase.svg",
+  "kind": "tile",
+  "source": "simple-icons:supabase"
+ },
+ "supadata": {
+  "file": "supadata.png",
+  "kind": "image",
+  "source": "https://supadata.ai/apple-icon.png?8f3889d209d03571"
+ },
+ "superchat": {
+  "file": "superchat.png",
+  "kind": "image",
+  "source": "https://www.superchat.com/favicon/apple-touch-icon-152x152.png"
+ },
+ "supermemory": {
+  "file": "supermemory.png",
+  "kind": "image",
+  "source": "https://supermemory.ai/apple-touch-icon.png?v=2"
+ },
+ "supportbee": {
+  "file": "supportbee.png",
+  "kind": "image",
+  "source": "https://sbeecdn.com/img/apple-touch-icon.png"
+ },
+ "surecontact": {
+  "file": "surecontact.png",
+  "kind": "image",
+  "source": "https://surecontact.com/wp-content/uploads/fbrfg/apple-touch-icon.png"
+ },
+ "surveymonkey": {
+  "file": "surveymonkey.svg",
+  "kind": "tile",
+  "source": "simple-icons:surveymonkey"
+ },
+ "svix": {
+  "file": "svix.png",
+  "kind": "image",
+  "source": "https://www.svix.com/apple-touch-icon.png"
+ },
+ "swaggerhub": {
+  "file": "swaggerhub.svg",
+  "kind": "tile",
+  "source": "simple-icons:swagger"
+ },
+ "synthflowai": {
+  "file": "synthflowai.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/67558e246490829b0a44ad8e/680f3c8cf4185727e41de2af_favicon%20large.png"
+ },
+ "tableau": {
+  "file": "tableau.png",
+  "kind": "image",
+  "source": "https://www.tableau.com/apple-touch-icon.png"
+ },
+ "taggun": {
+  "file": "taggun.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/65286447bc0a43b7b75ab81a/685b65a169a0a27b165ce774_taggun-black-256x256.png"
+ },
+ "tailscale": {
+  "file": "tailscale.svg",
+  "kind": "tile",
+  "source": "simple-icons:tailscale"
+ },
+ "tally": {
+  "file": "tally.svg",
+  "kind": "image",
+  "source": "https://tally.so/favicon.svg"
+ },
+ "tapfiliate": {
+  "file": "tapfiliate.png",
+  "kind": "image",
+  "source": "https://tapfiliate.com/wp-content/themes/site/assets-main/img/favicon/apple-touch-icon.png"
+ },
+ "tavily": {
+  "file": "tavily.png",
+  "kind": "image",
+  "source": "https://www.tavily.com/apple-icon.png?apple-icon.2rsjznomrsf77.png"
+ },
+ "taxjar": {
+  "file": "taxjar.png",
+  "kind": "image",
+  "source": "https://www.taxjar.com/wp-content/themes/TaxJar/assets/images/apple-icon-touch.png"
+ },
+ "teamtailor": {
+  "file": "teamtailor.png",
+  "kind": "image",
+  "source": "https://www.teamtailor.com/apple-touch-icon.png"
+ },
+ "teamviewer": {
+  "file": "teamviewer.svg",
+  "kind": "tile",
+  "source": "simple-icons:teamviewer"
+ },
+ "telegram": {
+  "file": "telegram.svg",
+  "kind": "tile",
+  "source": "simple-icons:telegram"
+ },
+ "telnyx": {
+  "file": "telnyx.png",
+  "kind": "image",
+  "source": "https://telnyx.com/favicon.ico"
+ },
+ "teltel": {
+  "file": "teltel.png",
+  "kind": "image",
+  "source": "https://www.teltel.io/favicon/apple-touch-icon.png"
+ },
+ "temporal": {
+  "file": "temporal.svg",
+  "kind": "tile",
+  "source": "simple-icons:temporal"
+ },
+ "tenable": {
+  "file": "tenable.png",
+  "kind": "image",
+  "source": "https://www.tenable.com/themes/custom/tenable/images-new/favicons/apple-touch-icon-180x180.png"
+ },
+ "terraform": {
+  "file": "terraform.svg",
+  "kind": "tile",
+  "source": "simple-icons:terraform"
+ },
+ "textit": {
+  "file": "textit.webp",
+  "kind": "image",
+  "source": "https://s3.amazonaws.com/static.temba.io/brand/textit/textit-fav.webp"
+ },
+ "textrazor": {
+  "file": "textrazor.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "thanksio": {
+  "file": "thanksio.svg",
+  "kind": "image",
+  "source": "https://thanks.io/favicon.svg"
+ },
+ "thecatapi": {
+  "file": "thecatapi.svg",
+  "kind": "image",
+  "source": "https://thecatapi.com/_app/immutable/assets/thecatapi-cat.74a07522.svg"
+ },
+ "thecompaniesapi": {
+  "file": "thecompaniesapi.png",
+  "kind": "image",
+  "source": "https://www.thecompaniesapi.com/images/favicons/apple-touch-icon.png"
+ },
+ "thehive": {
+  "file": "thehive.png",
+  "kind": "image",
+  "source": "https://strangebee.com/src/assets/fav/apple-touch-icon.png"
+ },
+ "theirstack": {
+  "file": "theirstack.png",
+  "kind": "image",
+  "source": "https://theirstack.com/static/generated/apple-touch-icon.png"
+ },
+ "theoddsapi": {
+  "file": "theoddsapi.svg",
+  "kind": "image",
+  "source": "https://the-odds-api.com/icon.svg"
+ },
+ "theorg": {
+  "file": "theorg.png",
+  "kind": "image",
+  "source": "https://theorg.com/_next/static/media/apple-touch-icon.64259cfd.png"
+ },
+ "ticketmaster": {
+  "file": "ticketmaster.svg",
+  "kind": "tile",
+  "source": "simple-icons:ticketmaster"
+ },
+ "tikhub": {
+  "file": "tikhub.png",
+  "kind": "image",
+  "source": "https://tikhub.io/apple-touch-icon.png"
+ },
+ "timelinesai": {
+  "file": "timelinesai.png",
+  "kind": "image",
+  "source": "https://timelines.ai/apple-icon.png?a458b430d418f2f4"
+ },
+ "tinyfish": {
+  "file": "tinyfish.png",
+  "kind": "image",
+  "source": "https://www.tinyfish.ai/favicon-for-app/apple-icon.png"
+ },
+ "tinypng": {
+  "file": "tinypng.png",
+  "kind": "image",
+  "source": "https://tinypng.com/images/apple-touch-icon.png"
+ },
+ "tinyurl": {
+  "file": "tinyurl.png",
+  "kind": "image",
+  "source": "https://tinyurl.com/images/icons/favicon-180.png"
+ },
+ "tisane": {
+  "file": "tisane.svg",
+  "kind": "image",
+  "source": "https://tisane.ai/favicon.svg"
+ },
+ "tldv": {
+  "file": "tldv.png",
+  "kind": "image",
+  "source": "https://tldv.io/favicon.ico"
+ },
+ "todoist": {
+  "file": "todoist.svg",
+  "kind": "tile",
+  "source": "simple-icons:todoist"
+ },
+ "together": {
+  "file": "together.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/69654e88dce9154b5f1206dd/69a59cff65ed0f267dd2fbe8_touchicon.png"
+ },
+ "toggl": {
+  "file": "toggl.svg",
+  "kind": "tile",
+  "source": "simple-icons:toggltrack"
+ },
+ "tomba": {
+  "file": "tomba.svg",
+  "kind": "image",
+  "source": "https://tomba.io/logo.svg"
+ },
+ "tomtom": {
+  "file": "tomtom.svg",
+  "kind": "tile",
+  "source": "simple-icons:tomtom"
+ },
+ "tpscheck": {
+  "file": "tpscheck.png",
+  "kind": "image",
+  "source": "https://www.tpscheck.uk/favicon.svg"
+ },
+ "trackdesk": {
+  "file": "trackdesk.png",
+  "kind": "image",
+  "source": "https://trackdesk.com/apple-touch-icon.png"
+ },
+ "trello": {
+  "file": "trello.svg",
+  "kind": "tile",
+  "source": "simple-icons:trello"
+ },
+ "triggercmd": {
+  "file": "triggercmd.png",
+  "kind": "image",
+  "source": "https://www.triggercmd.com/images/apple-touch-icon-180x180-precomposed.png"
+ },
+ "triggerdev": {
+  "file": "triggerdev.ico",
+  "kind": "image",
+  "source": "https://trigger.dev/favicon.ico"
+ },
+ "tripo3d": {
+  "file": "tripo3d.ico",
+  "kind": "image",
+  "source": "https://www.tripo3d.ai/favicon.ico"
+ },
+ "truelist": {
+  "file": "truelist.png",
+  "kind": "image",
+  "source": "https://truelist.io/favicons/apple-touch-icon.png"
+ },
+ "turbotpipes": {
+  "file": "turbotpipes.png",
+  "kind": "image",
+  "source": "https://turbot.com/apple-icon.png?apple-icon.261i6yx42a2fn.png"
+ },
+ "turso": {
+  "file": "turso.svg",
+  "kind": "tile",
+  "source": "simple-icons:turso"
+ },
+ "twelvedata": {
+  "file": "twelvedata.png",
+  "kind": "image",
+  "source": "https://twelvedata.com/build/favicons/favicon-180.png"
+ },
+ "twenty": {
+  "file": "twenty.svg",
+  "kind": "tile",
+  "source": "simple-icons:twenty"
+ },
+ "twilio": {
+  "file": "twilio.png",
+  "kind": "image",
+  "source": "https://www.twilio.com/content/dam/twilio-com/core-assets/social/apple-touch-icon.png"
+ },
+ "twitter": {
+  "file": "twitter.svg",
+  "kind": "tile",
+  "source": "simple-icons:x"
+ },
+ "twittershots": {
+  "file": "twittershots.ico",
+  "kind": "image",
+  "source": "https://twittershots.com/favicon.ico"
+ },
+ "twocaptcha": {
+  "file": "twocaptcha.png",
+  "kind": "image",
+  "source": "https://2captcha.com/favicon.ico"
+ },
+ "twochat": {
+  "file": "twochat.png",
+  "kind": "image",
+  "source": "https://2chat.co/favicon/apple-touch-icon.png"
+ },
+ "typecast": {
+  "file": "typecast.png",
+  "kind": "image",
+  "source": "https://typecast.ai/fav/apple-touch-icon-180.png"
+ },
+ "typeform": {
+  "file": "typeform.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/66ffe2174aa8e8d5661c2708/68b6f00951eb33cd19b77288_Frame%201867174.png"
+ },
+ "typefully": {
+  "file": "typefully.png",
+  "kind": "image",
+  "source": "https://typefully.com/icon/apple-icon.png"
+ },
+ "unifi": {
+  "file": "unifi.svg",
+  "kind": "tile",
+  "source": "simple-icons:ubiquiti"
+ },
+ "unione": {
+  "file": "unione.svg",
+  "kind": "image",
+  "source": "https://unione.io/assets/unione/favicon.svg"
+ },
+ "unisender": {
+  "file": "unisender.png",
+  "kind": "image",
+  "source": "https://www.unisender.com/apple-icon-180x180.png"
+ },
+ "unleash": {
+  "file": "unleash.png",
+  "kind": "image",
+  "source": "https://www.getunleash.io/apple-touch-icon.png"
+ },
+ "updownio": {
+  "file": "updownio.png",
+  "kind": "image",
+  "source": "https://updown.io/apple-touch-icon.png"
+ },
+ "uploadpost": {
+  "file": "uploadpost.png",
+  "kind": "image",
+  "source": "https://www.upload-post.com/apple-touch-icon.png"
+ },
+ "upstash": {
+  "file": "upstash.svg",
+  "kind": "tile",
+  "source": "simple-icons:upstash"
+ },
+ "uptimerobot": {
+  "file": "uptimerobot.png",
+  "kind": "image",
+  "source": "https://uptimerobot.com/apple-touch-icon.png"
+ },
+ "urlscan": {
+  "file": "urlscan.png",
+  "kind": "image",
+  "source": "https://urlscan.io/favicon.ico"
+ },
+ "vapi": {
+  "file": "vapi.png",
+  "kind": "image",
+  "source": "https://vapi.ai/apple-icon.png?apple-icon.09ry4e6-9jbfq.png"
+ },
+ "vastai": {
+  "file": "vastai.png",
+  "kind": "image",
+  "source": "https://vast.ai/icon.png"
+ },
+ "vault": {
+  "file": "vault.svg",
+  "kind": "tile",
+  "source": "simple-icons:vault"
+ },
+ "vectorshift": {
+  "file": "vectorshift.svg",
+  "kind": "image",
+  "source": "https://vectorshift.ai/favicon.svg"
+ },
+ "vercel": {
+  "file": "vercel.svg",
+  "kind": "tile",
+  "source": "simple-icons:vercel"
+ },
+ "vercelaigateway": {
+  "file": "vercelaigateway.png",
+  "kind": "image",
+  "source": "https://assets.vercel.com/image/upload/q_auto/front/favicon/vercel/apple-touch-icon-256x256.png"
+ },
+ "veriphone": {
+  "file": "veriphone.ico",
+  "kind": "image",
+  "source": "https://veriphone.io/favicon.ico"
+ },
+ "vestaboard": {
+  "file": "vestaboard.png",
+  "kind": "image",
+  "source": "https://www.vestaboard.com/icon.png?icon.0m0fm6vv5yvos.png"
+ },
+ "videodb": {
+  "file": "videodb.png",
+  "kind": "image",
+  "source": "https://videodb.io/assets/logos/videodb-mark.png"
+ },
+ "vies": {
+  "file": "vies.png",
+  "kind": "image",
+  "source": "https://commission.europa.eu/themes/contrib/oe_theme/images/favicons/ec/favicon.png"
+ },
+ "virustotal": {
+  "file": "virustotal.svg",
+  "kind": "tile",
+  "source": "simple-icons:virustotal"
+ },
+ "visualping": {
+  "file": "visualping.png",
+  "kind": "image",
+  "source": "https://static.visualping.io/prod/_next/static/media/apple-touch-icon.417fk004bzk1h.png"
+ },
+ "vlmrun": {
+  "file": "vlmrun.png",
+  "kind": "image",
+  "source": "https://vlm.run/apple-touch-icon.png"
+ },
+ "voiceflow": {
+  "file": "voiceflow.png",
+  "kind": "image",
+  "source": "https://www.voiceflow.com/webclip.png"
+ },
+ "vulners": {
+  "file": "vulners.ico",
+  "kind": "image",
+  "source": "https://vulners.com/static/favicon.ico"
+ },
+ "vultr": {
+  "file": "vultr.svg",
+  "kind": "tile",
+  "source": "simple-icons:vultr"
+ },
+ "vzero": {
+  "file": "vzero.svg",
+  "kind": "tile",
+  "source": "simple-icons:v0"
+ },
+ "waboxapp": {
+  "file": "waboxapp.ico",
+  "kind": "image",
+  "source": "https://www.waboxapp.com/favicon.ico"
+ },
+ "wachete": {
+  "file": "wachete.svg",
+  "kind": "image",
+  "source": "https://www.wachete.com/img/favicon/favicon.svg"
+ },
+ "wandb": {
+  "file": "wandb.png",
+  "kind": "image",
+  "source": "https://forge.coreweave.com/shell-assets/coreweave-apple-touch-icon-256-DqUDMTMd.png"
+ },
+ "wanikani": {
+  "file": "wanikani.png",
+  "kind": "image",
+  "source": "https://www.wanikani.com/apple-touch-icon.png"
+ },
+ "wasabi": {
+  "file": "wasabi.svg",
+  "kind": "tile",
+  "source": "simple-icons:wasabi"
+ },
+ "wati": {
+  "file": "wati.png",
+  "kind": "image",
+  "source": "https://www.wati.io/wp-content/uploads/2023/05/cropped-Favicon-512px-180x180.png"
+ },
+ "wazuh": {
+  "file": "wazuh.ico",
+  "kind": "image",
+  "source": "https://wazuh.com/wp-content/themes/wazuh-v3/assets/images/favicon.ico?v=1779901664998"
+ },
+ "webcrawlerapi": {
+  "file": "webcrawlerapi.png",
+  "kind": "image",
+  "source": "https://webcrawlerapi.com/apple-touch-icon.png"
+ },
+ "webex": {
+  "file": "webex.svg",
+  "kind": "tile",
+  "source": "simple-icons:webex"
+ },
+ "webflow": {
+  "file": "webflow.svg",
+  "kind": "tile",
+  "source": "simple-icons:webflow"
+ },
+ "webpushr": {
+  "file": "webpushr.png",
+  "kind": "image",
+  "source": "https://www.webpushr.com/apple-touch-icon.png"
+ },
+ "webscrapingai": {
+  "file": "webscrapingai.png",
+  "kind": "image",
+  "source": "https://webscraping.ai/apple-touch-icon.png"
+ },
+ "whatsapp": {
+  "file": "whatsapp.svg",
+  "kind": "tile",
+  "source": "simple-icons:whatsapp"
+ },
+ "whautomate": {
+  "file": "whautomate.png",
+  "kind": "image",
+  "source": "https://whautomate.com/assets/favicon.png"
+ },
+ "whoisfreaks": {
+  "file": "whoisfreaks.ico",
+  "kind": "image",
+  "source": "https://whoisfreaks.com/favicon.ico"
+ },
+ "wildapricot": {
+  "file": "wildapricot.webp",
+  "kind": "image",
+  "source": "https://www.wildapricot.com/wp-content/uploads/2026/05/cropped-wildapricot-logo-square-180x180.webp"
+ },
+ "windsorai": {
+  "file": "windsorai.png",
+  "kind": "image",
+  "source": "https://windsor.ai/wp-content/uploads/2020/02/favicon-310-300x300.png"
+ },
+ "winstonai": {
+  "file": "winstonai.png",
+  "kind": "image",
+  "source": "https://cdn.gowinston.ai/wp-content/uploads/2023/01/cropped-favicon-2-180x180.png"
+ },
+ "wise": {
+  "file": "wise.svg",
+  "kind": "tile",
+  "source": "simple-icons:wise"
+ },
+ "wisepops": {
+  "file": "wisepops.png",
+  "kind": "image",
+  "source": "https://wisepops.com/apple-touch-icon.png"
+ },
+ "wistia": {
+  "file": "wistia.png",
+  "kind": "image",
+  "source": "https://wistia.com/apple-touch-icon.png"
+ },
+ "witai": {
+  "file": "witai.png",
+  "kind": "image",
+  "source": "https://static.xx.fbcdn.net/rsrc.php/yS/r/7630oxeP32v.ico"
+ },
+ "wix": {
+  "file": "wix.svg",
+  "kind": "tile",
+  "source": "simple-icons:wix"
+ },
+ "wolframalpha": {
+  "file": "wolframalpha.ico",
+  "kind": "image",
+  "source": "https://www.wolframalpha.com/_next/static/images/favicon_b48d893b991ff67016124a4d51822e63.ico"
+ },
+ "woocommerce": {
+  "file": "woocommerce.png",
+  "kind": "image",
+  "source": "https://woocommerce.com/wp-content/uploads/2024/12/cropped-logo-w-favicon.png?w=180"
+ },
+ "woodpeckerco": {
+  "file": "woodpeckerco.png",
+  "kind": "image",
+  "source": "https://woodpecker.co/wp-content/uploads/2024/03/cropped-favicon-180x180.png"
+ },
+ "woopsocial": {
+  "file": "woopsocial.ico",
+  "kind": "image",
+  "source": "https://woopsocial.com/favicon.ico"
+ },
+ "wordpress": {
+  "file": "wordpress.svg",
+  "kind": "tile",
+  "source": "simple-icons:wordpress"
+ },
+ "workable": {
+  "file": "workable.png",
+  "kind": "image",
+  "source": "https://www.workable.com/static/apple-touch-icon.png"
+ },
+ "workiom": {
+  "file": "workiom.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/60dece8aa1eb0fa6ceb39450/66bb6c14cb96051020676a9a_Workiom.png"
+ },
+ "workos": {
+  "file": "workos.png",
+  "kind": "image",
+  "source": "https://cdn.prod.website-files.com/621f54116cab10f6e9215d8b/621f549024eb2947f6f2f7f7_Favicon%20256x256.png"
+ },
+ "worldnewsapi": {
+  "file": "worldnewsapi.svg",
+  "kind": "image",
+  "source": "https://worldnewsapi.com/img/world-news-api-logo-black.svg"
+ },
+ "wrike": {
+  "file": "wrike.ico",
+  "kind": "image",
+  "source": "https://www.wrike.com/favicon.ico"
+ },
+ "writer": {
+  "file": "writer.png",
+  "kind": "image",
+  "source": "https://writer.com/wp-content/uploads/2021/08/writer-w-logo-1.png?w=180"
+ },
+ "wufoo": {
+  "file": "wufoo.png",
+  "kind": "image",
+  "source": "https://www.wufoo.com/wp-content/themes/wufoo-site/img/favicons/apple-touch-icon.png"
+ },
+ "xai": {
+  "file": "xai.ico",
+  "kind": "image",
+  "source": "https://x.ai/favicon.ico"
+ },
+ "xata": {
+  "file": "xata.png",
+  "kind": "image",
+  "source": "https://xata.io/apple-icon.png?apple-icon.02u68ngkt6llv.png"
+ },
+ "xero": {
+  "file": "xero.svg",
+  "kind": "tile",
+  "source": "simple-icons:xero"
+ },
+ "yelp": {
+  "file": "yelp.svg",
+  "kind": "tile",
+  "source": "simple-icons:yelp"
+ },
+ "yousearch": {
+  "file": "yousearch.svg",
+  "kind": "tile",
+  "source": "initials"
+ },
+ "youtube": {
+  "file": "youtube.svg",
+  "kind": "tile",
+  "source": "simple-icons:youtube"
+ },
+ "youtubetranscript": {
+  "file": "youtubetranscript.ico",
+  "kind": "image",
+  "source": "https://www.youtube-transcript.io/favicon.ico"
+ },
+ "zap": {
+  "file": "zap.svg",
+  "kind": "tile",
+  "source": "simple-icons:zap"
+ },
+ "zendesk": {
+  "file": "zendesk.svg",
+  "kind": "tile",
+  "source": "simple-icons:zendesk"
+ },
+ "zenrows": {
+  "file": "zenrows.svg",
+  "kind": "image",
+  "source": "https://www.zenrows.com/_assets/favicon.svg?v=5"
+ },
+ "zenserp": {
+  "file": "zenserp.png",
+  "kind": "image",
+  "source": "https://zenserp.com/wp-content/themes/saasindustries/img/favicon/apple-icon-180x180.png"
+ },
+ "zep": {
+  "file": "zep.png",
+  "kind": "image",
+  "source": "https://www.getzep.com/apple-touch-icon.png"
+ },
+ "zeplin": {
+  "file": "zeplin.png",
+  "kind": "image",
+  "source": "https://zeplin.io/static/apple-touch-icon.png"
+ },
+ "zigpoll": {
+  "file": "zigpoll.png",
+  "kind": "image",
+  "source": "https://www.zigpoll.com/apple-icon-180x180.png"
+ },
+ "zixflow": {
+  "file": "zixflow.png",
+  "kind": "image",
+  "source": "https://zixflow.com/apple-icon.png?apple-icon.1xnm67d7h9gup.png"
+ },
+ "zohocrm": {
+  "file": "zohocrm.ico",
+  "kind": "image",
+  "source": "https://www.zoho.com/favicon.ico"
+ },
+ "zoom": {
+  "file": "zoom.png",
+  "kind": "image",
+  "source": "https://www.zoom.com/apple-touch-icon.png"
+ },
+ "zoomeye": {
+  "file": "zoomeye.ico",
+  "kind": "image",
+  "source": "https://www.zoomeye.ai/favicon.ico"
+ },
+ "zulip": {
+  "file": "zulip.svg",
+  "kind": "tile",
+  "source": "simple-icons:zulip"
+ },
+ "zyteapi": {
+  "file": "zyteapi.svg",
+  "kind": "tile",
+  "source": "simple-icons:zyte"
+ }
+}

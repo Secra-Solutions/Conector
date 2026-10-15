@@ -1,0 +1,16 @@
+# docker compose up -d, then open the setup link printed by: docker compose logs conector
+services:
+  conector:
+    build: .
+    image: conector:local
+    restart: unless-stopped
+    ports:
+      # Only reachable from this machine. To publish it, put an HTTPS reverse proxy in front and set CONECTOR_PUBLIC_URL.
+      - "127.0.0.1:8790:8790"
+    environment:
+      CONECTOR_PUBLIC_URL: http://localhost:8790
+    volumes:
+      - conector-data:/data
+
+volumes:
+  conector-data:
