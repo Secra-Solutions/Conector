@@ -72,7 +72,7 @@ export default [
     id: "discord", name: "Discord", category: "communication", description: "Servers, channels and messages with a bot",
     website: "https://discord.com", docs: "https://docs.discord.com/developers/reference", logo: { simpleIcons: "discord" },
     // Discord requires a User-Agent in the format “DiscordBot (url, version)”.
-    baseUrl: "https://discord.com/api/v10", headers: { "User-Agent": "DiscordBot (https://github.com/Secra-Solutions/conector, 1.0)" },
+    baseUrl: "https://discord.com/api/v10", headers: { "User-Agent": "DiscordBot (https://github.com/Secra-Solutions/Conector, 1.0)" },
     auth: { type: "header", name: "Authorization", prefix: "Bot " },
     fields: [{ id: "token", label: "Bot token", secret: true }],
     // No OAuth: a user's OAuth token cannot read or write messages in channels (only a bot can), and the OAuth “bot” scope

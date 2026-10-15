@@ -5,8 +5,8 @@ Thanks for helping. Issues and pull requests are welcome, from typo fixes to new
 ## Getting started
 
 ```bash
-git clone https://github.com/Secra-Solutions/conector.git
-cd conector
+git clone https://github.com/Secra-Solutions/Conector.git
+cd Conector
 npm install
 CONECTOR_PORT=8790 npm run dev
 ```

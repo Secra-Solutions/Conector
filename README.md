@@ -85,8 +85,8 @@ config files on each machine, for each agent. Conector puts all of it in one pla
 You need [Node.js](https://nodejs.org) 22 or later.
 
 ```bash
-git clone https://github.com/Secra-Solutions/conector.git
-cd conector
+git clone https://github.com/Secra-Solutions/Conector.git
+cd Conector
 npm install
 npm start
 ```
