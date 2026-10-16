@@ -35,6 +35,10 @@ Agents
       --dry-run                 Print what would be done, without a real token
   stdio                         Bridge for agents that only start local (stdio) servers: connects to
                                 CONECTOR_URL (default http://localhost:8790/mcp) with CONECTOR_TOKEN
+  mcp [--user <email>] [--apps a,b]
+                                MCP server over stdio in this process, reading the data directory directly
+                                (no web server or token), as that user (default: the only user) or with the
+                                shared connections only
 
 Apps
   apps [--connected]            List the app catalog (or only connected apps)
@@ -242,6 +246,17 @@ if (command === "start") {
       console.log(`\n${list.length} apps${opt.connected ? " connected (shared)" : ""}.`);
     },
     install: (a) => install(a, { CONFIG, auth }),
+    async mcp() {
+      // Same tools as the HTTP endpoint, but served in this process: whoever can run it can already read the data directory.
+      const users = auth.listUsers();
+      const user = opt.user ? userByEmail(opt.user) : users.length === 1 ? users[0] : null;
+      if (user?.disabledAt) fail(`${user.email} is disabled.`);
+      const apps = opt.apps ? opt.apps.split(",").map((s) => s.trim()).filter(Boolean) : ["*"];
+      const { createMcpServer } = await import("../src/mcp.js");
+      const { StdioServerTransport } = await import("@modelcontextprotocol/sdk/server/stdio.js");
+      await createMcpServer({ name: "stdio (local)", userId: user?.id ?? null, apps }).connect(new StdioServerTransport());
+      console.error(`[conector] MCP over stdio as ${user ? user.email : "the shared connections"}${apps.includes("*") ? "" : ` (${apps.join(", ")})`}.`);
+    },
   };
   if (!commands[command]) fail(`unknown command "${command}". Run "conector help".`);
   await commands[command](args);

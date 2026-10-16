@@ -136,7 +136,8 @@ file only exposes the panel on `127.0.0.1:8790`. Images for amd64 and arm64 are 
 Each agent authenticates with its own access token (`cnr_…`) and talks to `http://<server>/mcp` over Streamable HTTP,
 with an `Authorization: Bearer` header. Agents that can only start local (stdio) servers use the bundled bridge,
 `bin/stdio-bridge.js` (or `conector stdio`), configured with `CONECTOR_URL` and `CONECTOR_TOKEN`. It has no
-dependencies, so you can copy it to any machine with Node.js.
+dependencies, so you can copy it to any machine with Node.js. On the machine where Conector stores its data, an agent
+can also start `conector mcp`, which serves the same tools over stdio without the web server or a token.
 
 | | Agents |
 |---|---|
@@ -235,6 +236,7 @@ conector token <email> [--apps a,b] [--name N]
 conector revoke <token id>
 conector agents | install <agent> Add Conector to an agent
 conector stdio                    stdio bridge for agents that only start local servers
+conector mcp [--user <email>]     MCP over stdio on this machine, without the web server or a token
 conector apps [--connected]       List the catalog
 ```
 
