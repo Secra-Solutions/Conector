@@ -1,0 +1,45 @@
+name: Bug report
+description: Something doesn't work as documented.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead. Never paste tokens, API keys or passwords.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Apps → …
+        2. Click …
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Conector version
+      description: "`/healthz` shows it, for example 0.1.1."
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How do you run Conector?
+      options: [npm / npx, Docker, From source (git clone), Other]
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and app involved (if any)
+      placeholder: Claude Code 2.x with GitHub
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant server output or the agent's MCP log, with secrets removed.
+      render: text

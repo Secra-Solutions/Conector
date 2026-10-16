@@ -1,0 +1,29 @@
+name: Agent request
+description: Ask for install instructions for an AI agent or MCP client that isn't supported yet.
+labels: [agent request]
+body:
+  - type: input
+    id: agent
+    attributes:
+      label: Agent or MCP client
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Link to its MCP documentation
+      description: Where it explains how to add an MCP server (a CLI command, a config file or a settings screen).
+    validations:
+      required: true
+  - type: dropdown
+    id: transport
+    attributes:
+      label: Which transports does it support?
+      multiple: true
+      options: [Streamable HTTP, stdio (local command), SSE, I don't know]
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd like to add it myself (agents live in src/agents.json).

@@ -1,12 +1,16 @@
 // Runtime configuration, read once from environment variables (see .env.example). A local `.env` file is loaded too.
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 
 export const ROOT = path.resolve(import.meta.dirname, "..");
 export const VERSION = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8")).version;
+// Installed from npm (npx, npm install -g), the package folder can be replaced or deleted at any time, so the data lives in
+// ~/.conector and the .env file is read from the current directory instead.
+const INSTALLED = ROOT.split(path.sep).includes("node_modules");
 
 // Minimal .env support (KEY=value lines); real environment variables win.
-const envFile = path.join(ROOT, ".env");
+const envFile = path.join(INSTALLED ? process.cwd() : ROOT, ".env");
 if (fs.existsSync(envFile)) {
   for (const line of fs.readFileSync(envFile, "utf8").split(/\r?\n/)) {
     const m = /^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/.exec(line);
@@ -35,7 +39,7 @@ export const CONFIG = {
   https: publicUrl.startsWith("https://"),
   // HSTS covers every port of the host name: turn it off when the same name also serves plain-HTTP services.
   hsts: publicUrl.startsWith("https://") && env.CONECTOR_HSTS !== "0",
-  dataDir: path.resolve(env.CONECTOR_DATA_DIR || path.join(ROOT, "data")),
+  dataDir: path.resolve(env.CONECTOR_DATA_DIR || (INSTALLED ? path.join(os.homedir(), ".conector") : path.join(ROOT, "data"))),
   allowedHosts: new Set([publicHost, ...loopback(port), ...(publicIsLocal ? loopback(publicPort) : []),
     ...String(env.CONECTOR_ALLOWED_HOSTS || "").split(",").map((h) => h.trim()).filter(Boolean)]),
   trustProxy: env.CONECTOR_TRUST_PROXY === "1",

@@ -8,6 +8,8 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/Secra-Solutions/Conector/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Secra-Solutions/Conector?style=flat-square&color=8b6cf2&label=release"></a>
+  <a href="https://github.com/Secra-Solutions/Conector/actions/workflows/ci.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/Secra-Solutions/Conector/ci.yml?branch=main&style=flat-square&label=tests"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8b6cf2?style=flat-square"></a>
   <img alt="Node.js 22+" src="https://img.shields.io/badge/node-22%2B-8b6cf2?style=flat-square">
   <img alt="MCP: Streamable HTTP" src="https://img.shields.io/badge/MCP-Streamable%20HTTP-8b6cf2?style=flat-square">
@@ -82,7 +84,14 @@ config files on each machine, for each agent. Conector puts all of it in one pla
 
 ## Quick start
 
-You need [Node.js](https://nodejs.org) 22 or later.
+With Docker, in one command:
+
+```bash
+docker run -d --name conector -p 127.0.0.1:8790:8790 -v conector-data:/data ghcr.io/secra-solutions/conector
+docker logs conector    # shows the setup link
+```
+
+Or from source, with [Node.js](https://nodejs.org) 22 or later:
 
 ```bash
 git clone https://github.com/Secra-Solutions/Conector.git
@@ -105,7 +114,9 @@ Open it, create the admin account, and then:
 2. **Connect agents:** pick your agent, click **Create a token**, and copy the command or snippet.
 3. Ask your agent to use the app, for example: "list my open GitHub pull requests".
 
-### With Docker
+### With Docker Compose
+
+From a clone of the repository:
 
 ```bash
 docker compose up -d
@@ -113,7 +124,8 @@ docker compose logs conector    # shows the setup link
 ```
 
 The data (users, tokens, encrypted credentials and the master key) lives in the `conector-data` volume. The compose
-file only exposes the panel on `127.0.0.1:8790`.
+file only exposes the panel on `127.0.0.1:8790`. Images for amd64 and arm64 are published at
+`ghcr.io/secra-solutions/conector`: `latest` and `X.Y.Z` for releases, `edge` for the main branch.
 
 ## Connect an agent
 
@@ -123,7 +135,8 @@ file only exposes the panel on `127.0.0.1:8790`.
 
 Each agent authenticates with its own access token (`cnr_…`) and talks to `http://<server>/mcp` over Streamable HTTP,
 with an `Authorization: Bearer` header. Agents that can only start local (stdio) servers use the bundled bridge,
-`bin/stdio-bridge.js`. It has no dependencies, so you can copy it to any machine with Node.js.
+`bin/stdio-bridge.js` (or `conector stdio`), configured with `CONECTOR_URL` and `CONECTOR_TOKEN`. It has no
+dependencies, so you can copy it to any machine with Node.js.
 
 | | Agents |
 |---|---|
@@ -166,7 +179,8 @@ both exist, your personal connection wins.
 
 ## Configuration
 
-Set these environment variables, or put them in a `.env` file next to `package.json` (see `.env.example`):
+Set these environment variables, or put them in a `.env` file next to `package.json` (see `.env.example`). When
+Conector is installed from npm, the `.env` file is read from the current directory instead.
 
 | Variable | Default | |
 |---|---|---|
@@ -174,7 +188,7 @@ Set these environment variables, or put them in a `.env` file next to `package.j
 | `CONECTOR_HOST` | `127.0.0.1` | Interface to bind. Use `0.0.0.0` only behind a firewall or reverse proxy. |
 | `CONECTOR_PUBLIC_URL` | `http://localhost:<port>` | Address that people and agents use. Some OAuth providers require `https://`. |
 | `CONECTOR_ALLOWED_HOSTS` | | Extra `Host` headers to accept, comma-separated (for example `conector.lan:8790`). |
-| `CONECTOR_DATA_DIR` | `./data` | Users, tokens, encrypted credentials, the master key and the audit log. |
+| `CONECTOR_DATA_DIR` | `./data` | Users, tokens, encrypted credentials, the master key and the audit log. `~/.conector` when installed from npm, `/data` in Docker. |
 | `CONECTOR_TRUST_PROXY` | | `1` behind a reverse proxy on the same machine or private network. |
 | `CONECTOR_HSTS` | `1` | With an `https://` public URL, send Strict-Transport-Security. Set `0` if the same host name also serves plain-HTTP services on other ports. |
 | `CONECTOR_SESSION_HOURS` | `12` | Idle time before panel sessions expire. Sessions also end when the server restarts. |
@@ -220,6 +234,7 @@ conector reset-link <email>       Print a password reset link
 conector token <email> [--apps a,b] [--name N]
 conector revoke <token id>
 conector agents | install <agent> Add Conector to an agent
+conector stdio                    stdio bridge for agents that only start local servers
 conector apps [--connected]       List the catalog
 ```
 
@@ -267,7 +282,11 @@ test/       node:test suites
 
 ## Contributing
 
-New apps, agent install guides, fixes and ideas are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) to get started.
+New apps, agent install guides, fixes and ideas are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) to get started,
+pick one of the [good first issues](https://github.com/Secra-Solutions/Conector/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
+(many are popular self-hosted apps that aren't in the catalog yet), or ask in
+[Discussions](https://github.com/Secra-Solutions/Conector/discussions). Everyone taking part follows the
+[code of conduct](CODE_OF_CONDUCT.md).
 
 ## Powered by Secra Solutions
 
