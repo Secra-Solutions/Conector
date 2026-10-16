@@ -1,7 +1,7 @@
 # Conector in a container: the data (users, tokens, encrypted credentials, master key) lives in the /data volume.
 FROM node:22-alpine
 LABEL org.opencontainers.image.title="Conector" \
-      org.opencontainers.image.description="Self-hosted MCP gateway: connect 1,178 apps once and use them from 50 AI agents" \
+      org.opencontainers.image.description="Self-hosted MCP gateway: connect 1,178 apps once and use them from 47 AI agents" \
       org.opencontainers.image.source="https://github.com/Secra-Solutions/Conector" \
       org.opencontainers.image.licenses="MIT" \
       org.opencontainers.image.vendor="Secra Solutions" \
