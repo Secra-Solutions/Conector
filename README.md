@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <b>Connect 1,178 apps once and use them from Claude, Codex, Cursor, Gemini CLI, GitHub Copilot and 45 more AI agents.</b><br>
+  <b>Connect 1,178 apps once and use them from Claude, Codex, Cursor, Gemini CLI, GitHub Copilot and 42 more AI agents.</b><br>
   Self-hosted and open source. Your credentials stay encrypted on your own server.
 </p>
 
@@ -14,7 +14,7 @@
   <img alt="Node.js 22+" src="https://img.shields.io/badge/node-22%2B-8b6cf2?style=flat-square">
   <img alt="MCP: Streamable HTTP" src="https://img.shields.io/badge/MCP-Streamable%20HTTP-8b6cf2?style=flat-square">
   <img alt="1,178 apps" src="https://img.shields.io/badge/apps-1%2C178-8b6cf2?style=flat-square">
-  <img alt="50 agents" src="https://img.shields.io/badge/agents-50-8b6cf2?style=flat-square">
+  <img alt="47 agents" src="https://img.shields.io/badge/agents-47-8b6cf2?style=flat-square">
   <a href="https://secra.es/en"><img alt="Powered by Secra Solutions" src="https://img.shields.io/badge/powered%20by-Secra%20Solutions-16131f?style=flat-square&labelColor=8b6cf2"></a>
 </p>
 
@@ -59,7 +59,7 @@ config files on each machine, for each agent. Conector puts all of it in one pla
       as <code>outlook_search_mail</code>, <code>jira_search</code> or <code>slack_send_message</code>.
     </td>
     <td width="33%" valign="top">
-      <b>50 agents</b><br>
+      <b>47 agents</b><br>
       The panel shows the exact command or config file for each agent, with a token already filled in.
       <code>conector install &lt;agent&gt;</code> writes it for you.
     </td>

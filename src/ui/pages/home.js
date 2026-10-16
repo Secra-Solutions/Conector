@@ -29,7 +29,7 @@ export function homePage({ session, totals, connected, agents, mcpUrl, tokens, u
         <a class="btn btn-lg" href="/apps">Browse apps</a>
       </div>
       <div class="hero-stats"><span><b>${totals.apps.toLocaleString("en-US")}</b> apps</span><span><b>${totals.oneClick}</b> one-click</span>
-        <span><b>${connected.length}</b> connected</span><span><b>${agents.length}</b> supported agents</span></div>
+        <span><b>${connected.length}</b> connected</span><span><b>${agents.filter((a) => a.methods.length).length}</b> supported agents</span></div>
     </section>
     <div class="home-grid">
       <section class="card">
