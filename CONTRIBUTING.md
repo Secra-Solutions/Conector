@@ -3,7 +3,7 @@
 Thanks for helping. Issues and pull requests are welcome, from typo fixes to new apps and agent install guides.
 If you're looking for a place to start, the
 [good first issues](https://github.com/Secra-Solutions/Conector/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-are apps people asked for, each with a link to its API documentation. Questions and ideas go to
+are apps we want in the catalog, each with a link to its API documentation. Questions and ideas go to
 [Discussions](https://github.com/Secra-Solutions/Conector/discussions).
 
 Everyone taking part follows our [code of conduct](CODE_OF_CONDUCT.md).
