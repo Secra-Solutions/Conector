@@ -1,0 +1,45 @@
+# Publishes each GitHub release to npm (trusted publishing: no tokens, with provenance) and to the official MCP Registry
+# (GitHub OIDC). Run it by hand to retry: it skips a version that npm already has.
+name: Publish
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+      - name: Check that the versions match
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          node -e "const s = require('./server.json'); if (s.version !== '$VERSION' || s.packages[0].version !== '$VERSION') { console.error('server.json must have version $VERSION'); process.exit(1); }"
+          if [ "${{ github.event_name }}" = "release" ] && [ "${{ github.event.release.tag_name }}" != "v$VERSION" ]; then
+            echo "The release tag must be v$VERSION"; exit 1
+          fi
+      - run: npm ci
+      - run: npm test
+      - name: Publish to npm
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view "conector@$VERSION" version > /dev/null 2>&1; then echo "conector@$VERSION is already on npm"; else npm publish --access public; fi
+
+  mcp-registry:
+    needs: npm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install mcp-publisher
+        run: curl -fsSL https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz | tar xz mcp-publisher
+      - run: ./mcp-publisher login github-oidc
+      - run: ./mcp-publisher publish

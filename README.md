@@ -9,6 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/Secra-Solutions/Conector/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/Secra-Solutions/Conector?style=flat-square&color=8b6cf2&label=release"></a>
+  <a href="https://www.npmjs.com/package/conector"><img alt="npm" src="https://img.shields.io/npm/v/conector?style=flat-square&color=8b6cf2"></a>
   <a href="https://github.com/Secra-Solutions/Conector/actions/workflows/ci.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/Secra-Solutions/Conector/ci.yml?branch=main&style=flat-square&label=tests"></a>
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-8b6cf2?style=flat-square"></a>
   <img alt="Node.js 22+" src="https://img.shields.io/badge/node-22%2B-8b6cf2?style=flat-square">
@@ -84,14 +85,23 @@ config files on each machine, for each agent. Conector puts all of it in one pla
 
 ## Quick start
 
-With Docker, in one command:
+With [Node.js](https://nodejs.org) 22 or later, in one command:
+
+```bash
+npx conector start
+```
+
+Installed from npm, Conector keeps its data in `~/.conector`. For a permanent install, run `npm install -g conector` and
+then `conector start`.
+
+With Docker:
 
 ```bash
 docker run -d --name conector -p 127.0.0.1:8790:8790 -v conector-data:/data ghcr.io/secra-solutions/conector
 docker logs conector    # shows the setup link
 ```
 
-Or from source, with [Node.js](https://nodejs.org) 22 or later:
+Or from source:
 
 ```bash
 git clone https://github.com/Secra-Solutions/Conector.git
