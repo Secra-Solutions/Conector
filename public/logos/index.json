@@ -3184,6 +3184,11 @@
   "kind": "image",
   "source": "https://linguin.ai/apple-icon-180x180.png"
  },
+ "linkding": {
+  "file": "linkding.svg",
+  "kind": "image",
+  "source": "https://linkding.link/favicon.svg"
+ },
  "linkly": {
   "file": "linkly.png",
   "kind": "image",
