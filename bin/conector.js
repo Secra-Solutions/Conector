@@ -33,6 +33,8 @@ Agents
       --method <n>              Pick one of the agent's methods (see "conector install <agent> --list")
       --list                    Show the agent's methods
       --dry-run                 Print what would be done, without a real token
+  stdio                         Bridge for agents that only start local (stdio) servers: connects to
+                                CONECTOR_URL (default http://localhost:8790/mcp) with CONECTOR_TOKEN
 
 Apps
   apps [--connected]            List the app catalog (or only connected apps)
@@ -178,6 +180,8 @@ async function install([id], { CONFIG, auth }) {
 
 if (command === "start") {
   await import("../src/server.js");
+} else if (command === "stdio") {
+  await import("./stdio-bridge.js");
 } else {
   const { CONFIG } = await import("../src/config.js");
   const auth = await import("../src/auth.js");

@@ -1,0 +1,35 @@
+name: App request
+description: Ask for an app that isn't in the catalog yet, or offer to add it.
+labels: [app request]
+body:
+  - type: input
+    id: app
+    attributes:
+      label: App
+      placeholder: Home Assistant
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Link to its API documentation
+    validations:
+      required: true
+  - type: dropdown
+    id: auth
+    attributes:
+      label: How does its API authenticate?
+      options: [OAuth, API key or token, Username and password, No credentials, I don't know]
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: What would you ask your agent to do with it?
+      placeholder: Turn off the lights in the office when I finish my work day.
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd like to add it myself (see docs/ADDING_APPS.md).
