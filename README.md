@@ -28,7 +28,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/home.png" alt="Conector home page" width="900">
+  <img src="docs/assets/demo.gif" alt="Demo: search the app catalog, connect Hacker News, then add Conector to Claude Code with a new token" width="900">
 </p>
 
 ## Why Conector

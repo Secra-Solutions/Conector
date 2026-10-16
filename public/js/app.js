@@ -280,9 +280,10 @@
       if (empty) empty.hidden = n > 0;
     };
     search?.addEventListener("input", apply);
-    $$("[data-kind]", agentsRoot).forEach((b) => b.addEventListener("click", () => {
+    // Only the filter buttons: the agent cards carry data-kind too, and clicking "Add" on one must not filter the list.
+    $$("button[data-kind]", agentsRoot).forEach((b) => b.addEventListener("click", () => {
       kind = b.dataset.kind;
-      $$("[data-kind]", agentsRoot).forEach((x) => x.classList.toggle("is-active", x === b));
+      $$("button[data-kind]", agentsRoot).forEach((x) => x.classList.toggle("is-active", x === b));
       apply();
     }));
     apply();
