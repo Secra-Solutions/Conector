@@ -2134,6 +2134,11 @@
   "kind": "tile",
   "source": "simple-icons:sage"
  },
+ "forgejo": {
+  "file": "forgejo.svg",
+  "kind": "tile",
+  "source": "simple-icons:forgejo"
+ },
  "formbricks": {
   "file": "formbricks.svg",
   "kind": "tile",
