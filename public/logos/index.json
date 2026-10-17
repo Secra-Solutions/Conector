@@ -2134,6 +2134,11 @@
   "kind": "tile",
   "source": "simple-icons:sage"
  },
+ "forgejo": {
+  "file": "forgejo.svg",
+  "kind": "tile",
+  "source": "simple-icons:forgejo"
+ },
  "formbricks": {
   "file": "formbricks.svg",
   "kind": "tile",
@@ -4398,6 +4403,11 @@
   "file": "proxiedmail.png",
   "kind": "image",
   "source": "https://proxiedmail.com/images/v2/favicons/apple-touch-icon.png"
+ },
+ "proxmox": {
+  "file": "proxmox.svg",
+  "kind": "tile",
+  "source": "simple-icons:proxmox"
  },
  "pumble": {
   "file": "pumble.png",
