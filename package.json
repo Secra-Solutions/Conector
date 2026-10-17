@@ -1,6 +1,6 @@
 {
   "name": "conector",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Self-hosted MCP gateway: connect 1,178 apps once and use them from Claude, Codex, Cursor, Gemini CLI, Copilot and 42 more AI agents.",
   "mcpName": "io.github.Secra-Solutions/conector",
   "license": "MIT",
