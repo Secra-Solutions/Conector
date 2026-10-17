@@ -27,6 +27,21 @@ test("app ids and tool names are unique, texts fit the panel", () => {
   }
 });
 
+// A line ending in `" +` followed by one starting with `+ "` turns the second string into NaN; a missing value
+// prints "undefined". Both are easy to miss in review and show up in the panel and in the tool descriptions.
+test("app texts have no NaN, undefined or [object Object] from broken concatenation", () => {
+  const broken = /\bNaN\b|\bundefined\b|\[object Object\]/;
+  for (const c of CONNECTORS) {
+    const texts = { description: c.description, help: c.help, oauthHelp: c.oauthHelp,
+      ...Object.fromEntries((c.fields || []).flatMap((f) => [[`field ${f.id} label`, f.label], [`field ${f.id} help`, f.help]])),
+      ...Object.fromEntries(c.tools.map((t) => [`tool ${t.name}`, t.description])) };
+    for (const [where, text] of Object.entries(texts)) {
+      const found = typeof text === "string" && text.match(broken);
+      assert.ok(!found, `${c.id}: ${where} contains "${found?.[0]}"`);
+    }
+  }
+});
+
 test("every agent has a name, a kind and well-formed install snippets", () => {
   const ids = new Set();
   for (const a of AGENTS) {
