@@ -2934,6 +2934,11 @@
   "kind": "image",
   "source": "https://iteratehq.com/static/img/apple-touch-icon-512x512.png"
  },
+ "jellyfin": {
+  "file": "jellyfin.svg",
+  "kind": "tile",
+  "source": "simple-icons:jellyfin"
+ },
  "jenkins": {
   "file": "jenkins.svg",
   "kind": "tile",
