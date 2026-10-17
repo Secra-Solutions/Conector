@@ -2,6 +2,7 @@
 // JSON/binary bodies, readable errors and the generic <app>_request tool.
 import crypto from "node:crypto";
 import fs from "node:fs";
+import { STATUS_CODES } from "node:http";
 import net from "node:net";
 import path from "node:path";
 import { z } from "zod";
@@ -66,7 +67,9 @@ export function ensureOk(r, service) {
   const msg = text(d?.error?.message) || text(d?.error_description) || text(d?.message) || text(d?.errors?.[0]?.message)
     || text(d?.errors?.[0]?.detail) || text(d?.detail) || text(d?.description) || text(d?.error_message) || text(d?.title)
     || text(d?.info) || text(d?.msg) || text(d?.error)
-    || (typeof d === "string" ? d.replace(/\s+/g, " ").slice(0, 300) : JSON.stringify(d)?.slice(0, 300));
+    // An empty answer (common with 401) gets the standard status text instead of "null".
+    || (d === null || d === undefined || d === "" ? STATUS_CODES[r.status] || "empty answer"
+      : typeof d === "string" ? d.replace(/\s+/g, " ").slice(0, 300) : JSON.stringify(d)?.slice(0, 300));
   throw new Error(`${service} responded ${r.status}: ${msg}`);
 }
 

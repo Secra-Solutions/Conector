@@ -1,32 +1,52 @@
-// Nextcloud's OCS API lives under /ocs/v2.php on the same host as the web UI and rejects
-// requests without the OCS-APIRequest header; the OpenAPI spec documents that header on every
-// OCS route, so it is sent unconditionally. format=json keeps OCS from answering in XML.
+// Nextcloud is a self-hosted file sync and collaboration server. Two APIs live on the same address as the web interface,
+// both with the login and an app password (HTTP basic auth): OCS under /ocs/v2.php (users, groups, shares, capabilities,
+// search), which rejects requests without the OCS-APIRequest header and answers in XML unless format=json is asked for,
+// and WebDAV under /remote.php/dav (file contents), which ignores both. The base URL is the instance itself so agents
+// reach both with relative paths.
 export default [
   {
     id: "nextcloud", name: "Nextcloud", category: "productivity",
-    description: "Users, capabilities, shares and group management of your Nextcloud",
+    description: "Files, shares, users and groups of your Nextcloud",
     website: "https://nextcloud.com", docs: "https://docs.nextcloud.com/server/latest/developer_manual/client_apis/",
     logo: { simpleIcons: "nextcloud" },
-    baseUrl: "{url}/ocs/v2.php",
+    baseUrl: "{url}",
     auth: { type: "basic", usernameField: "username", passwordField: "app_password" },
     headers: { "OCS-APIRequest": "true" },
     query: { format: "json" },
-    fields: [{ id: "url", label: "Nextcloud URL", format: "url", default: "http://localhost:8080",
-               help: "The address you open Nextcloud at, with its port (default 8080). It must start with https://, except "
-                 + "http://localhost:8080 when Nextcloud runs on this same machine, or an http:// address on your local "
+    fields: [{ id: "url", label: "Nextcloud URL", format: "url", placeholder: "https://cloud.example.com",
+               example: "https://example.invalid",
+               help: "The address you open Nextcloud at, without /index.php, /apps/… or /ocs (e.g. https://cloud.example.com, "
+                 + "or https://example.com/nextcloud when it is installed in a folder). It must start with https://, except "
+                 + "http://localhost:<port> when Nextcloud runs on this same machine, or an http:// address on your local "
                  + "network when Conector runs with CONECTOR_ALLOW_PRIVATE_HTTP=1." },
-             { id: "username", label: "Username", default: "admin",
-               help: "The Nextcloud account the app password belongs to." },
+             { id: "username", label: "Login",
+               help: "The “Login” shown next to the new app password (your account name, not your display name)." },
              { id: "app_password", label: "App password", secret: true }],
-    keyUrl: "https://docs.nextcloud.com/server/latest/user_manual/en/settings_devices.html",
-    help: "1) In Nextcloud open “Settings” → “Security” → “Devices & sessions”. 2) Scroll to “App passwords” and click "
-      + "“Create new app password”. 3) Name it (e.g. Conector) and confirm with your account password — the generated "
-      + "password is shown only once. 4) Paste that app password here together with your username and server address. "
-      + "App passwords replace your account password for API access and can be revoked from the same page.",
-    test: { path: "/cloud/user", account: (d) => d?.ocs?.data?.displayname || d?.ocs?.data?.id },
-    examples: "Examples: GET /cloud/capabilities (enabled apps and their version), GET /cloud/user (your account), "
-      + "GET /cloud/users (admin only), GET /cloud/groups, GET /cloud/capabilities?format=json. Note that file contents "
-      + "are not served by OCS: upload, download and folder listings go through WebDAV at "
-      + "/remote.php/dav/files/{username}, which needs its own basic-auth request outside this tool.",
+    keyUrl: "https://docs.nextcloud.com/server/latest/user_manual/en/session_management.html",
+    help: "1) In Nextcloud click your avatar (top right), open “Settings” and then “Security” in the left menu. 2) At the "
+      + "bottom of “Devices & sessions”, type a name in “App name” (e.g. Conector) and click “Create new app password”; "
+      + "confirm with your account password when asked. 3) Copy the “Login” and the “Password” from “New app password”: "
+      + "the password is shown only once. 4) Paste them here, together with your Nextcloud address. The app password acts "
+      + "as your account (it is the only kind of password that works with two-factor authentication on) and can be revoked "
+      + "from “Devices & sessions”.",
+    // A wrong address (e.g. one copied from the browser, ending in /apps/files) answers 404 with an empty body.
+    test: { path: "/ocs/v2.php/cloud/user", acceptStatus: [404], account: (d) => d?.ocs?.data?.displayname || d?.ocs?.data?.id,
+            validate: (d) => {
+              if (!d?.ocs?.data?.id) {
+                throw new Error("Nextcloud: this URL does not answer like the Nextcloud API (use the address you open "
+                  + "Nextcloud at, without /index.php, /apps/… or /ocs)");
+              }
+            } },
+    examples: "OCS API (JSON): GET /ocs/v2.php/cloud/user (your account: its “id” is the {user} of file paths), "
+      + "GET /ocs/v2.php/cloud/capabilities (version and enabled features), "
+      + "GET /ocs/v2.php/search/providers/files/search?term=… (find files by name), "
+      + "GET /ocs/v2.php/apps/files_sharing/api/v1/shares (add ?shared_with_me=true for the ones shared with you), "
+      + "POST /ocs/v2.php/apps/files_sharing/api/v1/shares {\"path\":\"/Documents/report.pdf\",\"shareType\":3} (public "
+      + "link; shareType 0 with \"shareWith\":\"<user>\" shares with a user), GET /ocs/v2.php/cloud/users and "
+      + "GET /ocs/v2.php/cloud/groups (administrators and group admins only). Files (WebDAV): "
+      + "GET /remote.php/dav/files/{user}/Documents/notes.txt (download; binary files come back as base64), "
+      + "PUT /remote.php/dav/files/{user}/Documents/notes.txt with body_base64 (upload or overwrite; the folder must exist), "
+      + "DELETE /remote.php/dav/files/{user}/Documents/notes.txt. Listing folders (PROPFIND) and creating them (MKCOL) are "
+      + "not possible with this tool: search the files instead.",
   },
 ];
