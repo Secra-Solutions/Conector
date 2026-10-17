@@ -16,10 +16,23 @@ net.setDefaultAutoSelectFamilyAttemptTimeout(2000);
 const TEXT_LIMIT = 45_000; // MCP clients such as Claude Code spill responses over ~50,000 characters to a file
 export const USER_AGENT = `conector/${VERSION}`;
 
+const TLS_ERRORS = new Set(["UNABLE_TO_VERIFY_LEAF_SIGNATURE", "SELF_SIGNED_CERT_IN_CHAIN", "DEPTH_ZERO_SELF_SIGNED_CERT",
+  "UNABLE_TO_GET_ISSUER_CERT_LOCALLY", "CERT_HAS_EXPIRED", "ERR_TLS_CERT_ALTNAME_INVALID"]);
+
 /** fetch() with a timeout. Returns { status, ok, data } where data is parsed JSON, text, or { base64, contentType }. */
 export async function httpRequest(url, options = {}) {
   const { timeout, ...init } = options;
-  const r = await fetch(url, { ...init, signal: AbortSignal.timeout(timeout || 90_000) });
+  let r;
+  try {
+    r = await fetch(url, { ...init, signal: AbortSignal.timeout(timeout || 90_000) });
+  } catch (e) {
+    // "fetch failed" alone doesn't say why: add the network or TLS error code, and what to do about an untrusted certificate.
+    const code = e.cause?.code || e.cause?.errors?.[0]?.code; // connection errors come as an AggregateError (IPv4 and IPv6)
+    if (e.message !== "fetch failed" || !code) throw e;
+    const hint = TLS_ERRORS.has(code) ? ": the server's certificate isn't trusted (the app's help explains the options, "
+      + "e.g. NODE_EXTRA_CA_CERTS for a private CA)" : "";
+    throw new Error(`fetch failed (${code})${hint}`, { cause: e });
+  }
   const type = r.headers.get("content-type") || "";
   let data;
   if (r.status === 204) data = null;
