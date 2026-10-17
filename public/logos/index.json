@@ -4399,6 +4399,11 @@
   "kind": "image",
   "source": "https://proxiedmail.com/images/v2/favicons/apple-touch-icon.png"
  },
+ "proxmox": {
+  "file": "proxmox.svg",
+  "kind": "tile",
+  "source": "simple-icons:proxmox"
+ },
  "pumble": {
   "file": "pumble.png",
   "kind": "image",
