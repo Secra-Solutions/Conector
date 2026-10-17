@@ -149,6 +149,16 @@ with an `Authorization: Bearer` header. Agents that can only start local (stdio)
 dependencies, so you can copy it to any machine with Node.js. On the machine where Conector stores its data, an agent
 can also start `conector mcp`, which serves the same tools over stdio without the web server or a token.
 
+**Everything on one machine?** Start the panel with `npx conector start`, connect your apps, and add Conector to your
+editor in one click. The button adds `npx -y conector mcp`, which reads the same data in `~/.conector`, so there's no
+token to create:
+
+<p>
+  <a href="https://vscode.dev/redirect/mcp/install?name=conector&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22conector%22%2C%22mcp%22%5D%7D"><img alt="Install in VS Code" src="https://img.shields.io/badge/VS_Code-Install_Conector-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white"></a>
+  <a href="https://insiders.vscode.dev/redirect/mcp/install?name=conector&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22conector%22%2C%22mcp%22%5D%7D&quality=insiders"><img alt="Install in VS Code Insiders" src="https://img.shields.io/badge/VS_Code_Insiders-Install_Conector-24bfa5?style=flat-square&logo=visualstudiocode&logoColor=white"></a>
+  <a href="https://cursor.com/en/install-mcp?name=conector&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsImNvbmVjdG9yIiwibWNwIl19"><img alt="Add Conector to Cursor" src="https://cursor.com/deeplink/mcp-install-dark.svg" height="20"></a>
+</p>
+
 | | Agents |
 |---|---|
 | **CLIs** | Claude Code, Codex, Gemini CLI, OpenCode, Amp, goose, Qwen Code, Factory Droid, Devin CLI, TRAE CLI, Mistral Vibe, Kimi Code CLI, Grok Build, Hermes Agent, Auggie CLI, CodeBuddy Code, Qoder CLI, MiniMax Code, Cortex Code, Deep Agents, fast-agent, Stakpak, ZCode, Pi, Oh My Pi, Muse Code, Autohand Code, CodeWhale, crow-cli, DimCode, Gajae Code, Minion Code, Nova, Poolside, siGit Code, VT Code, GLM Agent, Corust Agent |
