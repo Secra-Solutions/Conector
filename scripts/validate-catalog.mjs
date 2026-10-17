@@ -15,7 +15,8 @@ const args = process.argv.slice(2);
 const offline = args.includes("--offline");
 const onlyArg = args.indexOf("--only");
 const only = onlyArg >= 0 ? new Set(String(args[onlyArg + 1] || "").split(",").filter(Boolean)) : null;
-let files = args.filter((a, i) => !a.startsWith("--") && i !== onlyArg + 1);
+// Without --only, onlyArg is -1: compare positions only when the flag is present, or the first file would be dropped.
+let files = args.filter((a, i) => !a.startsWith("--") && !(onlyArg >= 0 && i === onlyArg + 1));
 if (!files.length) {
   const dir = path.join(ROOT, "src", "catalog", "apps");
   files = fs.readdirSync(dir).filter((f) => f.endsWith(".js")).sort().map((f) => path.join(dir, f));
