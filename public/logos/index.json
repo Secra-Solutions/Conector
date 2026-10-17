@@ -2134,11 +2134,6 @@
   "kind": "tile",
   "source": "simple-icons:sage"
  },
- "forgejo": {
-  "file": "forgejo.svg",
-  "kind": "tile",
-  "source": "simple-icons:forgejo"
- },
  "formbricks": {
   "file": "formbricks.svg",
   "kind": "tile",
@@ -3443,6 +3438,11 @@
   "file": "maxio.png",
   "kind": "image",
   "source": "https://www.maxio.com/wp-content/themes/maxio-wp/favicons/apple-touch-icon.png"
+ },
+ "mealie": {
+  "file": "mealie.svg",
+  "kind": "tile",
+  "source": "simple-icons:mealie"
  },
  "melo": {
   "file": "melo.png",
