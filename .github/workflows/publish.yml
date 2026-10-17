@@ -39,6 +39,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Wait until npm serves this version
+        # A new version can take a few minutes to appear on npm, and the registry checks it there.
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          for i in $(seq 1 40); do
+            if curl -fsS "https://registry.npmjs.org/conector/$VERSION" > /dev/null 2>&1; then exit 0; fi
+            echo "conector@$VERSION is not on npm yet ($i/40)"; sleep 15
+          done
+          echo "conector@$VERSION did not appear on npm in 10 minutes"; exit 1
       - name: Install mcp-publisher
         run: curl -fsSL https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_linux_amd64.tar.gz | tar xz mcp-publisher
       - run: ./mcp-publisher login github-oidc
