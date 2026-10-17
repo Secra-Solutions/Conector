@@ -2134,6 +2134,11 @@
   "kind": "tile",
   "source": "simple-icons:sage"
  },
+ "forgejo": {
+  "file": "forgejo.svg",
+  "kind": "tile",
+  "source": "simple-icons:forgejo"
+ },
  "formbricks": {
   "file": "formbricks.svg",
   "kind": "tile",
@@ -3513,6 +3518,11 @@
   "file": "minerstat.png",
   "kind": "image",
   "source": "https://minerstat.com/apple-icon.png?apple-icon.10kwzbx4b7bgy.png"
+ },
+ "miniflux": {
+  "file": "miniflux.ico",
+  "kind": "image",
+  "source": "https://miniflux.app/favicon.ico"
  },
  "mintlify": {
   "file": "mintlify.svg",
