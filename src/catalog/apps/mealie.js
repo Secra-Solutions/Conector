@@ -1,4 +1,4 @@
-// Mealie is a self-hosted recipe manager and meal planner. Its API uses a Bearer token.
+// Mealie is a self-hosted recipe manager and meal planner. API uses Bearer token.
 export default [
   {
     id: "mealie", name: "Mealie", category: "productivity",
@@ -10,7 +10,7 @@ export default [
     fields: [{ id: "token", label: "API key", secret: true },
              { id: "url", label: "Mealie URL", format: "url", default: "https://mealie.example.org",
                help: "The address of your Mealie instance. It must start with https://, except "
-                 + "http://localhost:8000 when Mealie runs on this same machine, or an http:// address on your local "
+                 + "http://localhost:9000 when Mealie runs on this same machine, or an http:// address on your local "
                  + "network when Conector runs with CONECTOR_ALLOW_PRIVATE_HTTP=1." }],
     keyUrl: "https://docs.mealie.io/documentation/getting-started/api-usage/",
     help: "1) In Mealie click your avatar → “Profile”. 2) Scroll to “API Token” and click “Generate new token”. " +
