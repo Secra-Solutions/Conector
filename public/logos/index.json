@@ -3444,6 +3444,11 @@
   "kind": "image",
   "source": "https://www.maxio.com/wp-content/themes/maxio-wp/favicons/apple-touch-icon.png"
  },
+ "mealie": {
+  "file": "mealie.svg",
+  "kind": "tile",
+  "source": "simple-icons:mealie"
+ },
  "melo": {
   "file": "melo.png",
   "kind": "image",
