@@ -2814,6 +2814,11 @@
   "kind": "image",
   "source": "https://cdn.prod.website-files.com/6705f4b15aee7ca914fff083/6781be1c1332a17b6b17a18a_favicon-256.webp"
  },
+ "immich": {
+  "file": "immich.svg",
+  "kind": "tile",
+  "source": "simple-icons:immich"
+ },
  "inblog": {
   "file": "inblog.png",
   "kind": "image",
