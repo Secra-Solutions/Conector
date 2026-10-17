@@ -52,7 +52,7 @@ that the base URL or the test path is wrong.
 | `optional: true` | Not required to save. |
 | `default` | Value used when the field is left empty. |
 | `options: [["eu", "Europe"], ["us", "United States"]]` | A select. The first element is the stored value. |
-| `format` | `subdomain`, `domain`, `segment` (no spaces or slashes), `email` or `url` (a self-hosted instance; `https://` required except on localhost). |
+| `format` | `subdomain`, `domain`, `segment` (no spaces or slashes), `email` or `url` (a self-hosted instance; `https://` required except on localhost, or on private network addresses when Conector runs with `CONECTOR_ALLOW_PRIVATE_HTTP=1`). |
 | `hidden: true` | Not asked; filled in by OAuth (for example the instance URL returned with the token). |
 
 Fields can be used in URLs as `{placeholders}`: `baseUrl: "https://{subdomain}.acme.example/api"`. Every placeholder is

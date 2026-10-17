@@ -50,7 +50,7 @@ export function read() {
 }
 
 export function save() {
-  const tmp = `${FILE}.tmp`;
+  const tmp = `${FILE}.${process.pid}.tmp`; // per process: the server, the CLI and `conector mcp` can save at the same time
   fs.writeFileSync(tmp, JSON.stringify(state, null, 1), { mode: 0o600 });
   fs.renameSync(tmp, FILE);
   loadedVersion = fileVersion();

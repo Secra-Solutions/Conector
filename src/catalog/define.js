@@ -54,6 +54,21 @@ function bodyOf({ body, body_base64, content_type, form }) {
 }
 
 /** URL of a self-hosted instance (n8n, WordPress…): https is required except on this machine. */
+// Addresses on a local network. Many self-hosted apps there have no certificate, so with CONECTOR_ALLOW_PRIVATE_HTTP=1
+// they may use plain http://: credentials then travel unencrypted, but only inside that network. Cloud metadata
+// endpoints stay excluded, so a connection can't be pointed at the credentials of the machine Conector runs on.
+function isPrivateHost(hostname) {
+  const h = hostname.replace(/^\[|\]$/g, "").toLowerCase();
+  if (["169.254.169.254", "fd00:ec2::254", "metadata.google.internal"].includes(h)) return false;
+  const v4 = /^(\d{1,3})\.(\d{1,3})\.\d{1,3}\.\d{1,3}$/.exec(h);
+  if (v4) {
+    const [a, b] = [Number(v4[1]), Number(v4[2])];
+    return a === 10 || (a === 172 && b >= 16 && b <= 31) || (a === 192 && b === 168) || (a === 100 && b >= 64 && b <= 127);
+  }
+  if (h.includes(":")) return /^f[cd][0-9a-f]{2}:/.test(h); // IPv6 unique local addresses (fc00::/7)
+  return !h.includes(".") || /\.(local|lan|home\.arpa)$/.test(h) || h === "host.docker.internal";
+}
+
 export function normalizeUrl(value) {
   let u;
   try {
@@ -62,7 +77,12 @@ export function normalizeUrl(value) {
     throw new Error(`"${value}" is not a valid URL`);
   }
   const local = ["localhost", "127.0.0.1", "[::1]"].includes(u.hostname);
-  if (u.protocol !== "https:" && !(local && u.protocol === "http:")) throw new Error("The URL must start with https://");
+  if (u.protocol === "http:" && !local && isPrivateHost(u.hostname)) {
+    if (process.env.CONECTOR_ALLOW_PRIVATE_HTTP !== "1") {
+      throw new Error("The URL must start with https://. To use http:// on your local network, start Conector with "
+        + "CONECTOR_ALLOW_PRIVATE_HTTP=1");
+    }
+  } else if (u.protocol !== "https:" && !(local && u.protocol === "http:")) throw new Error("The URL must start with https://");
   if (u.username || u.password || u.search || u.hash) throw new Error("The URL cannot contain a user, query parameters or #");
   return `${u.origin}${u.pathname.replace(/\/+$/, "")}`;
 }

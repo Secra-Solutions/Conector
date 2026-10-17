@@ -213,9 +213,18 @@ Conector is installed from npm, the `.env` file is read from the current directo
 | `CONECTOR_TRUST_PROXY` | | `1` behind a reverse proxy on the same machine or private network. |
 | `CONECTOR_HSTS` | `1` | With an `https://` public URL, send Strict-Transport-Security. Set `0` if the same host name also serves plain-HTTP services on other ports. |
 | `CONECTOR_SESSION_HOURS` | `12` | Idle time before panel sessions expire. Sessions also end when the server restarts. |
+| `CONECTOR_ALLOW_PRIVATE_HTTP` | | `1` lets self-hosted apps on your local network use `http://` (for example `http://homeassistant.local:8123` or `http://192.168.1.10:8123`). See below. |
 
 To reach Conector from other machines or from cloud agents, put an HTTPS reverse proxy or tunnel in front of it (Caddy,
 nginx, Cloudflare Tunnel…) and set `CONECTOR_PUBLIC_URL` to its address.
+
+Self-hosted apps must use `https://`, except on `localhost`. Many home servers have no certificate, so
+`CONECTOR_ALLOW_PRIVATE_HTTP=1` also accepts `http://` for private network addresses: `10.x`, `172.16–31.x`, `192.168.x`,
+`100.64–127.x` (Tailscale), IPv6 unique local addresses, `*.local`, `*.lan`, `*.home.arpa`, `host.docker.internal` and
+names without a dot. Two things to know before you turn it on: those apps' credentials then cross your network
+unencrypted, and anyone who can create connections can make Conector call plain-HTTP services on your network. Cloud
+metadata addresses stay blocked. In Docker, `localhost` is the container itself: use the host's LAN address or
+`host.docker.internal`.
 
 ## Users and security
 

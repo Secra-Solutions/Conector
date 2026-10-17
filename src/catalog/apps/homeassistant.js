@@ -22,7 +22,8 @@ export default [
     fields: [{ id: "url", label: "Home Assistant URL", format: "url", placeholder: "https://home.example.com",
                help: "The address you open Home Assistant at, with its port and without /api (e.g. https://home.example.com:8123 "
                  + "or your Home Assistant Cloud address, https://….ui.nabu.casa). It must start with https://, except "
-                 + "http://localhost:8123 when Home Assistant runs on this same machine." },
+                 + "http://localhost:8123 when Home Assistant runs on this same machine, or an http:// address on your "
+                 + "local network (e.g. http://homeassistant.local:8123) when Conector runs with CONECTOR_ALLOW_PRIVATE_HTTP=1." },
              { id: "token", label: "Long-lived access token", secret: true }],
     // My Home Assistant asks for the address of your instance once and opens its “Security” tab.
     keyUrl: "https://my.home-assistant.io/redirect/profile_security/",
