@@ -2684,6 +2684,11 @@
   "kind": "image",
   "source": "https://www.holded.com/apple-touch-icon.png"
  },
+ "homeassistant": {
+  "file": "homeassistant.svg",
+  "kind": "tile",
+  "source": "simple-icons:homeassistant"
+ },
  "honcho": {
   "file": "honcho.svg",
   "kind": "image",
