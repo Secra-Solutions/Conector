@@ -3729,6 +3729,11 @@
   "kind": "image",
   "source": "https://newsapi.org/apple-touch-icon.png"
  },
+ "nextcloud": {
+  "file": "nextcloud.svg",
+  "kind": "tile",
+  "source": "simple-icons:nextcloud"
+ },
  "nextdns": {
   "file": "nextdns.svg",
   "kind": "tile",
