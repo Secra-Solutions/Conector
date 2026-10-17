@@ -4004,6 +4004,11 @@
   "kind": "image",
   "source": "https://paperform.com/apple-touch-icon.png"
  },
+ "paperless": {
+  "file": "paperless.svg",
+  "kind": "tile",
+  "source": "simple-icons:paperlessngx"
+ },
  "paradym": {
   "file": "paradym.ico",
   "kind": "image",
