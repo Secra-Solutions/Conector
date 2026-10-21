@@ -50,3 +50,8 @@ Keep pull requests focused: one app, one agent or one fix per pull request makes
 ## License
 
 By contributing you agree that your contribution is licensed under the [MIT License](LICENSE).
+# Contributing Tips
+
+Quick tip: when adding new apps, run the validation script first to confirm the API rejects fake credentials. This saves maintainers time during review.
+
+See the contributing guide for details.
