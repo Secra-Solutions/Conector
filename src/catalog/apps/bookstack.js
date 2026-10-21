@@ -21,6 +21,6 @@ export default [
       + "to bookstackapp.com: open the same menu on your server.",
     test: { path: "/books?count=1", account: (d) => d?.data?.[0]?.id ?? d?.id },
     examples: "Examples: GET /books (your books), GET /books/{id} (a book), GET /pages?book_id={id} (pages in a book), " +
-      + "POST /pages (create a page), GET /search?query={q} (search wiki).",
+      "POST /pages (create a page), GET /search?query={q} (search wiki).",
   },
 ];
