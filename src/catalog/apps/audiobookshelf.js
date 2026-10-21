@@ -19,6 +19,6 @@ export default [
       + "the same menu on your server.",
     test: { path: "/me", account: (d) => d?.username ?? d?.id },
     examples: "Examples: GET /me (your account), GET /libraries (your libraries), GET /books (your books), " +
-      + "GET /podcasts (your podcasts), GET /users/{userId} (a user), GET /playback/sessions (current playback sessions).",
+      "GET /podcasts (your podcasts), GET /users/{userId} (a user), GET /playback/sessions (current playback sessions).",
   },
 ];
