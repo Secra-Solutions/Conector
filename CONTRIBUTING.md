@@ -43,9 +43,15 @@ npm run logos -- <app id>
 - **Agent install guides** live in `src/agents.json`. Link the agent's official MCP documentation and test the snippet
   with a real install.
 - **Security issues:** please don't open a public issue. See [SECURITY.md](SECURITY.md).
+- **Run validation first:** if you add or change an app, run `node scripts/validate-catalog.mjs src/catalog/apps/<file>.js --only <app id>` to confirm the API rejects fake credentials before submitting.
 
 Keep pull requests focused: one app, one agent or one fix per pull request makes reviews fast.
 
 ## License
 
 By contributing you agree that your contribution is licensed under the [MIT License](LICENSE).
+# Contributing Tips
+
+Quick tip: when adding new apps, run the validation script first to confirm the API rejects fake credentials. This saves maintainers time during review.
+
+See the contributing guide for details.
