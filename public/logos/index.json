@@ -644,6 +644,11 @@
   "kind": "image",
   "source": "https://www.bookingmood.com/apple-icon.png?60079cd57328538a"
  },
+ "bookstack": {
+  "file": "bookstack.svg",
+  "kind": "tile",
+  "source": "simple-icons:bookstack"
+ },
  "booqable": {
   "file": "booqable.ico",
   "kind": "image",
