@@ -379,6 +379,11 @@
   "kind": "image",
   "source": "https://www.assemblyai.com/favicon.ico"
  },
+ "audiobookshelf": {
+  "file": "audiobookshelf.svg",
+  "kind": "tile",
+  "source": "simple-icons:audiobookshelf"
+ },
  "authyo": {
   "file": "authyo.webp",
   "kind": "image",
