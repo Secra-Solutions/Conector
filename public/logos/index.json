@@ -3029,6 +3029,11 @@
   "kind": "image",
   "source": "https://kapso.com/apple-touch-icon.png"
  },
+ "karakeep": {
+  "file": "karakeep.png",
+  "kind": "image",
+  "source": "https://karakeep.app/icons/apple-icon.png"
+ },
  "keenio": {
   "file": "keenio.png",
   "kind": "image",
