@@ -3,7 +3,7 @@
   "name": "io.github.Secra-Solutions/conector",
   "title": "Conector",
   "description": "Self-hosted MCP gateway: connect 1,178 apps once and use them from any AI agent.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "websiteUrl": "https://github.com/Secra-Solutions/Conector",
   "repository": {
     "url": "https://github.com/Secra-Solutions/Conector",
@@ -20,7 +20,7 @@
     {
       "registryType": "npm",
       "identifier": "conector",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "runtimeHint": "npx",
       "transport": { "type": "stdio" },
       "packageArguments": [{ "type": "positional", "value": "stdio" }],
