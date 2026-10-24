@@ -4507,7 +4507,7 @@
  "radarr": {
   "file": "radarr.svg",
   "kind": "tile",
-  "source": "initials"
+  "source": "simple-icons:radarr"
  },
  "rafflys": {
   "file": "rafflys.png",
@@ -5140,9 +5140,9 @@
   "source": "simple-icons:sonarqubecloud"
  },
  "sonarr": {
-  "file": "sonarr.ico",
-  "kind": "image",
-  "source": "https://sonarr.tv/img/favicon.ico"
+  "file": "sonarr.svg",
+  "kind": "tile",
+  "source": "simple-icons:sonarr"
  },
  "sourcegraph": {
   "file": "sourcegraph.svg",

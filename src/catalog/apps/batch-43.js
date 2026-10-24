@@ -43,20 +43,6 @@ export default [
       + "PATCH /cards/{cardId} {…}, GET /boards/{boardId}/structure, GET /users.",
   },
   {
-    id: "karakeep", name: "Karakeep", category: "productivity", description: "Self-hosted bookmarks, notes, lists and tags",
-    website: "https://karakeep.app", docs: "https://docs.karakeep.app/api/karakeep-api", logo: { favicon: "https://karakeep.app" },
-    baseUrl: "{url}/api/v1",
-    auth: { type: "bearer" },
-    fields: [{ id: "token", label: "API key", secret: true },
-             { id: "url", label: "Karakeep URL", format: "url",
-               help: "Use the root URL of your Karakeep instance, without /api/v1." }],
-    help: "1) Sign in to your Karakeep instance. 2) Open “Settings” → “API Keys” and create or copy an API key. "
-      + "3) Enter your instance's root URL below (without /api/v1) and paste the key.",
-    test: { path: "/users/me", account: (d) => d?.email || d?.name },
-    examples: "Examples: GET /bookmarks?limit=20, GET /bookmarks/search?q=…, POST /bookmarks {\"type\": \"link\", \"url\": \"https://…\"}, "
-      + "GET /lists, GET /tags, GET /users/me. See the full reference at docs.karakeep.app/api/karakeep-api.",
-  },
-  {
     id: "kintone", name: "Kintone", category: "productivity", description: "No-code business apps: applications, records and fields",
     website: "https://kintone.com", docs: "https://kintone.dev/en/docs/kintone/rest-api/", logo: { favicon: "https://kintone.com" },
     baseUrl: "https://{server}/k/v1",
